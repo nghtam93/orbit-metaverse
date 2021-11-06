@@ -10,6 +10,7 @@ $(function() {
     }
 
 	new WOW().init();
+
 	if($('body').hasClass('home')){
 		$('.home-story-slider').slick({
 			slidesToShow: 1,
@@ -18,6 +19,35 @@ $(function() {
 			dots: false,
 			easing: "linear"
 		});
+
+		$('.home-ourteam-slider01').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			infinite: false,
+			dots: false,
+			easing: "linear"
+		});
+
+
+		$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+		  $('.js-slick').slick('setPosition');
+		})
+
+		$('.home-partners-slider').slick({
+			rows: 2,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			infinite: true,
+			arrows: true,
+			dots: false,
+			easing: "linear"
+		});
+
+		// $('data-target="#ourteamModal"').on("click",function(e) {
+		// 	$('#ourteamModal').modal('show')
+		// })
+
+
 	}
 
 	var back_to_top=$(".scrollTop"),offset=220,duration=200;$(window).scroll(function(){
