@@ -46,6 +46,8 @@ $(function() {
 
 	if($('body').hasClass('games')){
 		$('.games-slider').slick({
+			// centerMode: true,
+  	// 		variableWidth: true,
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			infinite: false,
