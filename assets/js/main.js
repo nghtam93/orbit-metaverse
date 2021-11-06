@@ -42,12 +42,17 @@ $(function() {
 			dots: false,
 			easing: "linear"
 		});
+	}
 
-		// $('data-target="#ourteamModal"').on("click",function(e) {
-		// 	$('#ourteamModal').modal('show')
-		// })
-
-
+	if($('body').hasClass('games')){
+		$('.games-slider').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			infinite: false,
+			arrows: true,
+			dots: false,
+			easing: "linear"
+		});
 	}
 
 	var back_to_top=$(".scrollTop"),offset=220,duration=200;$(window).scroll(function(){
