@@ -12,7 +12,7 @@ p{margin-bottom:0;}
 body{font-family:'Nunito',sans-serif;background:#1A080C;color:#ECE1E1;font-size:16px;line-height:26px;}
 img{max-width:100%;height:auto;}
 h1,h2,h3{font-family:Lalezar;}
-.btn,a{cursor:url(../img/hover.png) 0 0,auto!important;}
+.btn,a,button, .slider__item{cursor:url(../img/hover.png) 0 0,auto!important;}
 
 /*Fix image trong khung*/
 .dnfix__thumb{position:relative;height:auto;width:100%;overflow:hidden;display:block;padding-top:68.075%;}
@@ -164,6 +164,9 @@ header.header.is-active{background:#1a080c;}
 .home-ourteam .slider__item:hover:before{width:200%;height:200%;animation:fadeCirce 1s;}
 .ourteamModal .modal-dialog{max-width:926px;}
 .ourteamModal .btn-close{position:absolute;top:0;right:60px;width:89px;height:80px;opacity:1;background:url(../img/popup-close.png) no-repeat;background-size:contain;}
+.ourteamModal .btn-close:focus {
+    box-shadow: none;
+}
 .ourteamModal-content{padding:100px 190px 160px;background:url(../img/popup-bg.png) no-repeat;background-size:100% 100%;border:0;}
 .ourteamModal__title{font-family:LNTH-BELLABOO;font-weight:normal;font-size:36px;line-height:43px;text-transform:uppercase;color:#471709;margin-bottom:10px;}
 .ourteamModal__sub{font-family:LNTH-BELLABOO;font-weight:normal;font-size:18px;line-height:22px;color:#B14C35;margin-bottom:30px;}
@@ -287,13 +290,15 @@ header.header.is-active{background:#1a080c;}
 }
 @media (max-width:1399px){
 	.main__nav ul.el__menu>li>a{padding:30px 25px;}
+	.home-tokenomics{
+		    padding: 95px 0 100px;
+	}
 	.home-story .el__item--thumb{padding-top:104%;}
 	.home-tokenomics .el__box{border-top-right-radius:350px;border-bottom-right-radius:350px;}
 	.home-tokenomics .el__box--thumb{top:0;right:0;width:500px;}
 	.home-tokenomics .el__box--thumb:before{top:75px;left:-10px;width:500px;height:500px;}
 }
 @media (max-width:1199px){
-	.home-tokenomics{padding:95px 0 100px;}
 	.main__nav ul.el__menu>li>a{padding:30px 14px;}
 	.header__banner .el__meta{max-width:500px;font-size:16px;line-height:36px;}
 	.header__banner .el__title{font-size:54px;line-height:55px;}

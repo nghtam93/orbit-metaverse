@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Orbit Metaverse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
+
+    <link rel="icon" href="assets/img/favicon.png" />
+  </head>
+  <body class="home">
+    <div class="containerz">
+      <canvas id="pixie"></canvas>
+    </div>
+
+    <header class="header -fix">
+        <div class="container d-flex align-items-center">
+          <h1 class="logo">
+            <a href="index.html">
+              <img width="74" height="20" src="images/logo.png" alt="Logo">
+            </a>
+          </h1>
+
+          <nav class="main__nav ms-auto">
+            <ul class="el__menu">
+              <li class="menu-item active"><a href="index.html">HOME</a></li>
+              <li class="menu-item"><a href="governance.html">Governance</a></li>
+              <li class="menu-item"><a href="games.html">GAMES</a></li>
+              <li class="menu-item"><a href="#">MARKETPLACE</a></li>
+              <li class="menu-item"><a href="orbit-meta.html">ORBIT META</a></li>
+              <li class="menu-item"><a href="#">WHITEPAPER</a></li>
+            </ul>
+          </nav>
+          <div class="ms-auto">
+            <a href="" class="header__btn"><span>CONNECT WALLET</span></a>
+          </div>
+        </div>
+    </header>
+
+    <section class="header__banner">
+      <div class="dnfix__thumb">
+        <img src="images/hero-banner.png" alt="">
+      </div>
+      <div class="el__wrap">
+        <div class="container">
+          <div class="el__meta">
+            <h2 class="el__title wow fadeInLeft">WELCOME TO<br>ORBIT METAVERSE</h2>
+            <div class="el__excerpt wow fadeInRight">
+              Cánh cổng kết nối nền văn minh cổ đại với thế giới tương lai<br>
+              Dẫn dắt đội quân với 5 chiến binh sử thi tham gia vào trận chiến sinh tử giành lấy đá năng lượng vũ trụ, hồi sinh các nền văn minh bị tàn phá
+            </div>
+            <a href="" class="el__btn wow fadeInUp"><span>GET STARTED</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer wow fadeInUp">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="footer__item">
+                <div class="footer__logo">
+                  <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                  </a>
+                </div>
+                <ul class="footer__socical">
+                  <li><a href=""><img src="assets/img/telegram.png" alt=""></a></li>
+                  <li><a href=""><img src="assets/img/twitter.png" alt=""></a></li>
+                  <li><a href=""><img src="assets/img/youtube.png" alt=""></a></li>
+                  <li><a href=""><img src="assets/img/discord.png" alt=""></a></li>
+                  <li><a href=""><img src="assets/img/facebook.png" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-35">
+              <div class="footer__item">
+                <h3 class="footer__item--title">CONTACT US</h3>
+                <ul class="footer__address">
+                  <li><i class="ic-map-marker"></i>56 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội.</li>
+                  <li><i class="ic-phone"></i><a href="tel:02422426188">024 2242 6188</a></li>
+                  <li><i class="ic-envelope"></i><a href="mailto:info@meta.vn">info@meta.vn</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-20">
+              <div class="footer__item">
+                <h3 class="footer__item--title">ABOUT</h3>
+                <ul class="footer__list">
+                  <li><a href="">Documentation</a></li>
+                  <li><a href="">FAQ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-20">
+              <div class="footer__item">
+                <h3 class="footer__item--title">LEGAL</h3>
+                <ul class="footer__list">
+                  <li><a href="">Terms Of Service</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="copyright">
+            Giấy phép cung cấp dịch vụ trò chơi điện tử trên mạng số 107/GCN-PTTH&TTĐT.
+          </div>
+        </div>
+      <div class="scrollTop"></div>
+    </footer>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade ourteamModal" id="ourteamModal" tabindex="-1" aria-labelledby="ourteamModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="ourteamModal-content modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <h3 class="ourteamModal__title">Michael Peterson</h3>
+            <p class="ourteamModal__sub">CO-FOUNDER & CTO</p>
+            <div class="ourteamModal__excerpt">
+              Lorem ipsumorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/firefly.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
