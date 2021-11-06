@@ -53,8 +53,12 @@ $(function() {
 			infinite: false,
 			arrows: true,
 			dots: false,
-			easing: "linear"
+			easing: "linear",
+			focusOnSelect: true
 		});
+
+		var setSliderCurrent = $('.games-slider').data('current')
+		$('.games-slider').slick('slickGoTo', setSliderCurrent);
 	}
 
 	var back_to_top=$(".scrollTop"),offset=220,duration=200;$(window).scroll(function(){

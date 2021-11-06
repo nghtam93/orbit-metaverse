@@ -226,6 +226,7 @@ position: relative;
     background: #341B16;
     border-radius:inherit;
     border-radius:16px;
+    padding: 10px 25px;
 }
 .games-slider .slick-current .slider__item,.games-slider .slider__item:hover{opacity:1;}
 .games-slider .slick-prev {
