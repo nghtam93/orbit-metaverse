@@ -56,9 +56,9 @@ $(function() {
 			easing: "linear",
 			focusOnSelect: true
 		});
-
+console.log('LOAD')
 		var setSliderCurrent = $('.games-slider').data('current')
-		$('.games-slider').slick('slickGoTo', setSliderCurrent);
+		$('.games-slider').slick('slickGoTo', parseInt(setSliderCurrent) );
 	}
 
 	var back_to_top=$(".scrollTop"),offset=220,duration=200;$(window).scroll(function(){
