@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'iCiel Cadena';
+    src: url('iCielCadena.woff2') format('woff2'),
+        url('iCielCadena.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
