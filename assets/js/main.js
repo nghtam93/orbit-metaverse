@@ -45,20 +45,22 @@ $(function() {
 	}
 
 	if($('body').hasClass('games')){
-		$('.games-slider').slick({
-			// centerMode: true,
-  	// 		variableWidth: true,
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			infinite: false,
-			arrows: true,
-			dots: false,
-			easing: "linear",
-			focusOnSelect: true
-		});
-console.log('LOAD')
+		// $('.games-slider').slick({
+		// 	slidesToShow: 4,
+		// 	slidesToScroll: 1,
+		// 	infinite: false,
+		// 	arrows: true,
+		// 	dots: false,
+		// 	easing: "linear",
+		// 	focusOnSelect: true
+		// });
 		var setSliderCurrent = $('.games-slider').data('current')
-		$('.games-slider').slick('slickGoTo', parseInt(setSliderCurrent) );
+		// $('.games-slider').slick('slickGoTo', parseInt(setSliderCurrent) );
+		//
+		var $carousel = $('.games-slider').flickity()
+  .flickity('next')
+  .flickity( 'select', parseInt(setSliderCurrent)  );
+
 	}
 
 	var back_to_top=$(".scrollTop"),offset=220,duration=200;$(window).scroll(function(){
