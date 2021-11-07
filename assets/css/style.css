@@ -94,8 +94,16 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 /*Home story*/
 .home-story{position:relative;padding:170px 0 100px;}
 .home-story:before{content:'';position:absolute;top:-42px;left:0;width:100%;height:calc(100% + 45px);background:url(../img/home-story-bg.png) no-repeat;background-size:100% 100%;pointer-events:none;}
-.el__island1{content:'';position:absolute;top:38%;left:19%;width:29%;height:20%;background:url(../img/home-island1.png) no-repeat;background-size:contain;pointer-events:none;}
-.el__island2{content:'';position:absolute;top:23%;right:3%;width:16.7%;height:36.2%;background:url(../img/home-island2.png) no-repeat;background-size:contain;pointer-events:none;}
+.el__island1{content:'';position:absolute;top:38%;left:19%;width:29%;height:20%;
+	background:url(../img/home-island1.png) no-repeat;background-size:contain;pointer-events:none;
+transform: translatey(0px);
+	animation: float20 6s ease-in-out infinite;
+}
+.el__island2{content:'';position:absolute;top:23%;right:3%;width:16.7%;height:36.2%;
+	background:url(../img/home-island2.png) no-repeat;background-size:contain;pointer-events:none;
+transform: translatey(0px);
+	animation: float30 5s ease-in-out infinite;
+}
 .home-story .container{position:relative;}
 .home-story .row{--bs-gutter-x:2rem;}
 .home-story .el__thumb{position:absolute;top:-40%;left:-9%;width:103%;height:100%;}
@@ -264,12 +272,30 @@ background: linear-gradient(180deg, #16072f 0%, #33173C 100%);
 .governance__content .sc__header{margin-bottom:50px;}
 .governance__content .el__box{position:relative;}
 .governance__content .el__thumb{margin-top:-70px;text-align:center;}
-.el__pet--s1{position:absolute;top:20%;left:13%;width:14%;height:14%;background:url(../img/pages/governance-pet1.png) no-repeat;background-size:contain;}
-.el__pet--s2{position:absolute;top:40%;left:6%;width:11.7%;height:13%;background:url(../img/pages/governance-pet2.png) no-repeat;background-size:contain;}
-.el__pet--s3{position:absolute;top:60%;left:15.5%;width:16.2%;height:16.8%;background:url(../img/pages/governance-pet3.png) no-repeat;background-size:contain;}
-.el__pet--s4{position:absolute;top:20%;right:16%;width:11%;height:12%;background:url(../img/pages/governance-pet4.png) no-repeat;background-size:contain;}
-.el__pet--s5{position:absolute;top:37%;right:0;width:20%;height:21%;background:url(../img/pages/governance-pet5.png) no-repeat;background-size:contain;}
-.el__pet--s6{position:absolute;top:63%;right:15%;width:16%;height:16%;background:url(../img/pages/governance-pet6.png) no-repeat;background-size:contain;}
+.el__pet--s1{position:absolute;top:20%;left:13%;width:14%;height:14%;
+	background:url(../img/pages/governance-pet1.png) no-repeat;background-size:contain;
+animation: float10 4s ease-in-out infinite;
+}
+.el__pet--s2{position:absolute;top:40%;left:6%;width:11.7%;height:13%;
+	background:url(../img/pages/governance-pet2.png) no-repeat;background-size:contain;
+animation: float20 5s ease-in-out infinite;
+}
+.el__pet--s3{position:absolute;top:60%;left:15.5%;width:16.2%;height:16.8%;
+	background:url(../img/pages/governance-pet3.png) no-repeat;background-size:contain;
+animation: float30 6s ease-in-out infinite;
+}
+.el__pet--s4{position:absolute;top:20%;right:16%;width:11%;height:12%;
+	background:url(../img/pages/governance-pet4.png) no-repeat;background-size:contain;
+animation: float10 4s ease-in-out infinite;
+}
+.el__pet--s5{position:absolute;top:37%;right:0;width:20%;height:21%;
+	background:url(../img/pages/governance-pet5.png) no-repeat;background-size:contain;
+animation: float20 5s ease-in-out infinite;
+}
+.el__pet--s6{position:absolute;top:63%;right:15%;width:16%;height:16%;
+	background:url(../img/pages/governance-pet6.png) no-repeat;background-size:contain;
+animation: float30 6s ease-in-out infinite;
+}
 
 /*PAge games*/
 .games-banner{position:relative;background-size:cover;background-repeat:no-repeat;text-align:center;padding-top:11%;padding-bottom:7%;}
@@ -394,6 +420,50 @@ background: linear-gradient(0deg, #1C024D, #1C024D);
 .ef--zoomin img{-webkit-transform:scale(1);transform:scale(1);-webkit-transition:.5s ease-in-out;transition:.5s ease-in-out}
 .ef--zoomin:hover img{-webkit-transform:scale(1.1);transform:scale(1.1)}
 
+@keyframes float10 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes float20 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes float30 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes float40 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 /*Responsive*/
 @media (max-width:1650px){
 	.home-tokenomics .el__box--thumb{right:-210px;}
