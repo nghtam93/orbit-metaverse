@@ -46,7 +46,7 @@ $(function() {
 			easing: "linear"
 		});
 
-		$('.js-slick .slider__item').on("click",function(e) {
+		$('.js-slick .slider__item[data-bs-toggle="modal"]').on("click",function(e) {
 			var content = $(this).find('.js-slider-content').html()
 			$('.js-modal-body').html(content)
 		})
