@@ -1,6 +1,8 @@
 $(function() {
 
 	var header_sticky=$("header.-fix")
+
+
     if($('body').hasClass( "home" )){
         $(window).scroll(function(){
             $(this).scrollTop()>1?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
