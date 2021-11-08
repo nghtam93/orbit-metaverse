@@ -34,7 +34,15 @@ h1,h2,h3{font-family:Lalezar;}
 .btn.-small{min-width:160px;height:40px;}
 .btn.-small span{font-size:18px;line-height:25px;}
 .sc__header{position:relative;max-width:780px;margin:0 auto 30px;}
-.sc__header--title{font-family:iCiel Cadena;font-style:normal;font-weight:900;font-size:48px;line-height:66px;text-align:center;margin-bottom:0;text-shadow:0px 3px 15px rgba(15,184,238,0.8);background:-webkit-linear-gradient(270deg,#52FFEA 20%,#00C2FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.sc__header--title{font-family:iCiel Cadena;font-style:normal;font-weight:900;font-size:48px;
+	line-height:66px;text-align:center;margin-bottom:0;
+	background:-webkit-linear-gradient(270deg,#52FFEA 20%,#00C2FF);-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+
+-webkit-animation: neon2 1.5s ease-in-out infinite alternate!important;
+    animation: neon2 1.5s ease-in-out infinite alternate!important;
+
+}
 
 /**/
 .containerz{overflow:hidden;pointer-events:none;position:absolute;top:0;left:0;height:100%;width:100%;filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429',EndColorStr='#257eb7');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429',EndColorStr='#257eb7')";}
@@ -492,6 +500,16 @@ transition: all .5s;
 
 
 /*keyframes*/
+
+@keyframes neon2 {
+  from {
+  	text-shadow:0px 3px 5px rgba(15,184,238,0.8);
+  }
+  to {
+    text-shadow:0px 3px 25px rgba(15,184,238,0.8);
+  }
+}
+
 @keyframes neon6 {
   from {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,

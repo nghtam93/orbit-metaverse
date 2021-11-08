@@ -19,7 +19,8 @@ $(function() {
 			slidesToScroll: 1,
 			infinite: true,
 			dots: false,
-			easing: "linear"
+			easing: "linear",
+			fade: true,
 		});
 
 		$('.home-ourteam-slider01').slick({
