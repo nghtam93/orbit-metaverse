@@ -327,9 +327,43 @@ transition: all .5s;
 .home-tokenomics .dnfix__thumb{padding-top:112.3%;}
 
 /*home-ourteam*/
-.home-ourteam{
+
+.home-roadmap{
 	position: relative;
-	padding: 140px 0 50px;
+	padding: 7.5% 0 40.95%;
+	background: url(../img/home-roadmap-bg.png) no-repeat;
+	background-size: cover;
+}
+.home-roadmap-slider__wrap{
+	position: absolute;
+	right: 0;
+}
+.home-roadmap-slider{
+	background: url(../img/home-roadmap-paper.png) no-repeat;
+	background-size: contain;
+	width: 581px;
+	height: 642px;
+	margin-top: 80px;
+	margin-left: auto;
+}
+.home-roadmap-slider .slider__item{
+	padding: 290px 90px 100px;
+	text-align: center;
+}
+.home-roadmap-slider .slider__item--title{
+	font-family: Lalezar;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 47px;
+	letter-spacing: 0.05em;
+	color: #963302;
+}
+.home-roadmap-slider .slider__item--excerpt{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.05em;
+	color: #A05530;
 }
 /*home-ourteam*/
 .home-ourteam{position:relative;padding:135px 0 130px;background:url(../img/home-ourteam-bg.png) no-repeat;
