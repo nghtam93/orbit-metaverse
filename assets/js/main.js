@@ -30,12 +30,17 @@ $(function() {
 			infinite: false,
 			dots: false,
 			easing: "linear",
-			fade: true,
+			fade: true
 		});
 		$('.js-home-roadmap-nav li').on("click",function(e) {
 			var index = $(this).data('index')
 		   $('.home-roadmap-slider').slick('slickGoTo', index);
 		})
+
+		$('.home-roadmap-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		  $('.js-home-roadmap-nav li').removeClass('active')
+		  $('.js-home-roadmap-nav li[data-index="'+nextSlide+'"]').addClass('active')
+		});
 
 		$('.home-ourteam-slider01').slick({
 			slidesToShow: 4,
