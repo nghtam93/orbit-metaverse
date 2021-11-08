@@ -124,8 +124,12 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-story .container{position:relative;}
 .home-story .row{--bs-gutter-x:2rem;}
 
-/*.home-story .el__thumb{position:absolute;top:-40%;left:-9%;width:103%;height:100%;}*/
-.home-story .dnfix__thumb{padding-top:90%;}
+.home-story-slider{
+	background: url(../img/home-game-book.png) no-repeat;
+	background-size: contain;
+}
+
+.home-story .dnfix__thumb{padding-top:76%;}
 .home-story .el__title{}
 .home-story .el__excerpt{margin-bottom:30px;color:#F8F8F8;}
 .home-story .el__box{}
