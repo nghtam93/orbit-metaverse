@@ -400,6 +400,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 	opacity: 0;
  animation: 1.5s fadeIn;
   animation-fill-mode: forwards;
+  transition-delay: 5s;
 }
 @keyframes fadeIn {
   0% {
