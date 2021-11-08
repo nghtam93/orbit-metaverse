@@ -6,6 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 @font-face{font-family:'iCiel Cadena';src:url('../fonts/iCielCadena/iCielCadena.woff2') format('woff2'),url('../fonts/iCielCadena/iCielCadena.woff') format('woff');font-weight:900;font-style:normal;font-display:swap;}
+@font-face {
+    font-family: 'LNTH-BELLABOO';
+    src: url('../fonts/LNTH-BELLABOO/LNTH-BELLABOO.woff2') format('woff2'),
+        url('../fonts/LNTH-BELLABOO/LNTH-BELLABOO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
 ul{list-style:none;padding:0;margin-bottom:0}

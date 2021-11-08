@@ -45,25 +45,19 @@ $(function() {
 			dots: false,
 			easing: "linear"
 		});
+
+		$('.js-slick .slider__item').on("click",function(e) {
+			var content = $(this).find('.js-slider-content').html()
+			$('.js-modal-body').html(content)
+		})
+
 	}
 
 	if($('body').hasClass('games')){
-		// $('.games-slider').slick({
-		// 	slidesToShow: 4,
-		// 	slidesToScroll: 1,
-		// 	infinite: false,
-		// 	arrows: true,
-		// 	dots: false,
-		// 	easing: "linear",
-		// 	focusOnSelect: true
-		// });
 		var setSliderCurrent = $('.games-slider').data('current')
-		// $('.games-slider').slick('slickGoTo', parseInt(setSliderCurrent) );
-		//
 		var $carousel = $('.games-slider').flickity()
-  .flickity('next')
-  .flickity( 'select', parseInt(setSliderCurrent)  );
-
+		.flickity('next')
+		.flickity( 'select', parseInt(setSliderCurrent)  );
 	}
 
 	var back_to_top=$(".scrollTop"),offset=220,duration=200;$(window).scroll(function(){
