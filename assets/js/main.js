@@ -23,13 +23,19 @@ $(function() {
 			fade: true,
 		});
 
+		/**/
 		$('.home-roadmap-slider').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			infinite: false,
 			dots: false,
 			easing: "linear",
 			fade: true,
 		});
+		$('.js-home-roadmap-nav li').on("click",function(e) {
+			var index = $(this).data('index')
+		   $('.home-roadmap-slider').slick('slickGoTo', index);
+		})
 
 		$('.home-ourteam-slider01').slick({
 			slidesToShow: 4,
