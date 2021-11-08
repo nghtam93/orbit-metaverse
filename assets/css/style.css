@@ -128,7 +128,47 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 
 /**/
 .home-orbit{position:relative;padding:180px 0 90px;background:url(../img/home-orbit-bg.png) no-repeat;background-size:100% 100%;background-color:#2D161C;overflow:hidden;}
-.home-orbit:before{content:'';position:absolute;top:0;right:-200px;width:500px;height:500px;background:url(../img/home-orbit-planet.png) no-repeat;background-size:contain;opacity:0.4;animation:spinner-rotate 10s infinite linear;}
+
+.home-orbit .container{
+	position: relative;
+	z-index: 1;
+}
+.-planet{
+	position:absolute;
+	top: -64px;
+	left: 3%;
+	right:auto;
+	width:350px;
+	height:350px;
+	background:url(../img/home-orbit-planet.png) no-repeat;
+	background-size:contain;
+	opacity:0.4;
+	animation:spinner-rotate 10s infinite linear;
+}
+.-planet.-s2{
+	position:absolute;top:0;
+	left: auto;
+	right:-200px;width:500px;height:500px;
+	background:url(../img/home-orbit-planet.png) no-repeat;background-size:contain;opacity:0.4;
+	animation:spinner-rotate 10s infinite linear;
+}
+
+.-planet.-s3{
+	position:absolute;
+	top: auto;
+	bottom: -4%;
+	left: auto;
+	right: 38%;
+	width: 250px;
+	height: 250px;
+	background:url(../img/home-orbit-planet.png) no-repeat;
+	background-size:contain;
+	opacity:0.4;
+	animation:spinner-rotate 10s infinite linear;
+}
+
+
+
 .home-orbit .row{--bs-gutter-x:5rem;}
 .home-orbit .sc__header{margin-bottom:80px;}
 .home-orbit .el__item{position:relative;width:100%;margin-bottom:80px;height:100%;display:flex;flex-direction:column;}
