@@ -42,6 +42,6 @@
 .slick-dots li.slick-active button,.slick-dots li:hover button{background-color:#FFDC4D;}
 
 /*Custom*/
-.slider__item + .slider__item{display:none;}
+.slick-slider .slider__item + .slider__item{display:none;}
 .slick-slide{margin:0 10px;}
 .slick-list{margin:0 -10px;}
