@@ -367,7 +367,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-banner{position:relative;background-size:cover;background-repeat:no-repeat;text-align:center;padding-top:11%;padding-bottom:7%;}
 
 .games-banner.-commingsoon{
-padding-bottom: 0;
+
 }
 .games-banner .el__logo{margin-bottom:50px;}
 .games-banner .el__comming{
@@ -381,7 +381,7 @@ padding-bottom: 0;
 }
 @keyframes scale2{
 	0%{transform:scale(1);}
-	50%{transform:scale(1.1);}
+	50%{transform:scale(1.2);}
 	10%{transform:scale(1);}
 }
 
@@ -398,16 +398,20 @@ padding-bottom: 0;
 }
 .el__comming img{
 	opacity: 0;
- animation: 10s fadeIn;
+ animation: 1.5s fadeIn;
   animation-fill-mode: forwards;
 }
 @keyframes fadeIn {
   0% {
   	opacity: 0;
   }
+  50% {
+  	opacity: 1;
+  	transform:scale(1.5);
+  }
   100% {
   	opacity: 1;
-    /*visibility: visible;*/
+  	transform:scale(1);
   }
 }
 
