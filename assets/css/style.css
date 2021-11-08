@@ -381,7 +381,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 }
 @keyframes scale2{
 	0%{transform:scale(1);}
-	50%{transform:scale(1.2);}
+	50%{transform:scale(1.5);}
 	10%{transform:scale(1);}
 }
 
