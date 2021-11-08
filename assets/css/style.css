@@ -377,7 +377,6 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 	width: 400px;
 	height: 400px;
 	margin: 0 auto;
-	animation:scale2 5s infinite;
 }
 @keyframes scale2{
 	0%{transform:scale(1);}
@@ -394,11 +393,11 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 	height: 100%;
 	background: url(../img/pages/tialua.png) no-repeat;
 	background-size: cover;
-	animation:spinner-rotate 5s infinite linear;
+	animation:spinner-rotate 2s infinite linear;
 }
 .el__comming img{
 	opacity: 0;
- animation: 1.5s fadeIn;
+ animation: 1s fadeIn;
   animation-fill-mode: forwards;
   transition-delay: 5s;
 }
