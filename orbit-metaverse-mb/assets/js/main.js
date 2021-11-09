@@ -60,7 +60,7 @@ $(function() {
 			slidesToScroll: 1,
 			infinite: false,
 			dots: true,
-			arrows: false,
+			arrows: true,
 			easing: "linear",
 			responsive: [
 			    {
