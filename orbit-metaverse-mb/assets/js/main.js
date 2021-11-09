@@ -161,7 +161,7 @@ $(function() {
 			rows: 2,
 			slidesToShow: 4,
 			slidesToScroll: 1,
-			infinite: true,
+			infinite: false,
 			arrows: true,
 			dots: false,
 			easing: "linear",
