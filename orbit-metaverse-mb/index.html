@@ -21,13 +21,16 @@
     </div>
 
     <header class="header -fix">
-        <div class="container d-flex align-items-center">
-          <h1 class="logo">
-            <a href="index.html">
-              <img width="79" height="61" src="images/logo.png" alt="Logo">
-            </a>
-          </h1>
-        </div>
+      <div class="container d-flex align-items-center">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Logo">
+          </a>
+        </h1>
+        <a href="#" class="menu-mb__btn ms-auto">
+          <img src="./assets/img/burger.png" alt="">
+        </a>
+      </div>
     </header>
 
     <section class="header__banner">
@@ -175,13 +178,14 @@
               <div class="ratio ratio-16x9">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tRZPMukE7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
+               <div class="text-center wow fadeInUp">
+                  <a href="" class="btn"><span>Let's Journey</span></a>
+                </div>
             </div>
           </div>
         </div>
 
-        <div class="text-center wow fadeInUp">
-          <a href="" class="btn"><span>Let's Journey</span></a>
-        </div>
+
       </div>
       <div class="night">
         <div class="shooting_star"></div>
@@ -203,7 +207,7 @@
       <section class="home-ecosystem">
         <div class="container">
           <div class="sc__header text-center">
-            <h2 class="sc__header--title wow fadeInLeft">ECOSYSTEM</h2>
+            <h2 class="sc__header--title wow fadeInLeft">Governance</h2>
           </div>
         </div>
         <div class="home-ecosystem-slider">
@@ -828,19 +832,19 @@
               <div class="col-6 wow fadeInLeft">
                 <div class="el__item">
                   <div class="el__item--thumb wow fadeInUp">
-                    <img src="images/advisors-img-1.png" alt="">
+                    <img src="images/advisor-user-1.png" alt="">
                   </div>
                   <h3 class="el__item--title">david marquez</h3>
-                  <h3 class="el__item--sub">CO-FOUNDER & CMO</h3>
+                  <p class="el__item--sub">CO-FOUNDER & CMO</p>
                 </div>
               </div>
               <div class="col-6 wow fadeInRight">
                 <div class="el__item">
                   <div class="el__item--thumb wow fadeInUp">
-                    <img src="images/advisors-img-1.png" alt="">
+                    <img src="images/advisor-user-2.png" alt="">
                   </div>
                   <h3 class="el__item--title">steve becker</h3>
-                  <h3 class="el__item--sub">CO-FOUNDER & COO</h3>
+                  <p class="el__item--sub">CO-FOUNDER & COO</p>
                 </div>
               </div>
             </div>
@@ -990,8 +994,24 @@
           <li><a href="https://t.me/OrbitMetaverseoffical" target="_blank"><img src="assets/img/telegram.png" alt=""></a></li>
           <li><a href="https://medium.com/@OrbitMetaverse" target="_blank"><img src="assets/img/medium.png" alt=""></a></li>
         </ul>
-
     </footer>
+
+    <nav id="menu__mobile" class="nav__mobile">
+        <div class="nav__mobile__content">
+            <div class="nav__mobile__header">
+                <img src="images/logo.png">
+                <div class="nav__mobile--close ms-auto"><img src="./assets/img/burger.png" alt=""></div>
+            </div>
+            <ul class="nav__mobile--ul">
+              <li class="menu-item active"><a href="index.html">HOME</a></li>
+              <li class="menu-item"><a href="governance.html">Governance</a></li>
+              <li class="menu-item"><a href="games.html">GAMES</a></li>
+              <li class="menu-item"><a href="#">MARKETPLACE</a></li>
+              <li class="menu-item"><a href="orbit-meta.html">ORBIT META</a></li>
+              <li class="menu-item"><a href="https://docs.orbitmeta.io/">WHITEPAPER</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Modal -->
     <div class="modal fade ourteamModal" id="ourteamModal" tabindex="-1" aria-labelledby="ourteamModalLabel" aria-hidden="true">
@@ -1002,7 +1022,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

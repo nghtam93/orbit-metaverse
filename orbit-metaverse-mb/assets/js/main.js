@@ -94,6 +94,21 @@ $(function() {
 
 	}
 
+	//-------------------------------------------------
+    // Menu
+    //-------------------------------------------------
+    $('.nav__mobile--close').click(function(e){
+        $('.nav__mobile').removeClass('active')
+        $('body').removeClass('modal-open')
+    });
+    $('.menu-mb__btn').click(function(e){
+        e.preventDefault()
+        $('body').addClass('modal-open')
+        // $('.menu-mb__btn').addClass('active')
+        $('.nav__mobile').addClass('active')
+    });
+
+
 	if($('body').hasClass('games')){
 		var setSliderCurrent = $('.games-slider').data('current')
 		var $carousel = $('.games-slider').flickity()
