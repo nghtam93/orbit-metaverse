@@ -160,9 +160,14 @@ $(function() {
     });
     $('.menu-mb__btn').click(function(e){
         e.preventDefault()
-        $('body').addClass('modal-open')
-        // $('.menu-mb__btn').addClass('active')
-        $('.nav__mobile').addClass('active')
+
+        if($('body').hasClass('modal-open')){
+			$('.nav__mobile').removeClass('active')
+        	$('body').removeClass('modal-open')
+        }else{
+        	$('body').addClass('modal-open')
+        	$('.nav__mobile').addClass('active')
+        }
     });
 
 
