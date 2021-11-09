@@ -63,6 +63,7 @@ $(function() {
 		});
 
 		$('.home-ourteam-slider01').slick({
+			rows: 2,
 			slidesToShow: 2,
 			slidesToScroll: 1,
 			infinite: false,
