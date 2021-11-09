@@ -58,8 +58,8 @@ h1,h2,h3{font-family:Lalezar;}
 .flickity-button:before{content:'';display:block;width:32px!important;height:32px!important;background:url(../img/next.png) no-repeat center;background-size:contain;}
 .flickity-button.previous:before{transform:rotate(180deg);}
 .flickity-button svg{display:none;}
-.flickity-prev-next-button.previous{left:5px!important;}
-.flickity-prev-next-button.next{right:15px!important;}
+.flickity-prev-next-button.previous{left:8px!important;}
+.flickity-prev-next-button.next{right:20px!important;}
 
 /*Header*/
 header.header{position:fixed;top:0;left:0;right:0;z-index:11;padding:10px 0;-webkit-animation:showNav 1s ease-in-out forwards;-moz-animation:showNav 1s ease-in-out forwards;animation:showNav 1s ease-in-out forwards;transition:background .5s;}
