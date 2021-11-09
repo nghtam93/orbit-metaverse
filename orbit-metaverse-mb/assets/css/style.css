@@ -255,7 +255,7 @@ background: url(../img/home-tokenomics-bg.png);
 .home-tokenomics .el__box__list li.-percent9::before{background:#34A538;}
 .home-tokenomics .el__box__list li.-percent10::before{background:#34A538;}
 .home-tokenomics .el__box__list li.-percent11::before{background:#95C61D;}
-.home-tokenomics .el__box--thumb{position:relative;width: 315px;z-index:1;margin:0 -30px 60px -10px;}
+.home-tokenomics .el__box--thumb{position:relative;width: 315px;z-index:1;    margin: 0 auto 60px;}
 .home-tokenomics .el__box--thumb::before{content:'';position:absolute;top: 38px;left: 7px;width: 290px;height: 290px;box-shadow:0px 5px 20px rgba(219,0,255,0.8),inset 0px -4px 0px rgba(0,0,0,0.25);border-radius:50%;background:url(../img/home-tokenomics-img-circle.png) no-repeat;background-size:contain;/* animation:spinner-rotate 2s linear infinite; */}
 .home-tokenomics .dnfix__thumb{padding-top:100%;}
 
