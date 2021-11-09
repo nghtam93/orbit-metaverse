@@ -275,12 +275,25 @@ margin: 0 auto;
 .home-roadmap-slider .slider__item--excerpt{font-weight:bold;font-size:18px;line-height:30px;letter-spacing:0.05em;color:#A05530;}
 
 /**/
-.home-roadmap .el__box{
-	position:relative;background:url(../img/home-roadmap-line.png) no-repeat;
-max-width: 390px;
-	background-size:contain;width:100%;padding-top: 89%;
-margin: 150px auto 0;
+.home-roadmap .el__box__wrap{
+	max-width: 414px;
+	margin: 150px auto 0;
 }
+.home-roadmap .el__box{
+position: relative;
+width:100%;padding-top: 89%;
+}
+
+.home-roadmap .el__box--line{
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	background:url(../img/home-roadmap-line.png) no-repeat;
+	background-size: contain;
+}
+
 .home-roadmap .el__box li{position:absolute;font-family:Lalezar;font-weight:normal;font-size: 16px;line-height: 25px;text-align:center;letter-spacing:0.05em;color:#EFCC9C;transition:color .5s;white-space:nowrap;}
 .home-roadmap .el__box li.active,.home-roadmap .el__box li:hover{color:#FFFFFF;}
 .home-roadmap .el__box li.active:after,.home-roadmap .el__box li:hover:after{background-color:#ffeeb2;animation:neon7 1.5s ease-in-out infinite alternate;}
