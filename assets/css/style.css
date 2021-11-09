@@ -400,6 +400,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
  animation: 1s fadeIn;
   animation-fill-mode: forwards;
   transition-delay: 5s;
+      margin-left: -5px;
 }
 @keyframes fadeIn {
   0% {
@@ -416,6 +417,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 }
 
 .games-banner .btn{margin-bottom:50px;animation:scale 1.5s infinite linear;}
+.games-banner .btn:hover{
+	transform: translateY(0);
+}
 .games-slider .slider__item{position:relative;opacity:0.6;background:#341B16;border-radius:16px;}
 .games-slider .slider__item img{max-width:initial;}
 .games-slider .slider__item a{display:block;width:100%;}
