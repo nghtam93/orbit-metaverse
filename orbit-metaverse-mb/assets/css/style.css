@@ -286,8 +286,8 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 
 /*home-ourteam*/
 .home-ourteam{position:relative;padding:50px 0 30px;background:url(../img/home-ourteam-bg.png) no-repeat;background-size:cover;overflow:hidden;}
-.home-ourteam .slick-prev{left:-50px;}
-.home-ourteam .slick-next{right:-50px;}
+.home-ourteam .slick-prev{left:0;}
+.home-ourteam .slick-next{right:0;}
 .home-ourteam .sc__header{margin-bottom:40px;}
 .home-ourteam .nav-tabs{border-bottom:0;flex-wrap:nowrap;border:0;justify-content:start;height:72px;overflow:auto;padding:1px 0 0 2px;}
 .home-ourteam .nav-tabs::-webkit-scrollbar{display:none;}

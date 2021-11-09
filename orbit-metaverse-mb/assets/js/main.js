@@ -123,6 +123,7 @@ $(function() {
 			slidesToScroll: 1,
 			infinite: false,
 			dots: false,
+			arrows: true,
 			easing: "linear",
 			responsive: [
 			    {
@@ -161,7 +162,7 @@ $(function() {
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			infinite: true,
-			arrows: false,
+			arrows: true,
 			dots: false,
 			easing: "linear",
 			responsive: [
