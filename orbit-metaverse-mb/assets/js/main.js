@@ -97,13 +97,37 @@ $(function() {
 		});
 
 		$('.home-ourteam-slider01').slick({
-			rows: 2,
-			slidesToShow: 2,
+			rows: 1,
+			slidesToShow: 4,
 			slidesToScroll: 1,
 			infinite: false,
 			dots: false,
 			easing: "linear",
-
+			responsive: [
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 4,
+			        slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 991,
+			      settings: {
+			      	rows: 1,
+			        slidesToShow: 3,
+			        slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 575,
+			      settings: {
+			      	rows: 1,
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			    }
+			]
 		});
 
 
