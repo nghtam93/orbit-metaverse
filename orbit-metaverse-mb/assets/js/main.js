@@ -27,7 +27,18 @@ $(function() {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			infinite: false,
-			dots: false,
+			dots: true,
+			arrows: false,
+			easing: "linear",
+			variableWidth: true
+		});
+
+		$('.home-ecosystem-slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			infinite: false,
+			dots: true,
+			arrows: false,
 			easing: "linear",
 			variableWidth: true
 		});
@@ -52,7 +63,7 @@ $(function() {
 		});
 
 		$('.home-ourteam-slider01').slick({
-			slidesToShow: 4,
+			slidesToShow: 2,
 			slidesToScroll: 1,
 			infinite: false,
 			dots: false,
@@ -66,12 +77,13 @@ $(function() {
 
 		$('.home-partners-slider').slick({
 			rows: 2,
-			slidesToShow: 5,
+			slidesToShow: 3,
 			slidesToScroll: 1,
 			infinite: true,
 			arrows: true,
 			dots: false,
-			easing: "linear"
+			easing: "linear",
+			// variableWidth: true
 		});
 
 		$('.js-slick .slider__item[data-bs-toggle="modal"]').on("click",function(e) {
