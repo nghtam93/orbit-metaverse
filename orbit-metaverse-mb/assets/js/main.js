@@ -28,9 +28,8 @@ $(function() {
 			slidesToScroll: 1,
 			infinite: false,
 			dots: true,
-			arrows: false,
+			arrows: true,
 			easing: "linear",
-			variableWidth: true,
 			responsive: [
 			    {
 			      breakpoint: 1024,
@@ -51,7 +50,6 @@ $(function() {
 			      settings: {
 			        slidesToShow: 1,
 			        slidesToScroll: 1,
-			        variableWidth: true,
 			      }
 			    }
 			]
@@ -84,7 +82,6 @@ $(function() {
 			      settings: {
 			        slidesToShow: 1,
 			        slidesToScroll: 1,
-			        variableWidth: true,
 			      }
 			    }
 			]
