@@ -310,11 +310,11 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-ourteam .slider__item--title{font-family:Lalezar;font-weight:normal;font-size:18px;line-height:28px;text-transform:uppercase;color:#FABE41;}
 .home-ourteam .slider__item--sub{font-weight:normal;font-size:13px;line-height:18px;letter-spacing:0.05em;color:#F8F8F8;text-transform:uppercase;}
 .ourteamModal .modal-dialog{max-width:926px;}
-.ourteamModal .btn-close{position:absolute;top:0;right:60px;width:89px;height:80px;opacity:1;background:url(../img/popup-close.png) no-repeat;background-size:contain;}
+.ourteamModal .btn-close{position:absolute;top:0;right:60px;width:70px;height:62px;opacity:1;background:url(../img/popup-close.png) no-repeat;background-size:contain;}
 .ourteamModal .btn-close:focus{box-shadow:none;}
-.ourteamModal-content{padding:100px 190px 160px;background:url(../img/popup-bg.png) no-repeat;background-size:100% 100%;border:0;}
-.ourteamModal__title{font-family:LNTH-BELLABOO;font-weight:normal;font-size:36px;line-height:43px;text-transform:uppercase;color:#471709;margin-bottom:10px;}
-.ourteamModal__sub{font-family:LNTH-BELLABOO;font-weight:normal;font-size:18px;line-height:22px;color:#B14C35;margin-bottom:30px;}
+.ourteamModal-content{padding:100px 20px 70px;background:url(../img/popup-bg.png) no-repeat;background-size:100% 100%;border:0;}
+.ourteamModal__title{font-family:LNTH-BELLABOO;font-weight:normal;font-size:30px;line-height:40px;text-transform:uppercase;color:#471709;margin-bottom:10px;}
+.ourteamModal__sub{font-family:LNTH-BELLABOO;font-weight:normal;font-size:16px;line-height:22px;color:#B14C35;margin-bottom:30px;}
 .ourteamModal__excerpt{font-family:Nunito;font-weight:normal;font-size:16px;line-height:22px;color:#B14C35;}
 .ourteamModal-content ul{list-style:disc;padding-left:15px;}
 
@@ -531,7 +531,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     100%{transform:translatey(0px);}
 }
 .modal-open{overflow:hidden}
-.nav__mobile{display:block;position:fixed;top:0;height:100%;left:-414px;width:414px;opacity:0;-webkit-transition:all .25s;-moz-transition:all .25s;-ms-transition:all .25s;-o-transition:all .25s;transition:all .25s;z-index:999;font-size:16px;font-weight:400;pointer-events:none;overflow:auto;background-image:url(../img/mennumb-bg.png);background-repeat:no-repeat;background-size:cover;}
+.nav__mobile{display:block;position:fixed;top:0;height:100%;left:-414px;width:100%;opacity:0;-webkit-transition:all .25s;-moz-transition:all .25s;-ms-transition:all .25s;-o-transition:all .25s;transition:all .25s;z-index:999;font-size:16px;font-weight:400;pointer-events:none;overflow:auto;background-image:url(../img/mennumb-bg.png);background-repeat:no-repeat;background-size:cover;}
 .nav__mobile:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(92.06% 95.01% at -10.39% -7.67%,#3C1D87 0%,rgba(4,4,7,0) 100%);opacity:0.7;pointer-events:none}
 .nav__mobile:after{content:'';position:absolute;top:0;left:0;width:50%;height:100%;background:url(../img/menu-bg.png) no-repeat;background-size:contain;pointer-events:none}
 .nav__mobile--close{position:relative;top:2px}
@@ -578,6 +578,10 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 @media (min-width:576px){
     .header__banner .el__title{font-size:54px;line-height:55px;}
     .sc__header--title{font-size:40px;line-height:44px;}
+
+    .ourteamModal-content {
+	    padding: 100px 50px 70px;
+	}
 }
 @media (min-width:768px){
     .home-ecosystem .slider__item{max-width:100%;}

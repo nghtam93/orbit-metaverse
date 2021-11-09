@@ -191,6 +191,7 @@ $(function() {
 		});
 
 		$('.js-slick .slider__item[data-bs-toggle="modal"]').on("click",function(e) {
+			console.log(1111)
 			var content = $(this).find('.js-slider-content').html()
 			$('.js-modal-body').html(content)
 		})
