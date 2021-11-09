@@ -231,7 +231,10 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 background: url(../img/home-tokenomics-bg.png);
 }
 .home-tokenomics .container{max-width:1124px;}
-.home-tokenomics .el__box{position:relative;padding:45px 10px 50px 30px;border-radius:16px;font-family:Nunito;font-weight:bold;font-size:16px;line-height:39px;letter-spacing:0.05em;color:#ECE1E1;}
+.home-tokenomics .el__box{position:relative;
+	max-width: 500px;
+    margin: auto;
+	padding:45px 10px 50px 30px;border-radius:16px;font-family:Nunito;font-weight:bold;font-size:16px;line-height:39px;letter-spacing:0.05em;color:#ECE1E1;}
 .home-tokenomics .el__box::before{content:'';position:absolute;width:100%;height:100%;bottom:0;left:0;background:url(../img/home-tokenomics-box-bg.png) no-repeat;background-size:contain;z-index:1;}
 .home-tokenomics .el__box::after{content:'';position:absolute;width:100%;height:100%;bottom:0;left:0;background:linear-gradient(180deg,#222266 0%,#4D0780 100%);opacity:0.8;border-radius:inherit;}
 .home-tokenomics .sc__header{margin-bottom:50px;}
@@ -262,7 +265,11 @@ background: url(../img/home-tokenomics-bg.png);
     overflow: hidden;
 }
 .home-roadmap-slider__wrap{--height:440px;height:var(--height);}
-.home-roadmap-slider{background:url(../img/home-roadmap-paper.png) no-repeat;background-size:contain;width:100%;height:100%;}
+.home-roadmap-slider{background:url(../img/home-roadmap-paper.png) no-repeat;
+	background-size:contain;width:100%;height:100%;
+max-width: 400px;
+margin: 0 auto;
+}
 .home-roadmap-slider .slider__item{text-align:center;padding:0 17% 0 15%;height:var(--height);display:flex!important;align-items:center;justify-content:center;}
 .home-roadmap-slider .slider__item--title{font-family:Lalezar;font-weight:normal;font-size:30px;line-height:47px;letter-spacing:0.05em;color:#963302;margin-bottom: 5px;}
 .home-roadmap-slider .slider__item--excerpt{font-weight:bold;font-size:18px;line-height:30px;letter-spacing:0.05em;color:#A05530;}
@@ -310,6 +317,10 @@ overflow: hidden;
 .home-ourteam .slick-list{margin:0 -12px;}
 .home-ourteam .slick-slide{margin:0 12px;}
 .home-ourteam .slider__item{position:relative;overflow:hidden;text-align:center;max-width:292px;}
+.home-ourteam .slick-slide>div{
+	text-align: center;
+}
+
 .home-ourteam .slider__item:before{position:absolute;top:50%;left:50%;z-index:2;display:block;content:"";width:0;height:0;background:rgba(254,228,104,0.3);border-radius:100%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:0;transition:1s;}
 .home-ourteam .slider__item:hover:before{width:200%;height:200%;animation:fadeCirce 1s;}
 .home-ourteam .slider__item--thumb{margin:20px;}
@@ -366,8 +377,8 @@ color: #F8F8F8;
 .home-partners .slick-list{padding:15px 0;}
 .home-partners .slick-list{margin:0 -8px;}
 .home-partners .slick-slide{margin:0 8px;}
-.home-partners .slick-prev{left:-60px;}
-.home-partners .slick-next{right:-60px;}
+.home-partners .slick-prev{left:0;}
+.home-partners .slick-next{right:0;}
 .home-partners .dnfix__thumb{padding-top:52%;}
 .home-partners .slider__item{transition:all .5s;background:linear-gradient(106.03deg,#4C205A -10.9%,#471772 121.52%);border-radius:16px;max-width: 150px;}
 .home-partners .slider__item:hover{box-shadow:0px 0px 10px #d783ff;}
