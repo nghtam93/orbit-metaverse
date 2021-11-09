@@ -24,13 +24,29 @@ $(function() {
 
 
 		$('.home-play-slider').slick({
-			slidesToShow: 1,
+			slidesToShow: 4,
 			slidesToScroll: 1,
 			infinite: false,
 			dots: true,
 			arrows: false,
 			easing: "linear",
-			variableWidth: true
+			variableWidth: true,
+			responsive: [
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 992,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1,
+			      }
+			    }
+			]
 		});
 
 		$('.home-ecosystem-slider').slick({
@@ -51,8 +67,8 @@ $(function() {
 			    {
 			      breakpoint: 992,
 			      settings: {
-			        slidesToShow: 3,
-			        slidesToScroll: 1
+			        slidesToShow: 2,
+			        slidesToScroll: 1,
 			      }
 			    },
 			    {
@@ -137,7 +153,7 @@ $(function() {
 
 		$('.home-partners-slider').slick({
 			rows: 2,
-			slidesToShow: 6,
+			slidesToShow: 4,
 			slidesToScroll: 1,
 			infinite: true,
 			arrows: false,
@@ -152,16 +168,16 @@ $(function() {
 			      }
 			    },
 			    {
-			      breakpoint: 600,
+			      breakpoint: 991,
 			      settings: {
-			        slidesToShow: 4,
+			        slidesToShow: 3,
 			        slidesToScroll: 1
 			      }
 			    },
 			    {
-			      breakpoint: 480,
+			      breakpoint: 575,
 			      settings: {
-			        slidesToShow: 3,
+			        slidesToShow: 2,
 			        slidesToScroll: 1
 			      }
 			    }

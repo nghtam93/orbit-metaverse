@@ -435,7 +435,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-maps{padding:50px 0;}
 .games-slider .flickity-prev-next-button{border-radius:0;}
 .games-slider .item__wrap{position:relative;padding:5px 9.8px 5px!important;}
-
+.games-roadmap{
+	padding: 50px 0;
+}
 /*Footer*/
 .footer{position:relative;padding:48px 0 0;background:linear-gradient(269.69deg,#5F2971 -18.14%,#380A72 126.63%);color:#F8F8F8;font-size:16px;line-height:32px;}
 .footer a{color:#ECE1E1;}
