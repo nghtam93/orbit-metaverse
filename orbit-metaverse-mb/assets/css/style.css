@@ -575,4 +575,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 }
 @media (min-width:768px){
 	.home-ecosystem .slider__item{max-width:100%;}
+	.home-ecosystem .slider__item{
+		max-width: 100%;
+	}
 }
