@@ -90,7 +90,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .header__banner{position:relative;}
 .header__banner .dnfix__thumb{padding-top:52.6%;}
 .header__banner .el__wrap{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;}
-.header__banner .el__meta{max-width:580px;font-family:Nunito;font-weight:600;font-size: 24px;line-height: 38px;color:#F8F8F8;text-align:center;margin:0 auto;}
+.header__banner .el__meta{max-width:580px;font-family:Nunito;font-weight:600;font-size:24px;line-height:38px;color:#F8F8F8;text-align:center;margin:0 auto;}
 .header__banner .el__title{font-family:iCiel Cadena;font-size:64px;line-height:64px;margin-bottom:24px;background:-webkit-linear-gradient(320deg,#FFE142,#F07C3D);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 .header__banner .el__excerpt{margin-bottom:55px;}
 .header__banner .el__btn{position:relative;display:inline-block;border-radius:12px;transition:all .5s;background:linear-gradient(131.45deg,#F517A0 24.6%,#AD00FF 84.41%);box-shadow:0px 5px 20px rgba(219,0,255,0.8),inset 0px -4px 0px rgba(0,0,0,0.25);}
@@ -137,11 +137,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-orbit .el__item--meta{text-align:center;}
 .home-orbit .el__item--title{font-family:iCiel Cadena;font-size:40px;line-height:55px;margin-bottom:16px;background:-webkit-linear-gradient(270deg,#FFE142,#F17024);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 .home-orbit .el__item--excerpt{margin-bottom:40px;}
-.home-orbit .ratio{
-	position:relative;box-shadow:10px 20px 30px rgba(36,12,67,0.5);border-radius:20px;transition:all .5s;
-	overflow: hidden;
-	    margin-top: auto;
-}
+.home-orbit .ratio{position:relative;box-shadow:10px 20px 30px rgba(36,12,67,0.5);border-radius:20px;transition:all .5s;overflow:hidden;margin-top:auto;}
 .home-orbit .ratio:hover{box-shadow:0px 0px 10px #d783ff;}
 .home-orbit .el__col{display:flex;flex-direction:column;	/* height: 100%; */}
 
@@ -285,11 +281,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-ourteam .nav-tabs{border-bottom:0;}
 .home-ourteam .nav-item{flex-grow:1;}
 .home-ourteam .nav-item:not(:last-child){margin-right:30px;}
-.home-ourteam .nav-link{position:relative;width:100%;font-family:Nunito;font-weight:800;font-size:24px;
-	line-height:33px;color:#FFFFFF;padding:22px 10px;
-	background:linear-gradient(180deg,#63109F 0%,#291E60 100%);border-radius:16px;opacity:0.8;}
+.home-ourteam .nav-link{position:relative;width:100%;font-family:Nunito;font-weight:800;font-size:24px;line-height:33px;color:#FFFFFF;padding:22px 10px;background:linear-gradient(180deg,#63109F 0%,#291E60 100%);border-radius:16px;opacity:0.8;}
 .home-ourteam .nav-link span{position:relative;z-index:1;}
-.home-ourteam .nav-link.active,.home-ourteam .nav-link:hover{box-shadow:0px 5px 10px #6B0B7A,inset 5px 5px 10px rgba(207,102,255,0.3);opacity:1;color: #FFE03D;}
+.home-ourteam .nav-link.active,.home-ourteam .nav-link:hover{box-shadow:0px 5px 10px #6B0B7A,inset 5px 5px 10px rgba(207,102,255,0.3);opacity:1;color:#FFE03D;}
 .home-ourteam .nav-link.active:before,.home-ourteam .nav-link:hover:before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;margin:-2px;border-radius:inherit;background:linear-gradient(to bottom,#00FDFF,#9600FF);}
 .home-ourteam .nav-link.active:after,.home-ourteam .nav-link:hover:after{content:"";position:absolute;top:0;left:0;bottom:0;width:100%;height:100%;background:linear-gradient(180deg,#63109F 0%,#291E60 100%);border-radius:12px;opacity:1;transition:all .5s;border-radius:inherit;}
 .home-ourteam .tab-pane{padding:90px 0 50px;}
@@ -367,71 +361,31 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 
 /*PAge games*/
 .games-banner{position:relative;background-size:cover;background-repeat:no-repeat;text-align:center;padding-top:11%;padding-bottom:7%;}
-
-.games-banner.-commingsoon{
-
-}
+.games-banner.-commingsoon{}
 .games-banner .el__logo{margin-bottom:50px;}
-.games-banner .el__comming{
-	position: relative;
-	background: url(../img/pages/tialua-bg.png) no-repeat;
-	background-size: cover;
-	width: 400px;
-	height: 400px;
-	margin: 0 auto;
-}
+.games-banner .el__comming{position:relative;background:url(../img/pages/tialua-bg.png) no-repeat;background-size:cover;width:400px;height:400px;margin:0 auto;}
 @keyframes scale2{
 	0%{transform:scale(1);}
 	50%{transform:scale(1.5);}
 	10%{transform:scale(1);}
 }
-
-.games-banner .el__comming:after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../img/pages/tialua.png) no-repeat;
-	background-size: cover;
-	animation:spinner-rotate 2s infinite linear;
+.games-banner .el__comming:after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url(../img/pages/tialua.png) no-repeat;background-size:cover;animation:spinner-rotate 2s infinite linear;}
+.el__comming img{opacity:0;animation:1s fadeIn;animation-fill-mode:forwards;transition-delay:5s;margin-left:-5px;}
+@keyframes fadeIn{
+	0%{opacity:0;}
+	50%{opacity:1;transform:scale(1.5);}
+	100%{opacity:1;transform:scale(1);}
 }
-.el__comming img{
-	opacity: 0;
- animation: 1s fadeIn;
-  animation-fill-mode: forwards;
-  transition-delay: 5s;
-      margin-left: -5px;
-}
-@keyframes fadeIn {
-  0% {
-  	opacity: 0;
-  }
-  50% {
-  	opacity: 1;
-  	transform:scale(1.5);
-  }
-  100% {
-  	opacity: 1;
-  	transform:scale(1);
-  }
-}
-
 .games-banner .btn{margin-bottom:50px;animation:scale 1.5s infinite linear;}
-.games-banner .btn:hover{
-	transform: translateY(0);
-}
+.games-banner .btn:hover{transform:translateY(0);}
 .games-slider .slider__item{position:relative;opacity:0.6;background:#341B16;border-radius:16px;}
 .games-slider .slider__item img{max-width:initial;}
 .games-slider .slider__item a{display:block;width:100%;}
 .games-slider .is-selected .slider__item::before,.games-slider .slider__item:hover::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;margin:-2px;border-radius:inherit;background:linear-gradient(to bottom,#00FDFF,#9600FF);}
 .games-slider .slider__item--thumb{position:relative;height:124px;display:flex;align-items:center;background:linear-gradient(180deg,#63109F 0%,#291E60 100%);padding:10px 25px;justify-content:center;border-radius:16px;}
 .games-slider .is-selected .slider__item,.games-slider .slider__item:hover{opacity:1;}
-.games-content{
-	background: url(../img/pages/game-roadmap-bg.png) no-repeat;
-	background-size: cover;
-}
+.games-content{background:url(../img/pages/game-roadmap-bg.png) no-repeat;background-size:cover;}
+.games-content .sc__header{text-transform:uppercase;}
 .games-content__slider{margin-bottom:90px;overflow:hidden;}
 .games-content .el__excerpt{max-width:875px;margin:0 auto 100px;}
 .games-system{padding:70px 0 0;background:linear-gradient(0deg,#1C024D,#1C024D);}
@@ -439,9 +393,8 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-maps{padding:50px 0;}
 .games-slider .flickity-prev-next-button{border-radius:0;}
 .games-slider .item__wrap{position:relative;padding:5px 9.8px 5px!important;}
-.games-roadmap{
-	padding: 50px 0;
-}
+.games-roadmap{padding:50px 0;}
+
 /*Footer*/
 .footer{position:relative;padding:48px 0 0;background:linear-gradient(269.69deg,#5F2971 -18.14%,#380A72 126.63%);color:#F8F8F8;font-size:16px;line-height:32px;}
 .footer a{color:#ECE1E1;}
@@ -627,14 +580,8 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 	.home-roadmap-slider .slider__item--excerpt{font-size:16px;line-height:28px;}
 }
 @media (max-width:1099px){
-	.container {
-	    max-width: 97%;
-	}
-		.header__btn span {
-	    padding: 12px 10px 11px 45px;
-
-	}
-
+	.container{max-width:97%;}
+	.header__btn span{padding:12px 10px 11px 45px;}
 	.header__banner .el__title{margin-bottom:15px;}
 	.header__banner .el__excerpt{margin-bottom:30px;line-height:24px;}
 	.home-story .slick-prev{left:-5px;}
@@ -656,8 +603,6 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 	.home-roadmap .el__box li:nth-child(8){top:51.5%;left:75%;}
 	.home-roadmap .el__box li:nth-child(9){top:73%;left:81%;}
 	.home-roadmap .el__box li:nth-child(10){top:78.5%;left:10%;}
-
-
 }
 @media (min-width:992px){
 	.col-lg-20{flex:0 0 auto;width:20%;}
