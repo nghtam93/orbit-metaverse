@@ -306,7 +306,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-ourteam .slider__item--title{font-family:Lalezar;font-weight:normal;font-size:30px;line-height:47px;text-transform:uppercase;color:#FABE41;}
 .home-ourteam .slider__item--sub{font-weight:normal;font-size:22px;line-height:30px;letter-spacing:0.05em;color:#F8F8F8;text-transform:uppercase;}
 .ourteamModal .modal-dialog{max-width:926px;}
-.ourteamModal .btn-close{position:absolute;top:0;right:60px;width:89px;height:80px;opacity:1;background:url(../img/popup-close.png) no-repeat;background-size:contain;}
+.ourteamModal .btn-close{position:absolute;top:-15px;right:60px;width:89px;height:80px;opacity:1;background:url(../img/popup-close.png) no-repeat;background-size:contain;}
 .ourteamModal .btn-close:focus{box-shadow:none;}
 .ourteamModal-content{padding:100px 190px 160px;background:url(../img/popup-bg.png) no-repeat;background-size:100% 100%;border:0;}
 .ourteamModal__title{font-family:LNTH-BELLABOO;font-weight:normal;font-size:36px;line-height:43px;text-transform:uppercase;color:#471709;margin-bottom:10px;}
