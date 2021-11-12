@@ -1,8 +1,10 @@
 $(function() {
 
+	$('body').addClass('modal-open')
 	$(window).on('load', function() {
 	  $('.loading-page__logo').fadeOut();
 	  $('.loading-page').delay(350).fadeOut('slow');
+	  $('body').removeClass('modal-open')
 	})
 
 	var header_sticky=$("header.-fix")

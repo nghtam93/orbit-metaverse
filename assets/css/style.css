@@ -15,6 +15,7 @@ body{font-family:'Nunito',sans-serif;background:#1A080C;color:#ECE1E1;font-size:
 img{max-width:100%;height:auto;}
 h1,h2,h3{font-family:Lalezar;}
 .btn,a,button,.slider__item,.home-roadmap .el__box li{cursor:url(../img/hover.png) 0 0,auto!important;}
+.modal-open{overflow:hidden;}
 
 /*Fix image trong khung*/
 .dnfix__thumb{position:relative;height:auto;width:100%;overflow:hidden;display:block;padding-top:68.075%;}
