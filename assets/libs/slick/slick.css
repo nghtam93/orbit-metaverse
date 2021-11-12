@@ -22,7 +22,6 @@
 
 /* Slider */
 .slick-loading .slick-list{background:#fff url('ajax-loader.gif') center center no-repeat;}
-
 /* Arrows */
 .slick-prev,.slick-next{font-size:0;line-height:0;position:absolute;top:50%;display:block;padding:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);cursor:pointer;color:transparent;border:none;outline:none;background:transparent;z-index:2;}
 .slick-prev:hover.slick-next:hover{color:transparent;outline:none;background:transparent;opacity:.75;}

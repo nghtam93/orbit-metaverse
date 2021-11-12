@@ -1,5 +1,10 @@
 $(function() {
 
+	$(window).on('load', function() {
+	  $('.loading-page__logo').fadeOut();
+	  $('.loading-page').delay(350).fadeOut('slow');
+	})
+
 	var header_sticky=$("header.-fix")
 
 
