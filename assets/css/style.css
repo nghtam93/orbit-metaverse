@@ -427,13 +427,29 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .footer__socical li:hover{transform:translateY(-3px);}
 .footer__address li{position:relative;padding-left:23px;line-height:40px;}
 .footer__address li i{position:absolute;left:0;top:13px;}
-.footer__address li i.ic-envelope{top:15px;}
+.footer__address li i.ic-envelope{top:13px;}
 .footer__list a{transition:all .5s;}
 .footer__list a:hover{text-decoration:underline;}
 .footer .copyright{position:relative;padding:23px 0;font-weight:normal;font-size:12px;line-height:19px;text-align:center;color:#8BEAFF;}
 .footer .copyright:before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,rgba(82,255,234,0.15) 23.65%,#52FFEA 44.93%,#AA0DC0 78.96%,rgba(170,13,192,0.28) 90.31%);}
 .scrollTop{position:absolute;top:-30px;right:8%;width:60px;height:60px;border-radius:50%;background:url(../img/scrolltop.png) no-repeat;background-size:contain;cursor:pointer;box-shadow:15px 15px 20px rgba(42,22,65,0.4);transition:all .5s;}
 .scrollTop:hover{transform:translateY(-3px);}
+
+/**/
+.languages{position:relative;font-weight:normal;font-size:16px;text-align:left;letter-spacing:0.25px;display:inline-block;margin-top:10px;}
+.languages img,.languages span{display:inline-block;vertical-align:middle;}
+.languages img{border-radius:50%;width:20px;height:20px;}
+.languages span{margin-left:7px;}
+.languages .languages-item{position:relative;padding:6px 35px 6px 18px;left:0px;top:0px;border:1px solid #FFFFFF;box-sizing:border-box;border-radius:10px;color:#ffffff;cursor:pointer;transition:0.3s;}
+.languages .languages-item:before{content:'';position:absolute;top:50%;right:10px;transform:translateY(-50%);background:url(../img/downward-arrow.png) no-repeat;width:18px;height:18px;background-size:contain;}
+.languages .languages-item:hover{background-color:#1A1C25;}
+.languages ul{position:absolute;bottom:105%;left:0;right:0;background-color:#ffffff;transform-origin:bottom;transform:rotateX(90deg);-webkit-transform:rotateX(90deg);opacity:0;display:block;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.languages ul.dropdown-languages{visibility:visible;transform:rotateY(0);-webkit-transform:rotateY(0);opacity:1;}
+.languages ul li{display:block;padding:5px 10px;color:#1A1C25;cursor:pointer;font-size:13px;transition:0.3s;}
+.languages ul li + li{border-top:1px solid #cccccc;}
+.languages ul li:hover,.languages ul li.active{background-color:#1A1C25;color:#ffffff;}
+.sc__language{display:flex;}
+.sc__language li:not(:last-child){margin-right:10px;}
 
 /*keyframes*/
 @keyframes neon2{

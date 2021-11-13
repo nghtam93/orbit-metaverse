@@ -7,9 +7,8 @@ $(function() {
 	  $('body').removeClass('modal-open')
 	})
 
+	// Header Fix
 	var header_sticky=$("header.-fix")
-
-
     if($('body').hasClass( "home" )){
         $(window).scroll(function(){
             $(this).scrollTop()>1?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
@@ -17,6 +16,22 @@ $(function() {
     }else{
         header_sticky.addClass("is-active")
     }
+
+    /*----Languages---*/
+	$('.languages .languages-item').click(function() {
+		$(this).next().toggleClass('dropdown-languages');
+		isClicked = true;
+	});
+
+	$('.languages ul li').click(function() {
+	    var $liIndex = $(this).index() + 1;
+	    $('.languages ul li').removeClass('active');
+	    $('.languages ul li:nth-child('+$liIndex+')').addClass('active');
+	    var $getLang = $(this).html();
+	    $('.languages .languages-item').html($getLang);
+
+	    $('.languages>ul').removeClass('dropdown-languages')
+	});
 
 	new WOW().init();
 
