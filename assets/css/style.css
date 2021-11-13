@@ -448,8 +448,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .languages ul li{display:block;padding:5px 10px;color:#1A1C25;cursor:pointer;font-size:13px;transition:0.3s;}
 .languages ul li + li{border-top:1px solid #cccccc;}
 .languages ul li:hover,.languages ul li.active{background-color:#1A1C25;color:#ffffff;}
-.sc__language{display:flex;}
-.sc__language li:not(:last-child){margin-right:10px;}
+
 
 /*keyframes*/
 @keyframes neon2{
