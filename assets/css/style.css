@@ -223,9 +223,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-ecosystem .sc__header{margin-bottom:30px;}
 .home-ecosystem .el__col{display:flex;}
 .home-ecosystem .videoWrapper{border-radius:20px;overflow:hidden;margin-bottom:30px;padding-bottom:49%;}
-.home-ecosystem .videoWrapper:hover{
-	    box-shadow: 0px 0px 10px #d783ff;
-}
+.home-ecosystem .videoWrapper:hover{box-shadow:0px 0px 10px #d783ff;}
 .home-ecosystem .el__item{position:relative;width:100%;margin-bottom:40px;background:linear-gradient(180deg,#227A7A 0%,#4D0780 100%);border-radius:16px;overflow:hidden;padding-bottom:80px;transition:all .5s;}
 .home-ecosystem .el__item:hover{box-shadow:0px 0px 10px #d783ff;}
 .home-ecosystem .el__item--meta{padding:30px 30px;}
