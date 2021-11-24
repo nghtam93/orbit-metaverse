@@ -230,13 +230,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-ecosystem{position:relative;z-index:1;padding:20px 0 80px;overflow: hidden;}
 .home-ecosystem .sc__header{margin-bottom:30px;}
 .home-ecosystem .el__col{display:flex;}
-<<<<<<< HEAD
+
 .home-ecosystem .videoWrapper{border-radius:20px;overflow:hidden;margin-bottom:30px;padding-bottom:408%;}
 
-=======
-.home-ecosystem .videoWrapper{border-radius:20px;overflow:hidden;margin-bottom:30px;padding-bottom:49%;}
->>>>>>> parent of ba5da5c (Update video)
-/**/
 .home-ecosystem-slider .slick-list{margin:0 0;}
 .home-ecosystem .slider__item{position:relative;width:100%;height:100%;margin-bottom:0;background:linear-gradient(180deg,#227A7A 0%,#4D0780 100%);border-radius:16px;overflow:hidden;padding-bottom:55px;transition:all .5s;}
 .home-ecosystem .slider__item--meta{padding:15px 15px;}
@@ -428,7 +424,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-content__slider{margin-bottom:90px;overflow:hidden;}
 .games-content .el__excerpt{max-width:875px;margin:0 auto;}
 .games-system{padding:70px 0 0;background:linear-gradient(0deg,#1C024D,#1C024D);}
-.games-system .videoWrapper{padding-bottom:49.25%;}
+.games-system .videoWrapper{padding-bottom:408%;}
 .games-system--thumb img{width:100%;}
 .games-maps{padding:50px 0;}
 .games-slider .flickity-prev-next-button{border-radius:0;padding:0;}

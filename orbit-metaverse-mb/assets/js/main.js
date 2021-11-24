@@ -258,14 +258,16 @@ $(function() {
 		return o.preventDefault(),$("html, body").animate({scrollTop:0},duration),!1
 	});
 
-	setTimeout(function(){
-		$('.gameslider__flickity').flickity({
-			 freeScroll: true,
-			 contain: true,
-			 prevNextButtons: true,
-			 pageDots: false
-		});
-	}, 500);
+	if($('.gameslider__flickity').length){
+		setTimeout(function(){
+			$('.gameslider__flickity').flickity({
+				 freeScroll: true,
+				 contain: true,
+				 prevNextButtons: true,
+				 pageDots: false
+			});
+		}, 500);
+	}
 
 
 
