@@ -258,4 +258,15 @@ $(function() {
 		return o.preventDefault(),$("html, body").animate({scrollTop:0},duration),!1
 	});
 
+	setTimeout(function(){
+		$('.gameslider__flickity').flickity({
+			 freeScroll: true,
+			 contain: true,
+			 prevNextButtons: true,
+			 pageDots: false
+		});
+	}, 500);
+
+
+
 });
