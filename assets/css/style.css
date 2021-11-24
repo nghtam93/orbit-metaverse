@@ -264,7 +264,19 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-tokenomics .el__box__list li.-percent10::before{background:#34A538;}
 .home-tokenomics .el__box__list li.-percent11::before{background:#95C61D;}
 .home-tokenomics .el__box--thumb{position:absolute;top:-125px;right:-255px;width: 720px;max-width:100%;z-index:1;}
-.home-tokenomics .el__box--thumb::before{content:'';position:absolute;top:97px;left:-20px;width: 637px;height:694px;box-shadow:0px 5px 20px rgba(219,0,255,0.8),inset 0px -4px 0px rgba(0,0,0,0.25);border-radius:50%;background:url(../img/home-tokenomics-img-circle.png) no-repeat;background-size:contain;animation:spinner-rotate 2s linear infinite;}
+.home-tokenomics .el__box--thumb::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: -17px;
+    width: 689px;
+    height: 690px;
+    box-shadow: 0px 5px 20px rgba(219,0,255,0.8),inset 0px -4px 0px rgba(0,0,0,0.25);
+    border-radius: 50%;
+    background: url(../img/home-tokenomics-img-circle.png) no-repeat;
+    background-size: contain;
+     animation: spinner-rotate 2s linear infinite;
+}
 .home-tokenomics .dnfix__thumb{padding-top: 107%;}
 
 /*home-ourteam*/
@@ -563,6 +575,11 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 	.home-tokenomics .el__box--thumb{right:-100px;}
 }
 @media (max-width:1399px){
+
+
+.home-tokenomics .el__box--thumb::before{content:'';position:absolute;top:97px;left:-20px;width: 637px;height:694px;box-shadow:0px 5px 20px rgba(219,0,255,0.8),inset 0px -4px 0px rgba(0,0,0,0.25);border-radius:50%;background:url(../img/home-tokenomics-img-circle.png) no-repeat;background-size:contain;animation:spinner-rotate 2s linear infinite;}
+
+
 	.main__nav ul.el__menu>li>a{padding:32px 20px;}
 	.home-tokenomics .el__box{padding:35px 60px 50px;border-top-right-radius:350px;border-bottom-right-radius:350px;}
 	.home-tokenomics .el__box::after{border-top-right-radius:350px;border-bottom-right-radius:350px;}
