@@ -18,6 +18,22 @@ $(function() {
 	    $('.languages>ul').removeClass('dropdown-languages')
 	});
 
+	// Video custom
+	$playPause = $(".btn-video-play");
+
+	$playPause.on("click", function (e) {
+	  e.preventDefault();
+	  var videoElement = $(this).closest('.video-play__wrapper').find('video')[0]
+
+	  if (videoElement.paused || videoElement.ended) {
+	    videoElement.play();
+	   	$(this).css('opacity',0)
+	  } else {
+	    videoElement.pause();
+	    $(this).css('opacity',1)
+	  }
+	})
+
 
 	// Loader
 	$('body').addClass('modal-open')
@@ -268,7 +284,5 @@ $(function() {
 			});
 		}, 500);
 	}
-
-
 
 });
