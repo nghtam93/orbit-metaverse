@@ -306,7 +306,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-roadmap .el__box li:after{content:'';display:block;top:0;left:0;width:20px;height:20px;background:#FFAE42;border-radius:50%;margin:auto;}
 
 /*home-ourteam*/
-.home-ourteam{position:relative;padding:135px 0 130px;}
+.home-ourteam{position:relative;padding:135px 0 130px;overflow: hidden;}
 .home-ourteam:before{content:'';position:absolute;top:-22%;left:0;width:100%;height:calc(100% + 35%);background:url(../img/home-ourteam-bg.png) no-repeat;background-size:cover;pointer-events:none;}
 .home-ourteam .slick-prev{left:-50px;}
 .home-ourteam .slick-next{right:-50px;}
