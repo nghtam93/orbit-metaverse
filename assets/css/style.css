@@ -252,17 +252,17 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-tokenomics .el__box__list{}
 .home-tokenomics .el__box__list li{position:relative;padding-left:40px;}
 .home-tokenomics .el__box__list li::before{content:'';position:absolute;top:10px;left:0;width:16px;height:16px;background:#F1E20C;border:1px solid #fff;border-radius:50%;}
-.home-tokenomics .el__box__list li.-percent1::before{background:#F1E20C;}
-.home-tokenomics .el__box__list li.-percent2::before{background:#FFAE42;}
+.home-tokenomics .el__box__list li.-percent1::before{background: #f4e513;}
+.home-tokenomics .el__box__list li.-percent2::before{background: #ffa52e;}
 .home-tokenomics .el__box__list li.-percent3::before{background:#E84A18;}
-.home-tokenomics .el__box__list li.-percent4::before{background:#E31341;}
-.home-tokenomics .el__box__list li.-percent5::before{background:#601848;}
-.home-tokenomics .el__box__list li.-percent6::before{background:#3F2583;}
-.home-tokenomics .el__box__list li.-percent7::before{background:#284397;}
-.home-tokenomics .el__box__list li.-percent8::before{background:#0A88C9;}
-.home-tokenomics .el__box__list li.-percent9::before{background:#34A538;}
-.home-tokenomics .el__box__list li.-percent10::before{background:#34A538;}
-.home-tokenomics .el__box__list li.-percent11::before{background:#95C61D;}
+.home-tokenomics .el__box__list li.-percent4::before{background: #fc7043;}
+.home-tokenomics .el__box__list li.-percent5::before{background: #e31341;}
+.home-tokenomics .el__box__list li.-percent6::before{background: #8a1c35;}
+.home-tokenomics .el__box__list li.-percent7::before{background: #613fba;}
+.home-tokenomics .el__box__list li.-percent8::before{background: #2f4eb1;}
+.home-tokenomics .el__box__list li.-percent9::before{background: #0f92d5;}
+.home-tokenomics .el__box__list li.-percent10::before{background: #3fa943;}
+.home-tokenomics .el__box__list li.-percent11::before{background: #95c61d;}
 .home-tokenomics .el__box--thumb{position:absolute;top:-125px;right:-255px;width:720px;max-width:100%;z-index:1;}
 .home-tokenomics .el__box--thumb::before{content:'';position:absolute;top:110px;left:-19px;width:666px;height:666px;box-shadow:0px 5px 20px rgba(219,0,255,0.8),inset 0px -4px 0px rgba(0,0,0,0.25);border-radius:50%;background:url(../img/home-tokenomics-img-circle.png) no-repeat;background-size:contain;animation:spinner-rotate 2s linear infinite;}
 .home-tokenomics .dnfix__thumb{padding-top:107%;}
