@@ -110,7 +110,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .header__banner .el__btn span{font-family:Lalezar;display:block;padding:10px 16px 10px 69px;font-size:24px;line-height:38px;color:#fff;}
 
 /*Home story*/
-.home-story{position:relative;padding:170px 0 100px;}
+.home-story{position:relative;padding:50px 0 100px;}
 .home-story:before{content:'';position:absolute;top:-12%;left:0;width:100%;height:calc(100% + 12%);background:url(../img/home-story-bg.png) no-repeat;background-size:cover;pointer-events:none;z-index:1;}
 .home-story:after{content:'';position:absolute;bottom:-23%;left:0;width:100%;height:45%;pointer-events:none;z-index:1;background:linear-gradient(179.81deg,rgba(48,76,155,0) 31.51%,#212368 49.31%,rgba(46,21,63,0.57) 77.28%,rgba(46,20,64,0) 99.83%);}
 .home-story__wrap{position:relative;z-index:1;}
