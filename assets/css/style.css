@@ -601,7 +601,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 	.main__nav ul.el__menu>li>a{font-size:15px;padding:25px 10px;}
 	.header__banner .el__meta{max-width:500px;font-size:16px;line-height:36px;}
 	.header__banner .el__title{font-size:54px;line-height:55px;}
-	.home-story{position:relative;padding:150px 0 115px;}
+	.home-story{position:relative;padding:50px 0 115px;}
 	.home-story .row{--bs-gutter-x:.5rem;}
 	.home-story .el__item--meta{padding:25px 10px 20px;}
 	.home-story .el__item--title{font-size:24px;line-height:32px;}
