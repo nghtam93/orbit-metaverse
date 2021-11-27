@@ -303,6 +303,10 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 /*home-ourteam*/
 .home-ourteam{position:relative;padding:20px 0 30px;}
 .home-ourteam:before{content:'';position:absolute;top:-22%;left:0;width:100%;height:calc(100% + 35%);background:url(../img/home-ourteam-bg.png) no-repeat;background-size:cover;pointer-events:none;}
+.home-ourteam .container{
+    position: relative;
+    z-index: 1;
+}
 .home-ourteam .slick-prev{left:0;}
 .home-ourteam .slick-next{right:0;}
 .home-ourteam .sc__header{margin-bottom:40px;}
