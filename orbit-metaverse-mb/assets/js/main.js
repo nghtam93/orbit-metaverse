@@ -162,7 +162,7 @@ $(function() {
 		});
 
 		$('.home-ourteam-slider01').slick({
-			rows: 1,
+			rows: 2,
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			infinite: false,
@@ -180,7 +180,7 @@ $(function() {
 			    {
 			      breakpoint: 991,
 			      settings: {
-			      	rows: 1,
+			      	rows: 2,
 			        slidesToShow: 3,
 			        slidesToScroll: 1
 			      }
@@ -188,7 +188,7 @@ $(function() {
 			    {
 			      breakpoint: 575,
 			      settings: {
-			      	rows: 1,
+			      	rows: 2,
 			        slidesToShow: 2,
 			        slidesToScroll: 1
 			      }
