@@ -83,7 +83,7 @@ $(function() {
 
 		$('.home-ourteam-slider01').slick({
 			rows: 2,
-			slidesToShow: 4,
+			slidesToShow: 6,
 			slidesToScroll: 2,
 			infinite: false,
 			dots: false,
