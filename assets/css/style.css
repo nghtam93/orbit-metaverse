@@ -16,7 +16,9 @@ img{max-width:100%;height:auto;}
 h1,h2,h3{font-family:Lalezar;}
 .btn,a,button,.slider__item,.home-roadmap .el__box li,.scrollTop,.btn-video-play{cursor:url(../img/hover.png) 0 0,auto!important;}
 .modal-open{overflow:hidden;}
-
+.wrapper{
+	overflow: hidden;
+}
 /*Fix image trong khung*/
 .dnfix__thumb{position:relative;height:auto;width:100%;overflow:hidden;display:block;padding-top:68.075%;}
 .dnfix__thumb img{margin:0px auto;position:absolute;width:100%;height:100%;top:0;left:0;object-fit:cover}
