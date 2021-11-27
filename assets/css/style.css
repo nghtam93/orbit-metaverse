@@ -301,8 +301,8 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-ourteam .slick-prev{left:-50px;}
 .home-ourteam .slick-next{right:-50px;}
 .home-ourteam .sc__header{margin-bottom:40px;}
-.home-ourteam .nav-tabs{border-bottom:0;}
-.home-ourteam .nav-item{flex-grow:1;}
+.home-ourteam .nav-tabs{border-bottom:0;justify-content: center;}
+.home-ourteam .nav-item{min-width: 250px;}
 .home-ourteam .nav-item:not(:last-child){margin-right:30px;}
 .home-ourteam .nav-link{position:relative;width:100%;font-family:Nunito;font-weight:800;font-size:24px;line-height:33px;color:#FFFFFF;padding:22px 10px;background:linear-gradient(180deg,#63109F 0%,#291E60 100%);border-radius:16px;opacity:0.8;}
 .home-ourteam .nav-link span{position:relative;z-index:1;}
@@ -384,7 +384,21 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .el__pet--s6{position:absolute;top:63%;right:15%;width:16%;height:16%;background:url(../img/pages/governance-pet6.png) no-repeat;background-size:contain;animation:float30 6s ease-in-out infinite;}
 
 /*PAge games*/
-.games-banner{position:relative;background-size:cover;background-repeat:no-repeat;text-align:center;padding-top:11%;padding-bottom:7%;}
+.games-banner{position:relative;background-size:cover;background-repeat:no-repeat;text-align:center;background-position: center;
+	padding-top:11%;padding-bottom:7%;}
+.games-banner__bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% + 340px);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+	z-index: -1;
+	pointer-events: none;
+}
+
 .games-banner.-commingsoon{}
 .games-banner .el__logo{margin-bottom:50px;}
 .games-banner .el__comming{position:relative;background:url(../img/pages/tialua-bg.png) no-repeat;background-size:cover;width:400px;height:400px;margin:0 auto;}

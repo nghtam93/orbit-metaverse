@@ -82,8 +82,9 @@ $(function() {
 		});
 
 		$('.home-ourteam-slider01').slick({
+			rows: 2,
 			slidesToShow: 4,
-			slidesToScroll: 1,
+			slidesToScroll: 2,
 			infinite: false,
 			dots: false,
 			easing: "linear"
