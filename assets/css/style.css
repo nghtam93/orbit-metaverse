@@ -385,7 +385,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 
 /*PAge games*/
 .games-banner{position:relative;background-size:cover;background-repeat:no-repeat;text-align:center;background-position:center;padding-top:11%;padding-bottom:7%;}
-.games-banner__bg{position:absolute;top:0;left:0;width:100%;height:calc(100% + 340px);background-size:cover;background-repeat:no-repeat;background-position:center;z-index:-1;pointer-events:none;}
+.games-banner__bg{position:absolute;top:0;left:0;width:100%;height:calc(100% + 340px);background-size:cover;background-repeat:no-repeat;background-position:center;pointer-events:none;}
 .games-banner.-commingsoon{}
 .games-banner .el__logo{margin-bottom:50px;}
 .games-banner .el__comming{position:relative;background:url(../img/pages/tialua-bg.png) no-repeat;background-size:cover;width:400px;height:400px;margin:0 auto;}
