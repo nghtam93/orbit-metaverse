@@ -427,13 +427,49 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .playtoearn-banner{position:relative;background-size:cover;background-repeat:no-repeat;
 	text-align:center;background-position:center;padding-top:57%;
 }
+.playtoearn-banner .container{
+	position: relative;
+	z-index: 1;
+}
+.playtoearn-banner:after {
+    content: '';
+    position: absolute;
+    bottom: -19%;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(
+180.27deg,rgba(61,25,104,0) 1.36%,#1c024d 17.25%,#1c024d 32%,rgba(51,23,60,0) 88.28%);
+    pointer-events: none;
+    z-index: 1;
+}
+
 .playtoearn-banner .el__wrap{
 	position: absolute;
 	opacity: 20%;
 }
 .playtoearn-text{
 position: relative;
-padding: 180px 0;
+padding: 100px 0;
+background: linear-gradient(
+0deg,#1C024D,#1C024D);
+}
+.playtoearn-text:after {
+content: '';
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 100%;
+    height: 19%;
+    background: linear-gradient(
+180.27deg,rgba(61,25,104,0) 1.36%,#1c024d 17.25%,#1c024d 32%,rgba(51,23,60,0) 88.28%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.playtoearn-text .container{
+	position: relative;
+	z-index: 1;
 }
 .playtoearn-text .el__box{
 	position: relative;
@@ -442,6 +478,7 @@ padding: 180px 0;
 	border-radius: 8px;
 	padding: 20px;
 	border: 1px solid #fff;
+	text-align: justify;
 }
 .playtoearn-text .el__box:before{
     content: '';
@@ -467,7 +504,10 @@ content: '';
     background-size: contain;
     pointer-events: none;
 }
-.playtoearn-text .el__box__wrap{padding: 30px;margin: 1px;background: linear-gradient(196.5deg, rgba(193, 61, 255, 0.4) 11.42%, rgba(193, 61, 255, 0) 88.58%);border-radius: 8px;}
+.playtoearn-text .el__box p +p{
+	margin-top: 20px;
+}
+.playtoearn-text .el__box__wrap{padding: 50px;margin: 1px;background: linear-gradient(196.5deg, rgba(193, 61, 255, 0.4) 11.42%, rgba(193, 61, 255, 0) 88.58%);border-radius: 8px;}
 .playtoearn-text .el__box__wrap:after{
     content: '';
     position: absolute;
@@ -480,6 +520,70 @@ content: '';
     background-size: contain;
     pointer-events: none;
 }
+.playtoearn-table {
+	position: relative;
+	padding: 100px 0;
+	background: linear-gradient(
+0deg,#1C024D,#1C024D);
+
+    background: url(../img/home-orbit-bg.png) no-repeat;
+}
+.playtoearn-table .container{
+	position: relative;
+	z-index: 1;
+}
+.playtoearn-table .table, .playtoearn-table .table th{
+	color: #fff;
+	border-color: rgba(255, 255, 255, .2)!important;
+}
+/**/
+.playtoearn-block {
+	position: relative;
+	background: linear-gradient(
+0deg,#1C024D,#1C024D);
+}
+.playtoearn-block .container{
+	position: relative;
+	z-index: 1;
+}
+.playtoearn-block:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/home-group-1-bg.png) no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+.playtoearn-block:after {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background: linear-gradient(
+180.27deg,rgba(61,25,104,0) 1.36%,#3D1968 17.25%,#3D1968 32%,rgba(51,23,60,0) 88.28%);
+    pointer-events: none;
+}
+
+.playtoearn-block .el__item {
+    padding-bottom: 0;
+}
+.playtoearn-block .el__item--meta {
+    min-height: 265px;
+}
+.playtoearn-block .slick-prev {
+    left: -60px;
+}
+.playtoearn-block .slick-next {
+    right: -60px;
+}
+
+
 /*Footer*/
 .footer{position:relative;padding:48px 0 0;background:linear-gradient(269.69deg,#5F2971 -18.14%,#380A72 126.63%);color:#F8F8F8;font-size:16px;line-height:32px;}
 .footer a{color:#ECE1E1;}
@@ -657,6 +761,18 @@ content: '';
 	.footer__socical li a{width:50px;height:45px;line-height:47px;}
 	.footer__socical li a:before{width:50px;height:55px;}
 	.footer__socical li img{max-width:18px;max-height:18px;}
+
+	.playtoearn-block .el__item--meta {
+    min-height: 291px;
+}
+}
+@media (max-width:1299px){
+	.playtoearn-block .slick-prev {
+	    left: -15px;
+	}
+	.playtoearn-block .slick-next {
+	    right: -15px;
+	}
 }
 @media (max-width:1199px){
 	.container{max-width:90%;}
