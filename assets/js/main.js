@@ -114,15 +114,18 @@ $(function() {
 
 	/**/
 	// Page play to earn
-	$('.playtoearn-block__slider').slick({
-		rows: 1,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		infinite: true,
-		arrows: true,
-		dots: false,
-		easing: "linear"
-	});
+	if($('body').hasClass('play-to-earn')){
+
+		$('.playtoearn-block__slider').slick({
+			rows: 1,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			infinite: true,
+			arrows: true,
+			dots: false,
+			easing: "linear"
+		});
+	}
 
 	if($('body').hasClass('games')){
 		var setSliderCurrent = $('.games-slider').data('current')
