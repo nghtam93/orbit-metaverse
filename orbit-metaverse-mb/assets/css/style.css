@@ -593,26 +593,26 @@ background-position: center;
     .nav__mobile{width:100%;}
 }
 @media (min-width:375px){
-    .home-roadmap .el__box li:nth-child(1){top:-14%;left:3%;}
-    .home-roadmap .el__box li:nth-child(2){top:-17%;left:49%;}
+    .home-roadmap .el__box li:nth-child(1){top: -6%;left:3%;}
+    .home-roadmap .el__box li:nth-child(2){top: -9%;left:49%;}
     .home-roadmap .el__box li:nth-child(3){top:3.3%;left:77%;}
-    .home-roadmap .el__box li:nth-child(4){top:17%;left:61%;}
-    .home-roadmap .el__box li:nth-child(5){top:29%;left:25%;}
-    .home-roadmap .el__box li:nth-child(6){top:53%;left:14%;}
-    .home-roadmap .el__box li:nth-child(7){top:49%;left:39%;}
-    .home-roadmap .el__box li:nth-child(8){top:52%;left:75%;}
+    .home-roadmap .el__box li:nth-child(4){top: 16.5%;left:61%;}
+    .home-roadmap .el__box li:nth-child(5){top: 27%;left: 7%;}
+    .home-roadmap .el__box li:nth-child(6){top: 47%;left: 57%;}
+    .home-roadmap .el__box li:nth-child(7){top: 75%;left: 74%;}
+    .home-roadmap .el__box li:nth-child(8){top: 77%;left: 18%;}
     .home-roadmap .el__box li:nth-child(9){top:75%;left:63%;}
     .home-roadmap .el__box li:nth-child(10){top:78%;left:10%;}
 }
 @media (min-width:414px){
-    .home-roadmap .el__box li:nth-child(1){top:-12%;left:3%;}
-    .home-roadmap .el__box li:nth-child(2){top:-16%;left:49%;}
+    .home-roadmap .el__box li:nth-child(1){top: -4%;left:3%;}
+    .home-roadmap .el__box li:nth-child(2){top: -6.5%;left:49%;}
     .home-roadmap .el__box li:nth-child(3){top:4.3%;left:77%;}
     .home-roadmap .el__box li:nth-child(4){top:18%;left:61%;}
-    .home-roadmap .el__box li:nth-child(5){top:30%;left:25%;}
-    .home-roadmap .el__box li:nth-child(6){top:54%;left:14%;}
-    .home-roadmap .el__box li:nth-child(7){top:50%;left:39%;}
-    .home-roadmap .el__box li:nth-child(8){top:52%;left:75%;}
+    .home-roadmap .el__box li:nth-child(5){top:30%;left: 17%;}
+    .home-roadmap .el__box li:nth-child(6){top: 49%;left: 53%;}
+    .home-roadmap .el__box li:nth-child(7){top: 76%;left: 75%;}
+    .home-roadmap .el__box li:nth-child(8){top: 79%;left: 17%;}
     .home-roadmap .el__box li:nth-child(9){top:76%;left:63%;}
     .home-roadmap .el__box li:nth-child(10){top:80%;left:10%;}
 }

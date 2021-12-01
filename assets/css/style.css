@@ -282,14 +282,14 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-roadmap .el__box li{position:absolute;font-family:Lalezar;font-weight:normal;font-size:18px;line-height:28px;text-align:center;letter-spacing:0.05em;color:#EFCC9C;transition:color .5s;white-space:nowrap;}
 .home-roadmap .el__box li.active,.home-roadmap .el__box li:hover{color:#FFFFFF;}
 .home-roadmap .el__box li.active:after,.home-roadmap .el__box li:hover:after{background-color:#ffeeb2;animation:neon7 1.5s ease-in-out infinite alternate;}
-.home-roadmap .el__box li:nth-child(1){top:-8%;left:7%;}
-.home-roadmap .el__box li:nth-child(2){top:-11%;left:56%;}
-.home-roadmap .el__box li:nth-child(3){top:6.3%;left:83%;}
-.home-roadmap .el__box li:nth-child(4){top:21%;left:70%;}
-.home-roadmap .el__box li:nth-child(5){top:32%;left:25%;}
-.home-roadmap .el__box li:nth-child(6){top:56.5%;left:14%;}
-.home-roadmap .el__box li:nth-child(7){top:53%;left:39%;}
-.home-roadmap .el__box li:nth-child(8){top:53.5%;left:75%;}
+.home-roadmap .el__box li:nth-child(1){top:-3%;left:7%;}
+.home-roadmap .el__box li:nth-child(2){top:-6%;left: 61%;}
+.home-roadmap .el__box li:nth-child(3){top: 24.3%;left:83%;}
+.home-roadmap .el__box li:nth-child(4){top: 32%;left: 25%;}
+.home-roadmap .el__box li:nth-child(5){top: 55.5%;left:25%;}
+.home-roadmap .el__box li:nth-child(6){top: 54%;left: 77%;}
+.home-roadmap .el__box li:nth-child(7){top: 78.5%;left: 65%;}
+.home-roadmap .el__box li:nth-child(8){top: 81%;left: 17%;}
 .home-roadmap .el__box li:nth-child(9){top:78.5%;left:63%;}
 .home-roadmap .el__box li:nth-child(10){top:82.5%;left:10%;}
 .home-roadmap .el__box li:after{content:'';display:block;top:0;left:0;width:20px;height:20px;background:#FFAE42;border-radius:50%;margin:auto;}
@@ -385,7 +385,8 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 
 /*PAge games*/
 .games-banner{position:relative;background-size:cover;background-repeat:no-repeat;text-align:center;background-position:center;padding-top:11%;padding-bottom:7%;}
-.games-banner__bg{position:absolute;top:0;left:0;width:100%;height:calc(100% + 340px);background-size:cover;background-repeat:no-repeat;background-position:center;pointer-events:none;}
+.games-banner__bg{position:absolute;top:0;left:0;width:100%;height:calc(100% + 340px);background-size:cover;
+	background-repeat:no-repeat;background-position:center;pointer-events:none;z-index: -1;}
 .games-banner.-commingsoon{}
 .games-banner .el__logo{margin-bottom:50px;}
 .games-banner .el__comming{position:relative;background:url(../img/pages/tialua-bg.png) no-repeat;background-size:cover;width:400px;height:400px;margin:0 auto;}
@@ -421,6 +422,64 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-slider .item__wrap{position:relative;padding:5px 9.8px 5px!important;}
 .games-roadmap{padding:50px 0;}
 
+
+/*PAge games*/
+.playtoearn-banner{position:relative;background-size:cover;background-repeat:no-repeat;
+	text-align:center;background-position:center;padding-top:57%;
+}
+.playtoearn-banner .el__wrap{
+	position: absolute;
+	opacity: 20%;
+}
+.playtoearn-text{
+position: relative;
+padding: 180px 0;
+}
+.playtoearn-text .el__box{
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	border-radius: 8px;
+	padding: 20px;
+	border: 1px solid #fff;
+}
+.playtoearn-text .el__box:before{
+    content: '';
+    position: absolute;
+    top: -35px;
+    right: -25px;
+    width: 92px;
+    height: 83px;
+    background: url(../img/pages/play-to-earn-text-ic1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   	pointer-events: none;
+}
+.playtoearn-text .el__box:after{
+content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -120px;
+    width: 226px;
+    height: 224px;
+    background: url(../img/pages/play-to-earn-text-ic2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+.playtoearn-text .el__box__wrap{padding: 30px;margin: 1px;background: linear-gradient(196.5deg, rgba(193, 61, 255, 0.4) 11.42%, rgba(193, 61, 255, 0) 88.58%);border-radius: 8px;}
+.playtoearn-text .el__box__wrap:after{
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    right: -75px;
+    width: 239px;
+    height: 221px;
+    background: url(../img/pages/play-to-earn-text-ic3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
 /*Footer*/
 .footer{position:relative;padding:48px 0 0;background:linear-gradient(269.69deg,#5F2971 -18.14%,#380A72 126.63%);color:#F8F8F8;font-size:16px;line-height:32px;}
 .footer a{color:#ECE1E1;}
@@ -580,14 +639,14 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 	.el__pet--s6{top:66%;right:11%;}
 	.home-roadmap-slider .slider__item--title{font-size:28px;line-height:45px;}
 	.home-roadmap-slider__wrap{--height:538px;}
-	.home-roadmap .el__box li:nth-child(1){top:-10%;left:7%;}
-	.home-roadmap .el__box li:nth-child(2){top:-13%;left:56%;}
+	.home-roadmap .el__box li:nth-child(1){top:-5%;left:7%;}
+	.home-roadmap .el__box li:nth-child(2){top:-8%;left:56%;}
 	.home-roadmap .el__box li:nth-child(3){top:5%;left:80%;}
 	.home-roadmap .el__box li:nth-child(4){top:20%;left:70%;}
-	.home-roadmap .el__box li:nth-child(5){top:31%;left:25%;}
-	.home-roadmap .el__box li:nth-child(6){top:55.5%;left:14%;}
-	.home-roadmap .el__box li:nth-child(7){top:52%;left:39%;}
-	.home-roadmap .el__box li:nth-child(8){top:52.5%;left:75%;}
+	.home-roadmap .el__box li:nth-child(5){top: 30.5%;left:25%;}
+	.home-roadmap .el__box li:nth-child(6){top: 51%;left: 43%;}
+	.home-roadmap .el__box li:nth-child(7){top: 76%;left: 78%;}
+	.home-roadmap .el__box li:nth-child(8){top: 79.5%;left: 14%;}
 	.home-roadmap .el__box li:nth-child(9){top:76%;left:81%;}
 	.home-roadmap .el__box li:nth-child(10){top:81.5%;left:10%;}
 	.home-story .el__item--meta{padding:25px 15px 30px;}
@@ -636,14 +695,14 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 	.games-slider .slick-prev{left:-45px;}
 	.home-roadmap-slider .slider__item--title{font-size:22px;line-height:38px;}
 	.home-roadmap-slider__wrap{--height:468px;}
-	.home-roadmap .el__box li:nth-child(1){top:-13%;left:5%;}
-	.home-roadmap .el__box li:nth-child(2){top:-16%;left:50%;}
-	.home-roadmap .el__box li:nth-child(3){top:3%;left:80%;}
+	.home-roadmap .el__box li:nth-child(1){top: -5%;left:5%;}
+	.home-roadmap .el__box li:nth-child(2){top: -7%;left:50%;}
+	.home-roadmap .el__box li:nth-child(3){top: 4%;left:80%;}
 	.home-roadmap .el__box li:nth-child(4){top:20%;left:70%;}
-	.home-roadmap .el__box li:nth-child(5){top:29%;left:25%;}
-	.home-roadmap .el__box li:nth-child(6){top:53.5%;left:14%;}
-	.home-roadmap .el__box li:nth-child(7){top:50%;left:39%;}
-	.home-roadmap .el__box li:nth-child(8){top:51.5%;left:75%;}
+	.home-roadmap .el__box li:nth-child(5){top: 30%;left:25%;}
+	.home-roadmap .el__box li:nth-child(6){top: 49.5%;left: 50%;}
+	.home-roadmap .el__box li:nth-child(7){top: 77%;left: 72%;}
+	.home-roadmap .el__box li:nth-child(8){top: 78.5%;left: 22%;}
 	.home-roadmap .el__box li:nth-child(9){top:73%;left:81%;}
 	.home-roadmap .el__box li:nth-child(10){top:78.5%;left:10%;}
 }
