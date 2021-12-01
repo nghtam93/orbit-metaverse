@@ -273,6 +273,10 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     border-color: rgba(255,255,255,.2)!important;
 }
 
+.home-tokenomics .table thead th {
+    color: #52FFEA;
+}
+
 /*home-ourteam*/
 .home-roadmap{position:relative;padding:90px 0 80px;background:url(../img/home-roadmap-bg.png) no-repeat;background-size:cover;}
 .home-roadmap .container{position:relative;z-index:1;}
@@ -448,6 +452,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .playtoearn-table .container{position:relative;z-index:1;}
 .playtoearn-table .table,.playtoearn-table .table th{color:#fff;border-color:rgba(255,255,255,.2)!important;}
 
+.playtoearn-table .table thead th {
+    color: #52FFEA;
+}
 /**/
 .playtoearn-block{position:relative;background:linear-gradient(0deg,#1C024D,#1C024D);}
 .playtoearn-block .container{position:relative;z-index:1;}

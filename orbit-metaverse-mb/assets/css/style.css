@@ -277,8 +277,20 @@ margin-bottom: 50px;
 .home-tokenomics .el__box--thumb{position:relative;width:315px;z-index:1;margin:0 auto 60px;}
 .home-tokenomics .el__box--thumb::before{content:'';position:absolute;top:40px;left:-5px;width:286px;height:286px;box-shadow:0px 5px 20px rgba(219,0,255,0.8),inset 0px -4px 0px rgba(0,0,0,0.25);border-radius:50%;background:url(../img/home-tokenomics-img-circle.png) no-repeat;background-size:contain;animation:spinner-rotate 2s linear infinite;}
 .home-tokenomics .dnfix__thumb{padding-top:100%;}
-.home-tokenomics table{background:#fddfb7;border-radius:10px;overflow:hidden;border:1px solid #fff;}
-.home-tokenomics table thead{background:linear-gradient(101.72deg,#C13DFF 6.16%,#321E89 95.73%);color:#fff;}
+.home-tokenomics .table, .home-tokenomics .table th {
+    color: #fff;
+    border-color: rgba(255,255,255,.2)!important;
+}
+
+.home-tokenomics table th{
+    white-space: nowrap;
+}
+.home-tokenomics table th:last-child {
+    min-width: 250px;
+}
+.home-tokenomics .table thead th {
+    color: #52FFEA;
+}
 
 /*home-ourteam*/
 .home-roadmap{position:relative;padding:50px 0 20px;background:url(../img/home-roadmap-bg.png) no-repeat;background-size:cover;overflow:hidden;}
@@ -463,7 +475,9 @@ background-position: center;
 .playtoearn-table{position:relative;padding:60px 0;background:linear-gradient(0deg,#1C024D,#1C024D);background:url(../img/home-orbit-bg.png) no-repeat;background-size: cover;overflow: hidden;}
 .playtoearn-table .container{position:relative;z-index:1;}
 .playtoearn-table .table,.playtoearn-table .table th{color:#fff;border-color:rgba(255,255,255,.2)!important;}
-
+.playtoearn-table .table thead th {
+    color: #52FFEA;
+}
 /**/
 .playtoearn-block{position:relative;
 padding: 60px 0;
