@@ -113,7 +113,7 @@ $(function() {
 	}
 
 	/**/
-
+	// Page play to earn
 	$('.playtoearn-block__slider').slick({
 		rows: 1,
 		slidesToShow: 3,

@@ -259,6 +259,32 @@ $(function() {
         	$('.nav__mobile').addClass('active')
         }
     });
+    // Page play to earn
+    $('.playtoearn-block__slider').slick({
+		rows: 1,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		infinite: true,
+		arrows: true,
+		dots: false,
+		easing: "linear",
+		responsive: [
+		    {
+		      breakpoint: 991,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 575,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		]
+	});
 
 
 	if($('body').hasClass('games')){
