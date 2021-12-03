@@ -131,7 +131,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-story .el__item--thumb:before{position:absolute;top:50%;left:50%;z-index:2;display:block;content:"";width:0;height:0;background:rgba(254,228,104,0.3);border-radius:100%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:0;transition:1s;}
 .home-story .el__item:hover .el__item--thumb:before{width:200%;height:200%;animation:fadeCirce 1s;}
 .home-story .el__item--meta{padding:25px 20px 30px;color:#F8F8F8;}
-.home-story .el__item--title{font-family:iCiel Cadena;font-size:32px;line-height:44px;color:#09FFFF;margin-bottom:15px;}
+.home-story .el__item--title{font-family:iCiel Cadena;font-size:32px;line-height:44px;color:#FFE03D;margin-bottom:15px;}
 .home-story .el__col{display:flex;}
 
 /**/
