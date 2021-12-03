@@ -151,4 +151,18 @@ $(function() {
 		}, 500);
 	}
 
+	//Select Item
+	function dnselect(elm) {
+	    var dnselect_parent = $(elm).closest('.js-dnselect')
+	    $(elm).click(function(e) {
+	        e.preventDefault();
+	        $(elm).closest('.js-dnselect').toggleClass('active');
+	    })
+
+	    $('.js-dnselect').mousedown(function(e){ e.stopPropagation(); });
+
+	    $(document).mousedown(function(e){ $('.js-dnselect').removeClass('active'); });
+	}
+	dnselect('.js-dnselect__label')
+
 });

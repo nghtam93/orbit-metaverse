@@ -14,7 +14,7 @@ p{margin-bottom:0;}
 body{font-family:'Nunito',sans-serif;background:#1A080C;color:#ECE1E1;font-size:16px;line-height:26px;cursor:url(data:image/png;base64,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) 0 0,auto!important;}
 img{max-width:100%;height:auto;}
 h1,h2,h3{font-family:Lalezar;}
-.btn,a,button,.slider__item,.home-roadmap .el__box li,.scrollTop,.btn-video-play{cursor:url(../img/hover.png) 0 0,auto!important;}
+.btn,a,button,.slider__item,.home-roadmap .el__box li,.scrollTop,.btn-video-play,.dnselect__label{cursor:url(../img/hover.png) 0 0,auto!important;}
 .modal-open{overflow:hidden;}
 .wrapper{overflow:hidden;}
 
@@ -382,15 +382,145 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .governance__header{padding:14% 0 8%;background:url(../img/pages/governance-header.png) no-repeat;background-size:100% 100%;}
 .governance__header .entry-title{font-family:iCiel Cadena;text-align:center;font-size:48px;line-height:75px;margin-bottom:24px;background:-webkit-linear-gradient(320deg,#FFE142,#F07C3D);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:0;}
 .governance__content{position:relative;padding:80px 0 100px;background:linear-gradient(180deg,#16072f 0%,#33173C 100%);}
-.governance__content .sc__header{margin-bottom:50px;}
+.governance__content .sc__header{margin-bottom:160px;}
 .governance__content .el__box{position:relative;}
-.governance__content .el__thumb{margin-top:-70px;text-align:center;}
-.el__pet--s1{position:absolute;top:20%;left:13%;width:14%;height:14%;background:url(../img/pages/governance-pet1.png) no-repeat;background-size:contain;animation:float10 4s ease-in-out infinite;}
-.el__pet--s2{position:absolute;top:40%;left:6%;width:11.7%;height:13%;background:url(../img/pages/governance-pet2.png) no-repeat;background-size:contain;animation:float20 5s ease-in-out infinite;}
-.el__pet--s3{position:absolute;top:60%;left:15.5%;width:16.2%;height:16.8%;background:url(../img/pages/governance-pet3.png) no-repeat;background-size:contain;animation:float30 6s ease-in-out infinite;}
-.el__pet--s4{position:absolute;top:20%;right:16%;width:11%;height:12%;background:url(../img/pages/governance-pet4.png) no-repeat;background-size:contain;animation:float10 4s ease-in-out infinite;}
-.el__pet--s5{position:absolute;top:37%;right:0;width:20%;height:21%;background:url(../img/pages/governance-pet5.png) no-repeat;background-size:contain;animation:float20 5s ease-in-out infinite;}
-.el__pet--s6{position:absolute;top:63%;right:15%;width:16%;height:16%;background:url(../img/pages/governance-pet6.png) no-repeat;background-size:contain;animation:float30 6s ease-in-out infinite;}
+
+.governance__box{
+	position: relative;
+	max-width: 558px;
+	margin: 0 auto;
+	padding: 125px 30px 125px;
+	background:url(../img/pages/governance-box.png) no-repeat;
+	background-size: 100% 100%;
+}
+.governance__box .el__header{
+
+    position: absolute;
+    top: -100px;
+    left: -12px;
+    width: 582px;
+}
+.governance__box .el__list{
+	margin-bottom: 55px;
+}
+.governance__box .el__list>li{
+	font-family: Lalezar;
+	display: flex;
+	align-items: center;
+	padding: 22px 22px;
+	margin-bottom: 3px;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 38px;
+	color: #FFFFFF;
+	background: linear-gradient(104.37deg, #4E2A73 -1.15%, #451772 84.53%);
+border-radius: 100px;
+}
+.governance__box .el__item__value{
+	margin-left: auto;
+	background: -webkit-linear-gradient(
+45deg, #FFE142, #F06B23);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+}
+.governance__box .el__item__value small{
+	display: block;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    -webkit-text-fill-color: #f1f1f1;
+}
+.governance__box .el__list>li:nth-child(2n){
+	background: #392A76;
+}
+.governance__box .btn{
+	min-width: 200px;
+}
+/**/
+.dnselect{position:relative;
+
+}
+.dnselect .dnselect__label{
+position: relative;
+	min-width:200px;
+	cursor:pointer;
+	overflow:hidden;
+	text-overflow:ellipsis;white-space:nowrap;
+
+
+box-shadow: 0px 5px 20px rgba(255, 195, 50, 0.3);
+border-radius: 12px;
+
+}
+.dnselect .dnselect__label span{
+	position: relative;
+	z-index: 1;
+	display: block;
+	font-family: Lalezar;
+	padding: 5px 12px 0;
+	background: linear-gradient(154deg, #C13DFF -8.84%, #321E89 94.69%);
+	margin: 2px;
+	border-radius: 12px;
+	font-weight: normal;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.dnselect .dnselect__label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -2px;
+    border-radius: inherit;
+background: linear-gradient(
+136deg, #00FDFF, #22C3FF, #4190FF, #5B64FF, #7040FF, #8124FF,#9600FF);
+}
+
+.dnselect .dnselect__label:after{
+	content: '';
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    width: 18px;
+    height: 18px;
+    background: url(../img/pages/governance-left-arrow.svg) no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.dnselect ul{position:absolute;top:100%;width:100%;left:0;
+	padding:0;font-size:14px;pointer-events:none;opacity:0;
+	background:#5726a7;
+	border: 2px solid #724ab5;
+	border-radius: 8px;
+	transition:all .5s;}
+.dnselect.active ul{opacity:1;pointer-events:inherit;}
+.dnselect ul li{transition:all .5s;}
+.dnselect ul a{cursor:pointer;display:block;padding:6px 10px;color: #fff;}
+.dnselect ul li:not(:last-child){border-bottom:1px solid rgba(0,0,0,.1);}
+.dnselect ul li:hover{
+	    background-color: rgba(0, 0, 0, .2);
+}
+
+
+.el__pet{
+position: absolute;
+z-index: 1;
+pointer-events: none;
+}
+.el__pet--s1{top:20%;left:13%;width:14%;height:14%;;background:url(../img/pages/governance-pet1.png) no-repeat;background-size:contain;animation:float10 4s ease-in-out infinite;}
+.el__pet--s2{top:40%;left:6%;width:11.7%;height:13%;background:url(../img/pages/governance-pet2.png) no-repeat;background-size:contain;animation:float20 5s ease-in-out infinite;}
+.el__pet--s3{top:60%;left:15.5%;width:16.2%;height:16.8%;background:url(../img/pages/governance-pet3.png) no-repeat;background-size:contain;animation:float30 6s ease-in-out infinite;}
+.el__pet--s4{top:20%;right:16%;width:11%;height:12%;background:url(../img/pages/governance-pet4.png) no-repeat;background-size:contain;animation:float10 4s ease-in-out infinite;}
+.el__pet--s5{top:37%;right:0;width:20%;height:21%;background:url(../img/pages/governance-pet5.png) no-repeat;background-size:contain;animation:float20 5s ease-in-out infinite;}
+.el__pet--s6{top:63%;right:15%;width:16%;height:16%;background:url(../img/pages/governance-pet6.png) no-repeat;background-size:contain;animation:float30 6s ease-in-out infinite;}
 
 /*PAge games*/
 .games-banner{position:relative;background-size:cover;background-repeat:no-repeat;text-align:center;background-position:center;padding-top:11%;padding-bottom:7%;}
