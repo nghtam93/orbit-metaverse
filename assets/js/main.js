@@ -245,6 +245,38 @@ $(function() {
 	}
 
 
+		/*
 
+		  1. Getting the hash value from current URL
+		  2. Traversing all tab buttons
+		  3. checking hash attribute with in each href of tab buttons
+		  4. if there click on it to perform hash change
+		   //akhil
+		 */
+		// $(".games-slider").find(".nav-link").last().click();
+
+		var url = document.URL;
+		var hash = url.substring(url.indexOf('#'));
+
+		$(".games-slider").find(".nav-link").each(function(key, val) {
+
+		  if (hash == $(val).data('bs-target')) {
+		  	setTimeout(function(){
+		    	$(val).click();
+		    }, 500);
+		    var slider = $('.gameslider__slick');
+
+  			var number = hash.match(/\d+/);
+
+  			slider[0].slick.slickGoTo(number[0] - 1);
+
+  			console.log(number[0])
+		  }
+
+		  $(val).click(function(ky, vl) {
+		    location.hash = $(this).data('bs-target');
+		  });
+
+		});
 
 });
