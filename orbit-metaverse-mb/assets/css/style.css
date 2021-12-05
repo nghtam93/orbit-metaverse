@@ -423,10 +423,14 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     text-align:center;padding-top:115%;overflow:hidden;
 transition: all .5s;
 }
+.games-banner__bg{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-repeat:no-repeat;background-position:center;pointer-events:none;}
+
 .games-banner .el__wrap{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-content:center;flex-direction:column;}
 .games-banner.-commingsoon{}
 .games-banner .el__logo{margin-bottom:40px;}
-.games-banner .el__comming{position:relative;background:url(../img/pages/tialua-bg.png) no-repeat;background-size:cover;width:400px;height:400px;margin:0 auto;}
+.games-banner .el__comming{
+display: none;
+    position:relative;background:url(../img/pages/tialua-bg.png) no-repeat;background-size:cover;width:400px;height:400px;margin:0 auto;}
 @keyframes scale2{
     0%{transform:scale(1);}
     50%{transform:scale(1.5);}
@@ -442,7 +446,7 @@ transition: all .5s;
 .games-banner .btn{margin-bottom:0;animation:scale 1.5s infinite linear;}
 .games-banner .btn:hover{transform:translateY(0);}
 .games-slider .slider__item{position:relative;opacity:0.6;background:#341B16;border-radius:16px;}
-.games-slider .slider__item img{max-width:100%;}
+.games-slider .slider__item img{max-width:100%;max-height: 100%;}
 .games-slider .slider__item a{display:block;width:100%;}
 /*.games-slider .is-selected .slider__item::before,.games-slider .slider__item:hover::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;margin:-2px;border-radius:inherit;background:linear-gradient(to bottom,#00FDFF,#9600FF);}*/
 .games-slider .slider__item--thumb{position:relative;height:100px;display:flex;align-items:center;background:linear-gradient(180deg,#63109F 0%,#291E60 100%);padding:10px 25px;justify-content:center;border-radius:16px;}
@@ -459,8 +463,13 @@ transition: all .5s;
 .games-system--thumb img{width:100%;}
 .games-maps{padding:50px 0;}
 .games-slider .flickity-prev-next-button{border-radius:0;padding:0;}
-.games-slider .item__wrap{position:relative;padding:5px 9.8px 5px!important;}
-
+.games-slider .item__wrap{position:relative;padding:5px;}
+.games-slider .slick-list {
+    margin: 0 -5px;
+}
+.games-slider .slick-slide {
+    margin: 0 5px;
+}
 /**/
 .games-content__slider .nav-link{
         padding: 0;

@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
 
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -57,8 +57,8 @@
       <section class="games-content">
         <div class="games-content__slider nav" id="gameTab" role="tablist">
           <div class="container">
-            <div class="games-slider" data-current="0" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": true, "pageDots": false }'>
-              <div class="col-12 col-md-6 col-lg-3 item__wrap">
+            <div class="games-slider gameslider__slick">
+              <div class="item__wrap">
                 <div class="slider__item nav-item" role="presentation">
                   <button id="gameTab1-tab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#gameTab1" type="button" role="tab" aria-controls="gameTab1" aria-selected="true">
                     <div class="slider__item--thumb">
@@ -68,7 +68,7 @@
                   </button >
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3 item__wrap">
+              <div class="item__wrap">
                 <div class="slider__item nav-item">
                   <button id="gameTab2-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#gameTab2" type="button" role="tab" aria-controls="gameTab2" aria-selected="false">
                     <div class="slider__item--thumb">
@@ -78,7 +78,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3 item__wrap">
+              <div class="item__wrap">
                 <div class="slider__item nav-item">
                   <button id="gameTab3-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#gameTab3" type="button" role="tab" aria-controls="gameTab3" aria-selected="false">
                     <div class="slider__item--thumb">
@@ -88,7 +88,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3 item__wrap">
+              <div class="item__wrap">
                 <div class="slider__item nav-item">
                   <button id="gameTab4-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#gameTab4" type="button" role="tab" aria-controls="gameTab4" aria-selected="false">
                     <div class="slider__item--thumb">
@@ -98,7 +98,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3 item__wrap">
+              <div class="item__wrap">
                 <div class="slider__item nav-item">
                   <button id="gameTab5-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#gameTab5" type="button" role="tab" aria-controls="gameTab5" aria-selected="false">
                     <div class="slider__item--thumb">
@@ -108,7 +108,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3 item__wrap">
+              <div class="item__wrap">
                 <div class="slider__item nav-item">
                   <button id="gameTab6-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#gameTab6" type="button" role="tab" aria-controls="gameTab6" aria-selected="false">
                     <div class="slider__item--thumb">
@@ -351,15 +351,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="footer__item">
-                  <h3 class="footer__item--title">LEGAL</h3>
-                  <ul class="footer__list">
-                                                    <!--                    <li><a href="">Terms Of Service</a></li>-->
-                                <!--                    <li><a href="">Privacy Policy</a></li>-->
-                  </ul>
-                </div>
-              </div>
+
             </div>
           </div>
 
@@ -381,7 +373,7 @@
               <li class="menu-item"><a href="index.html">HOME</a></li>
               <!-- <li class="menu-item"><a href="governance.html">Governance</a></li> -->
               <li class="menu-item active"><a href="games.html">GAMES</a></li>
-              <li class="menu-item"><a href="#">MARKETPLACE</a></li>
+              <!-- <li class="menu-item"><a href="#">MARKETPLACE</a></li> -->
               <li class="menu-item"><a href="orbit-meta.html">ORBIT META</a></li>
               <li class="menu-item"><a href="https://docs.orbitmeta.io/">WHITEPAPER</a></li>
             </ul>
@@ -390,7 +382,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
     <script type="text/javascript" src="assets/js/firefly.js"></script>
 

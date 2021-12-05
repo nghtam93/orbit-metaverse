@@ -290,12 +290,12 @@ $(function() {
 	}
 
 
-	if($('body').hasClass('games')){
-		var setSliderCurrent = $('.games-slider').data('current')
-		var $carousel = $('.games-slider').flickity()
-		.flickity('next')
-		.flickity( 'select', parseInt(setSliderCurrent)  );
-	}
+	// if($('body').hasClass('games')){
+	// 	var setSliderCurrent = $('.games-slider').data('current')
+	// 	var $carousel = $('.games-slider').flickity()
+	// 	.flickity('next')
+	// 	.flickity( 'select', parseInt(setSliderCurrent)  );
+	// }
 
 	var back_to_top=$(".scrollTop"),offset=220,duration=200;$(window).scroll(function(){
 		$(this).scrollTop()>offset?back_to_top.addClass("active"):back_to_top.removeClass("active")}),
@@ -303,15 +303,36 @@ $(function() {
 		return o.preventDefault(),$("html, body").animate({scrollTop:0},duration),!1
 	});
 
-	if($('.gameslider__flickity').length){
-		setTimeout(function(){
-			$('.gameslider__flickity').flickity({
-				 freeScroll: true,
-				 contain: true,
-				 prevNextButtons: true,
-				 pageDots: false
-			});
-		}, 500);
+	if($('.gameslider__slick').length){
+
+		$('.gameslider__slick').slick({
+			variableWidth: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			infinite: false,
+			arrows: true,
+			dots: false,
+			easing: "linear",
+			responsive: [
+			    {
+			      breakpoint: 991,
+			      settings: {
+			      	variableWidth: false,
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 575,
+			      settings: {
+			      	variableWidth: false,
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
+			    }
+			]
+		});
+
 	}
 
 	//Select Item
@@ -345,7 +366,31 @@ $(function() {
 		}else{
 			$('.games-banner .js-tab-play').hide()
 		}
+	})
 
+	$('#orbitTab .nav-link').on("click",function(e) {
+		$('.nav-link').removeClass('active')
+		$(this).addClass('active')
+
+		var bg = $(this).find('.js-tab-data').data('bg')
+		var logo = $(this).find('.js-tab-data').data('logo')
+		var link = $(this).find('.js-tab-data').data('link')
+
+		$('.games-banner__bg').css("background-image",'url(' + bg + ')')
+		// $('.games-banner .el__logo img').attr("src",logo)
+
+		if(link){
+			$('.games-banner .js-tab-play').show().attr("href",link)
+		}else{
+			$('.games-banner .js-tab-play').hide()
+		}
+		if(logo){
+			$('.games-banner .el__comming').hide()
+			$('.games-banner .el__logo').show().find('img').attr("href",link)
+		}else{
+			$('.games-banner .el__logo').hide()
+			$('.games-banner .el__comming').show()
+		}
 	})
 
 });
