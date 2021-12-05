@@ -237,13 +237,11 @@ $(function() {
 		$('.nav-link').on("click",function(e) {
 			var setSliderCurrent = $(this).data('current')
 			setTimeout(function(){
-				console.log(11111)
 				var $carousel = $('.games-system__carousel').flickity()
 				.flickity('next')
 				.flickity( 'select', parseInt(setSliderCurrent)  );
 			}, 500);
 		})
-
 	}
 
 
