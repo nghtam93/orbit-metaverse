@@ -227,14 +227,11 @@ $(function() {
 		}
 	})
 
-	var games_system__carousel = $('.js-flickity' ).flickity({
-		wrapAround : true,
-		cellAlign : "center",
-		pageDots: false,
-	});
-	$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-	  games_system__carousel.flickity('resize');
-	})
+	if($('.js-flickity').length){
+		$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+		  $('.js-flickity').flickity('resize');
+		})
+	}
 
 
 
