@@ -66,6 +66,9 @@ header.header:after{content:"";position:absolute;right:0;bottom:0;width:100%;hei
 header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(25,8,12,0.7) 57.77%,#33173C 95.34%);}
 .logo{margin-bottom:0;}
 
+.header__right{
+	width: 186px;
+}
 /*
 ======================================
 [ Main menu ]
@@ -426,13 +429,15 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 }
 .games-banner .btn{margin-bottom:50px;animation:scale 1.5s infinite linear;}
 .games-banner .btn:hover{transform:translateY(0);}
-.games-slider .slider__item{position:relative;opacity:0.6;background:#341B16;border-radius:16px;}
+
 .games-slider .slider__item img{max-width:initial;}
 .games-slider .slider__item a{display:block;width:100%;}
-.games-slider .is-selected .slider__item::before,.games-slider .slider__item:hover::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;margin:-2px;border-radius:inherit;background:linear-gradient(to bottom,#00FDFF,#9600FF);}
-.games-slider .slider__item--thumb{position:relative;height:124px;display:flex;align-items:center;background:linear-gradient(180deg,#63109F 0%,#291E60 100%);padding:10px 25px;justify-content:center;border-radius:16px;}
-.games-slider .is-selected .slider__item,.games-slider .slider__item:hover{opacity:1;}
-.games-content{background:url(../img/pages/game-roadmap-bg.png) no-repeat;background-size:cover;padding-bottom:50px;}
+.games-slider .slider__item--thumb{position:relative;height:124px;display:flex;
+	align-items:center;background:linear-gradient(180deg,#63109F 0%,#291E60 100%);padding:10px 25px;
+	justify-content:center;border-radius:16px;
+}
+
+.games-content{background:url(../img/pages/game-roadmap-bg.png) no-repeat;background-size:cover;background-position: top;}
 .games-content .sc__header{text-transform:uppercase;}
 .games-content__slider{margin-bottom:90px;overflow:hidden;}
 .games-content .el__excerpt{max-width:875px;margin:0 auto 100px;}
@@ -445,7 +450,15 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-roadmap{padding:50px 0;}
 
 /**/
-.games-content__slider .nav-link{padding:0;}
+.games-content__slider .nav-link{
+	    padding: 0;
+    border: 0;
+    width: 100%;
+    border-radius: 16px;
+}
+.games-slider .nav-link{position:relative;opacity:0.6;background:#341B16;border-radius:16px;}
+.games-slider .nav-link.active::before,.games-slider .nav-link.active:hover::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;margin:-2px;border-radius:inherit;background:linear-gradient(to bottom,#00FDFF,#9600FF);}
+.games-slider .nav-link.active,.games-slider .nav-link.active:hover{opacity:1;}
 
 /*PAge games*/
 .play-to-earn__link{position:fixed;bottom:30px;right:30px;z-index:99;animation:pulse 2s infinite;}

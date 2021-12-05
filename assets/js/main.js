@@ -165,4 +165,11 @@ $(function() {
 	}
 	dnselect('.js-dnselect__label')
 
+
+	// Fix tab boostrap
+	$('#gameTab .nav-link').on("click",function(e) {
+		$('.nav-link').removeClass('active')
+		$(this).addClass('active')
+	})
+
 });
