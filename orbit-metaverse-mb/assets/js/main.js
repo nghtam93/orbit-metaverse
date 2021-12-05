@@ -309,7 +309,7 @@ $(function() {
 			variableWidth: true,
 			slidesToShow: 3,
 			slidesToScroll: 1,
-			infinite: false,
+			infinite: true,
 			arrows: true,
 			dots: false,
 			easing: "linear",

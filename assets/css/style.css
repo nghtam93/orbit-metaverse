@@ -346,8 +346,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 
 /**/
 .home-adpa-group{position:relative;}
-.home-adpa-group:before{content:'';position:absolute;top:-35%;left:0;width:100%;height:calc(100% + -35%);background:linear-gradient(180deg,rgba(52,40,118,0) 9.58%,rgba(49,34,102,0.86) 22.77%,#312266 27.23%,#33173C 69.73%);pointer-events:none;}
-.home-adpa-group:after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url(../img/home-adpa-group.png) no-repeat;background-size:cover;pointer-events:none;}
+.home-adpa-group:before{content:'';position:absolute;top:-35%;left:0;width:100%;height:120%;background:linear-gradient(180deg,rgba(52,40,118,0) 9.58%,rgba(49,34,102,0.86) 22.77%,#312266 27.23%,#33173C 69.73%);pointer-events:none;}
+.home-adpa-group:after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;
+	background:url(../img/home-adpa-group.png) no-repeat;background-size: 100% 100%;pointer-events:none;}
 
 /**/
 .home-advisors{position:relative;z-index:1;padding:100px 0 50px;}
