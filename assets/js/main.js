@@ -175,7 +175,6 @@ $(function() {
 		var logo = $(this).find('.js-tab-data').data('logo')
 		var link = $(this).find('.js-tab-data').data('link')
 
-		console.log(bg + logo + link)
 		$('.games-banner').css("background-image",'url(' + bg + ')')
 		$('.games-banner .el__logo img').attr("src",logo)
 
