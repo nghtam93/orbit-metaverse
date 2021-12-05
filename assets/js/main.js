@@ -170,6 +170,21 @@ $(function() {
 	$('#gameTab .nav-link').on("click",function(e) {
 		$('.nav-link').removeClass('active')
 		$(this).addClass('active')
+
+		var bg = $(this).find('.js-tab-data').data('bg')
+		var logo = $(this).find('.js-tab-data').data('logo')
+		var link = $(this).find('.js-tab-data').data('link')
+
+		console.log(bg + logo + link)
+		$('.games-banner').css("background-image",'url(' + bg + ')')
+		$('.games-banner .el__logo img').attr("src",logo)
+
+		if(link){
+			$('.games-banner .js-tab-play').show().attr("href",link)
+		}else{
+			$('.games-banner .js-tab-play').hide()
+		}
+
 	})
 
 });
