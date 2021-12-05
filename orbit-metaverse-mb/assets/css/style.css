@@ -284,7 +284,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-roadmap-slider{background:url(../img/home-roadmap-paper.png) no-repeat;background-size:contain;width:100%;height:100%;max-width:400px;margin:0 auto;}
 .home-roadmap-slider .slider__item{text-align:center;padding:0 17% 0 15%;height:var(--height);display:flex!important;align-items:center;justify-content:center;}
 .home-roadmap-slider .slider__item--title{font-family:Lalezar;font-weight:normal;font-size:30px;line-height:47px;letter-spacing:0.05em;color:#963302;margin-bottom:5px;}
-.home-roadmap-slider .slider__item--excerpt{font-weight:bold;font-size:18px;line-height:30px;letter-spacing:0.05em;color:#A05530;}
+.home-roadmap-slider .slider__item--excerpt{text-align:left;font-weight:bold;font-size:18px;line-height:30px;letter-spacing:0.05em;color:#A05530;}
 
 /**/
 .home-roadmap .el__box__wrap{max-width:414px;margin:100px auto 0;}
