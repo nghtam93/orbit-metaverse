@@ -346,7 +346,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 
 /**/
 .home-adpa-group{position:relative;}
-.home-adpa-group:before{content:'';position:absolute;top:-35%;left:0;width:100%;height:calc(100% + 29%);background:linear-gradient(180deg,rgba(52,40,118,0) 9.58%,rgba(49,34,102,0.86) 22.77%,#312266 27.23%,#33173C 69.73%);pointer-events:none;}
+.home-adpa-group:before{content:'';position:absolute;top:-35%;left:0;width:100%;height:calc(100% + -35%);background:linear-gradient(180deg,rgba(52,40,118,0) 9.58%,rgba(49,34,102,0.86) 22.77%,#312266 27.23%,#33173C 69.73%);pointer-events:none;}
 .home-adpa-group:after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url(../img/home-adpa-group.png) no-repeat;background-size:cover;pointer-events:none;}
 
 /**/
@@ -457,46 +457,11 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 
 /*page orbit-meta*/
 .orbit-meta__banner{position:relative;}
-.games-system__slider{
-	margin-bottom: 50px;
-}
-.games-system__slider .dnfix__thumb{
-	max-width: 150px;
-	padding-top: 100%;
-	margin: 0 auto;
-	transition: all .5s;
-}
-
-.games-system__slider .slick-center .dnfix__thumb{
-	max-width: 100%;
-	padding-top: 100%;
-}
-
-
-.games-system__carousel{
-	padding-bottom: 50px;
-}
-.games-system__carousel:focus-visible{
-	outline: none;
-}
-.games-system__carousel .item__wrap{
-	padding: 100px 0;
-}
-.games-system__carousel .dnfix__thumb{
-	max-width: 180px;
-	padding-top: 100%;
-	margin: 0 auto;
-	transition: all .5s;
-}
-
-.games-system__carousel .is-selected .dnfix__thumb{
-	max-width: 100%;
-	padding-top: 100%;
-	transform: scale(1.3);
-}
-
-
-
+.games-system__carousel{padding-bottom:50px;}
+.games-system__carousel:focus-visible{outline:none;}
+.games-system__carousel .item__wrap{padding:100px 0;}
+.games-system__carousel .dnfix__thumb{max-width:180px;padding-top:100%;margin:0 auto;transition:all .5s;}
+.games-system__carousel .is-selected .dnfix__thumb{max-width:100%;padding-top:100%;transform:scale(1.1);}
 
 /*PAge games*/
 .play-to-earn__link{position:fixed;bottom:30px;right:30px;z-index:99;animation:pulse 2s infinite;}
