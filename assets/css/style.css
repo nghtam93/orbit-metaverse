@@ -476,8 +476,14 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-system__carousel{
 	padding-bottom: 50px;
 }
+.games-system__carousel:focus-visible{
+	outline: none;
+}
+.games-system__carousel .item__wrap{
+	padding: 100px 0;
+}
 .games-system__carousel .dnfix__thumb{
-	max-width: 150px;
+	max-width: 180px;
 	padding-top: 100%;
 	margin: 0 auto;
 	transition: all .5s;
@@ -486,6 +492,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-system__carousel .is-selected .dnfix__thumb{
 	max-width: 100%;
 	padding-top: 100%;
+	transform: scale(1.3);
 }
 
 
