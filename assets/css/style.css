@@ -450,7 +450,7 @@ transition: all .5s;
 .games-banner .btn{margin-bottom:50px;animation:scale 1.5s infinite linear;}
 .games-banner .btn:hover{transform:translateY(0);}
 
-.games-slider .slider__item img{max-width:initial;}
+.games-slider .slider__item img{max-width:100%;}
 .games-slider .slider__item a{display:block;width:100%;}
 .games-slider .slider__item--thumb{position:relative;height:124px;display:flex;
 	align-items:center;background:linear-gradient(180deg,#63109F 0%,#291E60 100%);padding:10px 25px;
