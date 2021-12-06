@@ -484,7 +484,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 /*Game orbit*/
 .g-treasure .sc__header{margin-bottom:50px;}
 .g-treasure__characters{padding-bottom:0;}
-.g-treasure .el__slider{margin:0 auto 0px;}
+.g-treasure .el__slider{margin:0 auto 50px;}
 .g-treasure .el__slider .dnfix__thumb{padding-top:123%;}
 .g-treasure__pet{position:relative;padding:80px 0 40px;background:url(../img/home-orbit-bg.png) no-repeat;background-size:cover;overflow:hidden;}
 .g-treasure__pet .container{
@@ -745,6 +745,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     .nav__mobile{
         width:100%;
     }
+    .g-treasure .el__slider{margin:0 auto 30px;}
 
     .g-treasure__pet .slider__item__thumb {
         max-width: 90%;
