@@ -245,38 +245,36 @@ $(function() {
 	}
 
 
-		/*
+	/*page slider dao*/
+	var url = document.URL;
+	var hash = url.substring(url.indexOf('#'));
 
-		  1. Getting the hash value from current URL
-		  2. Traversing all tab buttons
-		  3. checking hash attribute with in each href of tab buttons
-		  4. if there click on it to perform hash change
-		   //akhil
-		 */
-		// $(".games-slider").find(".nav-link").last().click();
+	$(".games-slider").find(".nav-link").each(function(key, val) {
 
-		var url = document.URL;
-		var hash = url.substring(url.indexOf('#'));
+	  if (hash == $(val).data('bs-target')) {
 
-		$(".games-slider").find(".nav-link").each(function(key, val) {
+	  	setTimeout(function(){
+	    	$(val).click();
 
-		  if (hash == $(val).data('bs-target')) {
-		  	setTimeout(function(){
-		    	$(val).click();
-		    }, 500);
-		    var slider = $('.gameslider__slick');
+			 $(".tab-pane").removeClass("show active");
+			$(hash).addClass("show active");
 
-  			var number = hash.match(/\d+/);
+	    }, 500);
+	    var slider = $('.gameslider__slick');
 
-  			slider[0].slick.slickGoTo(number[0] - 1);
+			var number = hash.match(/\d+/);
 
-  			console.log(number[0])
-		  }
+			if(number[0] >=4){
+				slider[0].slick.slickGoTo(3);
+			}else{
+				slider[0].slick.slickGoTo(number[0] - 1);
+			}
 
-		  $(val).click(function(ky, vl) {
-		    location.hash = $(this).data('bs-target');
-		  });
+	  }
 
-		});
+	  $(val).click(function(ky, vl) {
+	    location.hash = $(this).data('bs-target');
+	  });
 
+	});
 });

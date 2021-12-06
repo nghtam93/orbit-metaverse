@@ -393,4 +393,38 @@ $(function() {
 		}
 	})
 
+	/*page slider dao*/
+	var url = document.URL;
+	var hash = url.substring(url.indexOf('#'));
+
+	$(".games-slider").find(".nav-link").each(function(key, val) {
+
+	  if (hash == $(val).data('bs-target')) {
+console.log(val)
+	  	setTimeout(function(){
+	    	$(hash).click();
+
+			 $(".tab-pane").removeClass("show active");
+			$(hash).addClass("show active");
+
+	    }, 500);
+	    var slider = $('.gameslider__slick');
+
+			var number = hash.match(/\d+/);
+
+			if(number[0] >=4){
+				slider[0].slick.slickGoTo(3);
+			}else{
+				slider[0].slick.slickGoTo(number[0] - 1);
+			}
+
+	  }
+
+	  $(val).click(function(ky, vl) {
+	    location.hash = $(this).data('bs-target');
+	  });
+
+	});
+
+
 });
