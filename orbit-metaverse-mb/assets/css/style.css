@@ -694,6 +694,12 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     .neon-glow{
         display: none
     }
+    .home-ourteam .nav-item:not(:last-child) {
+        margin-right: 15px;
+    }
+    .home-ourteam .nav-link {
+        padding: 14px 25px;
+    }
 }
 @media (max-width:767px){
     .governance__box .el__header{top:-100px;left:0;max-width:100%;}
