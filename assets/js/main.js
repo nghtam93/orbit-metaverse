@@ -244,14 +244,24 @@ $(function() {
 		});
 
 
-		$('.g-treasure__slider').slick({
+		$('.g-treasure__characters .el__slider').slick({
 			infinite: true,
 			slidesToShow: 4,
-			slidesToScroll: 4,
+			slidesToScroll: 1,
 			arrows: true,
 			dots: false,
 			// easing: "linear"
 		});
+
+		// $('.g-treasure__pet .el__slider').slick({
+		// 	centerMode: true,
+		// 	infinite: true,
+		// 	slidesToShow: 5,
+		// 	slidesToScroll: 1,
+		// 	arrows: true,
+		// 	dots: false,
+		// 	// easing: "linear"
+		// });
 	}
 
 
