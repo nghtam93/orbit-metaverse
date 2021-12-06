@@ -691,6 +691,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .nav__mobile .nav__mobile__follow{font-weight:bold;font-size:14px;line-height:21px;text-transform:uppercase;color:#7C7E99}
 @media (max-width:991px){
     .el__pet{display:none}
+    .neon-glow{
+        display: none
+    }
 }
 @media (max-width:767px){
     .governance__box .el__header{top:-100px;left:0;max-width:100%;}
