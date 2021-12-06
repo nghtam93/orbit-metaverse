@@ -241,7 +241,17 @@ $(function() {
 				.flickity('next')
 				.flickity( 'select', parseInt(setSliderCurrent)  );
 			}, 500);
-		})
+		});
+
+
+		$('.g-treasure__slider').slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			arrows: true,
+			dots: false,
+			// easing: "linear"
+		});
 	}
 
 
