@@ -386,7 +386,21 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .governance__box .el__item__value small{display:block;font-size:16px;line-height:25px;color:#FFFFFF;-webkit-text-fill-color:#f1f1f1;}
 .governance__box .el__list>li:nth-child(2n){background:#392A76;}
 .governance__box .btn{min-width:200px;}
-.governance__box input{    padding: 11px 10px;}
+.governance__box input{
+    font-family: Lalezar;
+    padding: 15px 0 10px;
+    border-radius: 30px;
+    border: 0;
+    background: #340d5a;
+    text-align: center;
+}
+.governance__box input:focus{
+	background: #340d5a;
+	color: #fff;
+}
+.governance__box input::-webkit-input-placeholder {
+	color: #fff;
+}
 /**/
 .dnselect{position:relative;}
 .dnselect .dnselect__label{position:relative;min-width:200px;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;box-shadow:0px 5px 20px rgba(255,195,50,0.3);border-radius:12px;}
@@ -456,6 +470,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-slider .nav-link.active,.games-slider .nav-link.active:hover{opacity:1;}
 
 /*Game orbit*/
+.g-treasure__slider{
+	padding-bottom: 50px;
+}
 .g-treasure__slider .dnfix__thumb {
     padding-top: 123%;
 }
