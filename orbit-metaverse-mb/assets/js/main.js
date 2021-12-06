@@ -400,11 +400,11 @@ $(function() {
 	$(".games-slider").find(".nav-link").each(function(key, val) {
 
 	  if (hash == $(val).data('bs-target')) {
-console.log(val)
-	  	setTimeout(function(){
-	    	$(hash).click();
 
-			 $(".tab-pane").removeClass("show active");
+	  	setTimeout(function(){
+	    	$(hash+'-tab').click();
+
+			$(".tab-pane").removeClass("show active");
 			$(hash).addClass("show active");
 
 	    }, 500);

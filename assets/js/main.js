@@ -254,9 +254,9 @@ $(function() {
 	  if (hash == $(val).data('bs-target')) {
 
 	  	setTimeout(function(){
-	    	$(val).click();
+	    	$(hash+'-tab').click();
 
-			 $(".tab-pane").removeClass("show active");
+			$(".tab-pane").removeClass("show active");
 			$(hash).addClass("show active");
 
 	    }, 500);
