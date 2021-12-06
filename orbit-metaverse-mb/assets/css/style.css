@@ -391,13 +391,27 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .governance__content .el__box{position:relative;}
 .governance__box{position:relative;max-width:558px;margin:0 auto;padding:125px 30px 125px;background:url(../img/pages/governance-box.png) no-repeat;background-size:100% 100%;}
 .governance__box .el__header{position:absolute;top:-100px;left:-12px;width:582px;}
-.governance__box .el__list{margin-bottom:55px;}
+.governance__box .el__list{margin-bottom:15px;}
 .governance__box .el__list>li{font-family:Lalezar;display:flex;align-items:center;padding:22px 22px;margin-bottom:3px;font-weight:normal;font-size:24px;line-height:38px;color:#FFFFFF;background:linear-gradient(104.37deg,#4E2A73 -1.15%,#451772 84.53%);border-radius:100px;}
 .governance__box .el__item__value{margin-left:auto;background:-webkit-linear-gradient(45deg,#FFE142,#F06B23);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:right;}
 .governance__box .el__item__value small{display:block;font-size:16px;line-height:25px;color:#FFFFFF;-webkit-text-fill-color:#f1f1f1;}
 .governance__box .el__list>li:nth-child(2n){background:#392A76;}
 .governance__box .btn{min-width:200px;}
-
+.governance__box input{
+    font-family: Lalezar;
+    padding: 15px 0 10px;
+    border-radius: 30px;
+    border: 0;
+    background: #340d5a;
+    text-align: center;
+}
+.governance__box input:focus{
+    background: #340d5a;
+    color: #fff;
+}
+.governance__box input::-webkit-input-placeholder {
+    color: #fff;
+}
 /**/
 .dnselect{position:relative;width:200px;z-index:1;}
 .dnselect .dnselect__label{position:relative;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;box-shadow:0px 5px 20px rgba(255,195,50,0.3);border-radius:12px;}
@@ -711,7 +725,6 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     .nav__mobile{width:100%;}
     .governance__box .el__header{top:-65px;}
     .governance__box{padding:100px 15px 60px;min-width:100%;}
-    .governance__box .el__list{margin-bottom:30px;}
     .governance__box .el__list>li{padding:12px 15px;margin-bottom:3px;font-size:14px;line-height:18px;border-radius:100px;}
     .governance__box .btn span{font-family:Lalezar;font-weight:normal;font-size:14px;line-height:34px;text-align:center;color:#FFFFFF;}
     .governance__box .dnselect .dnselect__label span{padding:5px 12px 0;font-size:14px;line-height:34px;}
