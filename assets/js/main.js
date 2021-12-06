@@ -253,15 +253,6 @@ $(function() {
 			// easing: "linear"
 		});
 
-		// $('.g-treasure__pet .el__slider').slick({
-		// 	centerMode: true,
-		// 	infinite: true,
-		// 	slidesToShow: 5,
-		// 	slidesToScroll: 1,
-		// 	arrows: true,
-		// 	dots: false,
-		// 	// easing: "linear"
-		// });
 	}
 
 

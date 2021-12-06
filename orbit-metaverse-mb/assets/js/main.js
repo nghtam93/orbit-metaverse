@@ -290,12 +290,6 @@ $(function() {
 	}
 
 
-	// if($('body').hasClass('games')){
-	// 	var setSliderCurrent = $('.games-slider').data('current')
-	// 	var $carousel = $('.games-slider').flickity()
-	// 	.flickity('next')
-	// 	.flickity( 'select', parseInt(setSliderCurrent)  );
-	// }
 
 	var back_to_top=$(".scrollTop"),offset=220,duration=200;$(window).scroll(function(){
 		$(this).scrollTop()>offset?back_to_top.addClass("active"):back_to_top.removeClass("active")}),
@@ -391,7 +385,58 @@ $(function() {
 			$('.games-banner .el__logo').hide()
 			$('.games-banner .el__comming').show()
 		}
-	})
+	});
+
+	if($('.js-flickity').length){
+		$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+		  $('.js-flickity').flickity('resize');
+		})
+	}
+
+	if($('body').hasClass('games')){
+		// $('.nav-link').on("click",function(e) {
+		// 	var setSliderCurrent = $(this).data('current')
+		// 	console.log(1111)
+		// 	setTimeout(function(){
+		// 		$('.games-system__carousel').flickity()
+		// 		.flickity('next')
+		// 		.flickity( 'select', parseInt(setSliderCurrent)  );
+		// 	}, 500);
+		// });
+
+
+		$('.g-treasure__characters .el__slider').slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			arrows: true,
+			dots: false,
+			responsive: [
+			    {
+			      breakpoint: 991,
+			      settings: {
+			      	variableWidth: false,
+			        slidesToShow: 3,
+			      }
+			    },
+			    {
+			      breakpoint: 767,
+			      settings: {
+			      	variableWidth: false,
+			        slidesToShow: 2,
+			      }
+			    },
+			    {
+			      breakpoint: 575,
+			      settings: {
+			      	variableWidth: false,
+			        slidesToShow: 1,
+			      }
+			    }
+			]
+		});
+
+	}
 
 	/*page slider dao*/
 	var url = document.URL;
@@ -406,17 +451,16 @@ $(function() {
 
 			$(".tab-pane").removeClass("show active");
 			$(hash).addClass("show active");
-
+			$('.js-flickity').flickity('resize');
 	    }, 500);
 	    var slider = $('.gameslider__slick');
+		var number = hash.match(/\d+/);
 
-			var number = hash.match(/\d+/);
-
-			if(number[0] >=4){
-				slider[0].slick.slickGoTo(3);
-			}else{
-				slider[0].slick.slickGoTo(number[0] - 1);
-			}
+		if(number[0] >=4){
+			slider[0].slick.slickGoTo(3);
+		}else{
+			slider[0].slick.slickGoTo(number[0] - 1);
+		}
 
 	  }
 
