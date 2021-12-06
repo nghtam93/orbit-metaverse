@@ -471,7 +471,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-system__carousel{padding-bottom:50px;}
 .games-system__carousel:focus-visible{outline:none;}
 .games-system__carousel .item__wrap{padding:100px 0;}
-.games-system__carousel .dnfix__thumb{max-width: 60%;padding-top:100%;margin:0 auto;transition:all .5s;}
+.games-system__carousel .dnfix__thumb{max-width:60%;padding-top:100%;margin:0 auto;transition:all .5s;}
 .games-system__carousel .is-selected .dnfix__thumb{max-width:100%;transform:scale(1.1);}
 
 /*PAge games*/
@@ -691,36 +691,21 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .nav__mobile .nav__mobile__follow{font-weight:bold;font-size:14px;line-height:21px;text-transform:uppercase;color:#7C7E99}
 @media (max-width:991px){
     .el__pet{display:none}
-    .neon-glow{
-        display: none
-    }
-    .home-ourteam .nav-item:not(:last-child) {
-        margin-right: 15px;
-    }
-    .home-ourteam .nav-link {
-        padding: 14px 25px;
-    }
+    .neon-glow{display:none}
+    .home-ourteam .nav-item:not(:last-child){margin-right:15px;}
+    .home-ourteam .nav-link{padding:14px 25px;}
 }
 @media (max-width:767px){
     .governance__box .el__header{top:-100px;left:0;max-width:100%;}
-
-    .home-tokenomics .el__box--price {
-        font-size: 38px;
-        line-height: 58px;
-    }
-
+    .home-tokenomics .el__box--price{font-size:38px;line-height:58px;}
 }
 @media (max-width:575px){
     .governance__box .btn{margin-bottom:16px}
     .dnselect{margin:0 auto;}
-
     .games-system__carousel .item__wrap{padding:50px 0;}
-    .games-system__carousel .dnfix__thumb{max-width: 100%;margin:0 auto;transition:all .5s;}
+    .games-system__carousel .dnfix__thumb{max-width:100%;margin:0 auto;transition:all .5s;}
     .games-system__carousel .is-selected .dnfix__thumb{max-width:100%;padding-top:100%;transform:scale(1.0);}
-    .home-tokenomics .el__box{
-        font-size: 14px;
-    }
-
+    .home-tokenomics .el__box{font-size:14px;}
 }
 @media (max-width:480px){
     .nav__mobile{width:100%;}
