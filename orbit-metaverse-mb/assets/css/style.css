@@ -388,7 +388,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .home-partners .slider__item:hover{box-shadow:0px 0px 10px #d783ff;}
 
 /*Page governance*/
-.governance__header{padding:14% 0 8%;background:url(../img/pages/governance-header.png) no-repeat;background-size:100% 100%;}
+.governance__header{padding:200px 0 20px;background:url(../img/pages/governance-header.png) no-repeat;background-size:100% 100%;}
 .governance__header .entry-title{font-family:iCiel Cadena;text-align:center;font-size:48px;line-height:75px;margin-bottom:24px;background:-webkit-linear-gradient(320deg,#FFE142,#F07C3D);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:0;}
 .governance__content{position:relative;padding:80px 0 100px;background:linear-gradient(180deg,#16072f 0%,#33173C 100%);}
 .governance__content .sc__header{margin-bottom:160px;}
@@ -484,9 +484,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 /*Game orbit*/
 .g-treasure .sc__header{margin-bottom:50px;}
 .g-treasure__characters{padding-bottom:0;}
-.g-treasure .el__slider{margin:0 auto 50px;}
+.g-treasure .el__slider{margin:0 auto 0px;}
 .g-treasure .el__slider .dnfix__thumb{padding-top:123%;}
-.g-treasure__pet{position:relative;padding:80px 0 80px;background:url(../img/home-orbit-bg.png) no-repeat;background-size:cover;overflow:hidden;}
+.g-treasure__pet{position:relative;padding:80px 0 40px;background:url(../img/home-orbit-bg.png) no-repeat;background-size:cover;overflow:hidden;}
 .g-treasure__pet .container{
     position: relative;
     z-index: 1;
@@ -495,7 +495,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .g-treasure__pet .el__slider .dnfix__thumb{padding-top:100%;}
 .g-treasure__pet .dnfix__thumb{max-width:50%;margin:0 auto;transition:all .5s;}
 .g-treasure__pet .is-selected .dnfix__thumb{max-width:100%;}
-.g-treasure__discover{position:relative;padding:80px 0;}
+.g-treasure__discover{position:relative;padding:60px 0 80px;}
 .g-treasure__discover:before{content:'';position:absolute;top:-10%;left:0;width:100%;height:45%;background:linear-gradient(180.27deg,rgba(61,25,104,0) 1.36%,#2a0d57 17.25%,#240a47 32%,rgba(51,23,60,0) 88.28%);pointer-events:none;}
 .g-treasure__discover .container{position:relative;z-index:1;}
 .g-treasure__discover .el__list{display:flex;align-items:center;justify-content:center;    flex-wrap: wrap;margin-bottom:35px;}
@@ -745,6 +745,12 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     .nav__mobile{
         width:100%;
     }
+
+    .g-treasure__pet .slider__item__thumb {
+        max-width: 90%;
+        margin: auto;
+    }
+
 
     .governance__box .btn{margin-bottom:16px}
     .dnselect{margin:0 auto;}
