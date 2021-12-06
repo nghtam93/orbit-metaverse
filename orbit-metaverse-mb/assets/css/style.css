@@ -717,12 +717,13 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     .games-system__carousel .item__wrap{padding:50px 0;}
     .games-system__carousel .dnfix__thumb{max-width: 100%;margin:0 auto;transition:all .5s;}
     .games-system__carousel .is-selected .dnfix__thumb{max-width:100%;padding-top:100%;transform:scale(1.0);}
-
+    .home-tokenomics .el__box{
+        font-size: 14px;
+    }
 
 }
 @media (max-width:480px){
     .nav__mobile{width:100%;}
-    .governance__content .sc__header{        /*margin-bottom: 100px;*/}
     .governance__box .el__header{top:-65px;}
     .governance__box{padding:100px 15px 60px;min-width:100%;}
     .governance__box .el__list{margin-bottom:30px;}
