@@ -1,7 +1,7 @@
 $(function() {
 
 	$('body').addClass('modal-open')
-	$(window).on('load', function() {
+	$( document ).ready(function() {
 	  $('.loading-page__logo').fadeOut();
 	  $('.loading-page').delay(350).fadeOut('slow');
 	  $('body').removeClass('modal-open')
@@ -258,17 +258,16 @@ $(function() {
 
 			$(".tab-pane").removeClass("show active");
 			$(hash).addClass("show active");
-
+			$('.js-flickity').flickity('resize');
 	    }, 500);
 	    var slider = $('.gameslider__slick');
+		var number = hash.match(/\d+/);
 
-			var number = hash.match(/\d+/);
-
-			if(number[0] >=4){
-				slider[0].slick.slickGoTo(3);
-			}else{
-				slider[0].slick.slickGoTo(number[0] - 1);
-			}
+		if(number[0] >=4){
+			slider[0].slick.slickGoTo(3);
+		}else{
+			slider[0].slick.slickGoTo(number[0] - 1);
+		}
 
 	  }
 
