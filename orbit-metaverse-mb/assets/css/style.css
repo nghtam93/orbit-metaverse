@@ -736,7 +736,11 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     .home-ourteam .slick-next{right:-10px;}
     .home-ourteam .slick-prev{left:-10px;}
     .nav__mobile{width:100%;}
-    .home-ourteam .nav-tabs{margin-left:calc(-1.5rem + -12px);padding-left:calc(1.5rem + 12px);margin-right:calc(-1.5rem + -12px);}
+    .home-ourteam .nav-tabs{
+
+        margin-left:calc(-1.5rem + -12px);margin-right:calc(-1.5rem + -12px);
+        padding-left:calc(1.5rem + 12px);padding-right:calc(1.5rem + 12px);
+    }
     .g-treasure .el__slider{margin:0 auto 30px;}
     .g-treasure__pet .slider__item__thumb{max-width:90%;margin:auto;}
     .governance__box .btn{margin-bottom:16px}
