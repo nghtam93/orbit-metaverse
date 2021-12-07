@@ -211,7 +211,6 @@ $(function() {
 		var link = $(this).find('.js-tab-data').data('link')
 
 		$('.games-banner__bg').css("background-image",'url(' + bg + ')')
-		// $('.games-banner .el__logo img').attr("src",logo)
 
 		if(link){
 			$('.games-banner .js-tab-play').show().attr("href",link)
