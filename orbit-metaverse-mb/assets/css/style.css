@@ -615,8 +615,39 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .dnselect2{position:relative;font-size:14px;}
 .dnselect2__label{padding:4px 40px 4px 15px;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:linear-gradient(90.11deg,rgba(59,238,241,0.4) 5.31%,rgba(78,21,137,0.4) 99.94%);border-radius:8px;font-family:Nunito;font-style:normal;font-weight:800;font-size:18px;line-height:40px;text-transform:uppercase;color:#F8F8F8;}
 .dnselect2__label:before{content:'';position:absolute;top:17px;right:15px;background:url(../img/pages/select-arrow.svg) no-repeat;background-size:contain;width:18px;height:18px;}
-.dnselect2 ul{margin-top:10px;width:100%;left:0;padding:0;font-size:14px;pointer-events:none;opacity:0;background:#383083;transition:all .5s;font-family:Nunito;font-weight:normal;font-size:18px;line-height:45px;padding:15px 15px;color:#FFFFFF;border-radius:8px;z-index:1;height:0;    /*display: none;*/transform-origin:top;transform:rotateX(90deg);-webkit-transform:rotateX(90deg);transition:all .5s;}
-.dnselect2.active ul{opacity:1;pointer-events:inherit;transform:rotateY(0);-webkit-transform:rotateY(0);display:block;height:100%;}
+.dnselect2 ul{margin-top:10px;width:100%;
+height: 300px;
+overflow: auto;
+    left:0;padding:0;font-size:14px;pointer-events:none;opacity:0;background:#383083;transition:all .5s;
+    font-family:Nunito;font-weight:normal;font-size:18px;line-height:45px;padding:15px 15px;color:#FFFFFF;
+    border-radius:8px;z-index:1;transform-origin:top;transform:rotateX(90deg);-webkit-transform:rotateX(90deg);
+    transition:all .5s;}
+/* width */
+.dnselect2 ul::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+/* Track */
+.dnselect2 ul::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+.dnselect2 ul::-webkit-scrollbar-thumb {
+  background: #4f73f9;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.dnselect2 ul::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+
+.dnselect2.active ul{opacity:1;pointer-events:inherit;transform:rotateY(0);-webkit-transform:rotateY(0);
+}
 .dnselect2 ul li{transition:all .5s;border-radius:8px;}
 .dnselect2 ul li:not(:last-child){margin-bottom:2px;}
 .dnselect2 ul label{cursor:pointer;display:block;padding:0px 20px;}
