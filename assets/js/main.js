@@ -182,6 +182,27 @@ $(function() {
 	}
 	dnselect('.js-dnselect__label')
 
+	//Select 2 Item
+	function dnselect2(elm) {
+	    var dnselect_parent = $(elm).closest('.js-dnselect2')
+	    $(elm).click(function(e) {
+	        e.preventDefault();
+	        $(elm).closest('.js-dnselect2').toggleClass('active');
+	    })
+	    dnselect_parent.find('li').on("click",function(e) {
+	        var text = $(this).text()
+	        dnselect_parent.find('li').removeClass('active')
+	        $(this).addClass('active')
+	        dnselect_parent.removeClass('active')
+	        dnselect_parent.find('.js-dnselect2__label').text(text)
+	    })
+	    $('.js-dnselect2').mousedown(function(e){ e.stopPropagation(); });
+
+	    $(document).mousedown(function(e){ $('.js-dnselect2').removeClass('active'); });
+	}
+	dnselect2('.js-dnselect2__label')
+
+
 
 	// Fix tab boostrap
 	$('#gameTab .nav-link').on("click",function(e) {
