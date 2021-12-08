@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NFT MARKETPLACE - Orbit Metaverse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="images/meta-image.jpg">
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+  <body class="marketplace">
+    <div class="wrapper">
+      <div class="loading-page">
+        <div class="loading-page__logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+      </div>
+
+      <div class="containerz">
+        <canvas id="pixie"></canvas>
+      </div>
+
+      <header class="header -fix">
+          <div class="container d-flex align-items-center">
+            <p class="logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+              </a>
+            </p>
+            <nav class="main__nav ms-auto">
+              <ul class="el__menu">
+                <li class="menu-item"><a href="index.html">HOME</a></li>
+                <!-- <li class="menu-item"><a href="governance.html">Governance</a></li> -->
+                <li class="menu-item"><a href="games.html">GAMES</a></li>
+                <li class="menu-item active"><a href="#">MARKETPLACE</a></li>
+                <li class="menu-item"><a href="orbit-meta.html">ORBIT META</a></li>
+                <li class="menu-item"><a href="https://docs.orbitmeta.io/">WHITEPAPER</a></li>
+              </ul>
+            </nav>
+            <div class="header__right ms-auto">
+              <!-- <a href="" class="header__btn"><span>CONNECT WALLET</span></a> -->
+            </div>
+          </div>
+      </header>
+
+      <section class="marketplace__banner">
+        <div class="container">
+          <div class="el__header">
+            <h1 class="el__header__title">NFT MARKETPLACE</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="marketplace__content">
+        <div class="container">
+
+          <div class="nav-tabs__wrap">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs marketplace-tabs" id="marketplaceTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="marketplace1-tab" data-bs-toggle="tab" data-bs-target="#marketplace1" type="button" role="tab" aria-controls="marketplace1" aria-selected="true"><span>MARKET</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="marketplace2-tab" data-bs-toggle="tab" data-bs-target="#marketplace2" type="button" role="tab" aria-controls="marketplace2" aria-selected="false"><span>MINT</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="marketplace3-tab" data-bs-toggle="tab" data-bs-target="#marketplace3" type="button" role="tab" aria-controls="marketplace3" aria-selected="false"><span>OBIT GATE</span></button>
+              </li>
+            </ul>
+          </div>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="marketplace1" role="tabpanel" aria-labelledby="marketplace1-tab">
+
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="market__sidebar">
+                    <ul>
+                      <li>
+                        <div class="el__label">Selling:</div>
+                        <div class="el__value">334 OBM</div>
+                      </li>
+                      <li>
+                        <div class="el__label">Total Volume:</div>
+                        <div class="el__value">$1,344,411,23</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-9">
+
+                  <div class="market-properties">
+                      <input type="radio" id="html" name="fav_language" value="HTML">
+                      <label for="html">HTML</label><br>
+                      <input type="radio" id="css" name="fav_language" value="CSS">
+                      <label for="css">CSS</label><br>
+                      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                      <label for="javascript">JavaScript</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-1.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-2.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-3.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-4.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-5.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-6.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-7.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-8.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-9.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-10.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-11.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-12.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="tab-pane" id="marketplace2" role="tabpanel" aria-labelledby="marketplace2-tab">...2</div>
+            <div class="tab-pane" id="marketplace3" role="tabpanel" aria-labelledby="marketplace3-tab">.3..</div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-lg-29">
+                <div class="footer__item">
+                  <div class="footer__logo">
+                    <a href="index.html">
+                      <img src="images/logo-footer.png" alt="">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-3 col-lg-31">
+                <div class="footer__item">
+                  <h3 class="footer__item--title">CONTACT US</h3>
+                  <ul class="footer__address">
+                    <!-- <li><i class="ic-map-marker"></i>Address: 1 Kingdom Street, London, United Kingdom, W2 6BD</li> -->
+                    <li><i class="ic-envelope"></i><a href="mailto:support@orbitmeta.io">Email: support@orbitmeta.io</a></li>
+                    <!-- <li><i class="ic-phone"></i><a href="tel:+442045770691">Phone: +442045770691</a></li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-lg-20">
+                <div class="footer__item">
+                  <h3 class="footer__item--title">ABOUT</h3>
+                  <ul class="footer__list">
+                    <li><a href="https://docs.orbitmeta.io/">Documentation</a></li>
+                                                    <!--                    <li><a href="">FAQ</a></li>-->
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="col-md-3 col-lg-20">
+                <div class="footer__item">
+                  <h3 class="footer__item--title">LEGAL</h3>
+                  <ul class="footer__list">
+                    <li><a href="">Terms Of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        <div class="scrollTop"></div>
+      </footer>
+
+      <div class="play-to-earn__link">
+        <a href="play-to-earn.html" class="tada">
+          <img src="assets/img/playtoearn-icon.png" alt="">
+        </a>
+      </div>
+
+    </div> <!-- wrapper -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/firefly.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
