@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Orbit Metaverse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="images/meta-image.jpg">
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css"/>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+  <body class="games">
+    <div class="wrapper">
+      <div class="loading-page">
+        <div class="loading-page__logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+      </div>
+
+      <div class="containerz">
+        <canvas id="pixie"></canvas>
+      </div>
+
+      <header class="header -fix">
+        <div class="container d-flex align-items-center">
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Logo">
+            </a>
+          </h1>
+          <a href="#" class="menu-mb__btn ms-auto">
+            <img src="./assets/img/burger.png" alt="">
+          </a>
+        </div>
+      </header>
+
+      <section class="marketplace__banner">
+        <div class="container">
+          <div class="el__header">
+            <h1 class="el__header__title">NFT MARKETPLACE</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="marketplace__content">
+        <div class="container">
+
+          <div class="nav-tabs__wrap">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs marketplace-tabs" id="marketplaceTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="marketplace1-tab" data-bs-toggle="tab" data-bs-target="#marketplace1" type="button" role="tab" aria-controls="marketplace1" aria-selected="true"><span>MARKET</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="marketplace2-tab" data-bs-toggle="tab" data-bs-target="#marketplace2" type="button" role="tab" aria-controls="marketplace2" aria-selected="false"><span>MINT</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="marketplace3-tab" data-bs-toggle="tab" data-bs-target="#marketplace3" type="button" role="tab" aria-controls="marketplace3" aria-selected="false"><span>OBIT GATE</span></button>
+              </li>
+            </ul>
+          </div>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="market-tab tab-pane active" id="marketplace1" role="tabpanel" aria-labelledby="marketplace1-tab">
+
+              <div class="market__settings">
+                <img src="assets/img/pages/settings-gear.png" alt="">
+              </div>
+              <div class="row">
+                <div class="col--left col-md-3">
+                  <div class="market__sidebar js-market__sidebar">
+                    <div class="js-market--close"><img src="assets/img/popup-close.png" alt=""></div>
+                    <div class="market__sidebar__inner">
+
+                      <ul class="market__sidebar__header">
+                        <li class="-large">
+                          <div class="el__label">Selling:</div>
+                          <div class="el__value ms-auto">334 OBM</div>
+                        </li>
+                        <li>
+                          <div class="el__label">Total Volume:</div>
+                          <div class="el__value ms-auto">$1,344,411,23</div>
+                        </li>
+                      </ul>
+                      <ul class="nav nav-tabs sbmaketTab" id="sbmaketTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="sbmaket1-tab" data-bs-toggle="tab" data-bs-target="#sbmaket1" type="button" role="tab" aria-controls="sbmaket1" aria-selected="true">
+                            <img src="images/pages/sbmaket-01.png" alt="">
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="sbmaket2-tab" data-bs-toggle="tab" data-bs-target="#sbmaket2" type="button" role="tab" aria-controls="sbmaket2" aria-selected="false">
+                            <img src="images/pages/sbmaket-02.png" alt="">
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="sbmaket3-tab" data-bs-toggle="tab" data-bs-target="#sbmaket3" type="button" role="tab" aria-controls="sbmaket3" aria-selected="false">
+                            <img src="images/pages/sbmaket-03.png" alt="">
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="sbmaket4-tab" data-bs-toggle="tab" data-bs-target="#sbmaket4" type="button" role="tab" aria-controls="sbmaket4" aria-selected="false">
+                            <img src="images/pages/sbmaket-04.png" alt="">
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="sbmaket5-tab" data-bs-toggle="tab" data-bs-target="#sbmaket5" type="button" role="tab" aria-controls="sbmaket5" aria-selected="false">
+                            <img src="images/pages/sbmaket-05.png" alt="">
+                          </button>
+                        </li>
+                      </ul> <!-- .market__sidebar__header -->
+
+                      <div class="tab-content" id="sbmaketTabContent">
+                        <div class="tab-pane fade show active" id="sbmaket1" role="tabpanel" aria-labelledby="sbmaket1-tab">
+                          <div class="sbmaket__widget sbmaket__rarity">
+                            <div class="sbmaket__widget__header">
+                              <h3 class="sbmaket__widget__title">Rarity</h3>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__rarity-01" name="sbmaket__rarity" value="Normal" checked>
+                                <label for="sbmaket__rarity-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity-02" name="sbmaket__rarity" value="Rare">
+                                <label for="sbmaket__rarity-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity-03" name="sbmaket__rarity" value="Epic">
+                                <label for="sbmaket__rarity-03">Epic</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity-04" name="sbmaket__rarity" value="Legent">
+                                <label for="sbmaket__rarity-04">Legent</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity-05" name="sbmaket__rarity" value="Legendary">
+                                <label for="sbmaket__rarity-05">Legendary</label>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="sbmaket__widget sbmaket__star">
+                            <div class="sbmaket__widget__header d-flex align-items-center">
+                              <h3 class="sbmaket__widget__title">Star</h3>
+                              <div class="ms-auto">
+                                <img src="assets/img/pages/sbmaket-star.png" alt="">
+                              </div>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__star-01" name="sbmaket__star" value="Normal" checked>
+                                <label for="sbmaket__star-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star-02" name="sbmaket__star" value="Rare">
+                                <label for="sbmaket__star-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star-03" name="sbmaket__star" value="Epic">
+                                <label for="sbmaket__star-03">Epic</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="sbmaket2" role="tabpanel" aria-labelledby="sbmaket2-tab">
+                          <div class="sbmaket__widget sbmaket__rarity">
+                            <div class="sbmaket__widget__header">
+                              <h3 class="sbmaket__widget__title">Rarity</h3>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__rarity2-01" name="sbmaket__rarity2" value="Normal" checked>
+                                <label for="sbmaket__rarity2-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity2-02" name="sbmaket__rarity2" value="Rare">
+                                <label for="sbmaket__rarity2-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity2-03" name="sbmaket__rarity2" value="Epic">
+                                <label for="sbmaket__rarity2-03">Epic</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity2-04" name="sbmaket__rarity2" value="Legent">
+                                <label for="sbmaket__rarity2-04">Legent</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity2-05" name="sbmaket__rarity2" value="Legendary">
+                                <label for="sbmaket__rarity2-05">Legendary</label>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="sbmaket__widget sbmaket__star">
+                            <div class="sbmaket__widget__header d-flex align-items-center">
+                              <h3 class="sbmaket__widget__title">Star</h3>
+                              <div class="ms-auto">
+                                <img src="assets/img/pages/sbmaket-star.png" alt="">
+                              </div>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__star2-01" name="sbmaket__star2" value="Normal" checked>
+                                <label for="sbmaket__star2-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star2-02" name="sbmaket__star2" value="Rare">
+                                <label for="sbmaket__star2-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star2-03" name="sbmaket__star2" value="Epic">
+                                <label for="sbmaket__star2-03">Epic</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="sbmaket3" role="tabpanel" aria-labelledby="sbmaket3-tab">
+                          <div class="sbmaket__widget sbmaket__rarity">
+                            <div class="sbmaket__widget__header">
+                              <h3 class="sbmaket__widget__title">Rarity</h3>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__rarity3-01" name="sbmaket__rarity3" value="Normal" checked>
+                                <label for="sbmaket__rarity3-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity3-02" name="sbmaket__rarity3" value="Rare">
+                                <label for="sbmaket__rarity3-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity3-03" name="sbmaket__rarity3" value="Epic">
+                                <label for="sbmaket__rarity3-03">Epic</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity3-04" name="sbmaket__rarity3" value="Legent">
+                                <label for="sbmaket__rarity3-04">Legent</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity3-05" name="sbmaket__rarity3" value="Legendary">
+                                <label for="sbmaket__rarity3-05">Legendary</label>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="sbmaket__widget sbmaket__star">
+                            <div class="sbmaket__widget__header d-flex align-items-center">
+                              <h3 class="sbmaket__widget__title">Star</h3>
+                              <div class="ms-auto">
+                                <img src="assets/img/pages/sbmaket-star.png" alt="">
+                              </div>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__star3-01" name="sbmaket__star3" value="Normal" checked>
+                                <label for="sbmaket__star3-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star3-02" name="sbmaket__star3" value="Rare">
+                                <label for="sbmaket__star3-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star3-03" name="sbmaket__star3" value="Epic">
+                                <label for="sbmaket__star3-03">Epic</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="sbmaket4" role="tabpanel" aria-labelledby="sbmaket4-tab">
+                          <div class="sbmaket__widget sbmaket__rarity">
+                            <div class="sbmaket__widget__header">
+                              <h3 class="sbmaket__widget__title">Rarity</h3>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__rarity4-01" name="sbmaket__rarity4" value="Normal" checked>
+                                <label for="sbmaket__rarity4-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity4-02" name="sbmaket__rarity4" value="Rare">
+                                <label for="sbmaket__rarity4-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity4-03" name="sbmaket__rarity4" value="Epic">
+                                <label for="sbmaket__rarity4-03">Epic</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity4-04" name="sbmaket__rarity4" value="Legent">
+                                <label for="sbmaket__rarity4-04">Legent</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity4-05" name="sbmaket__rarity4" value="Legendary">
+                                <label for="sbmaket__rarity4-05">Legendary</label>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="sbmaket__widget sbmaket__star">
+                            <div class="sbmaket__widget__header d-flex align-items-center">
+                              <h3 class="sbmaket__widget__title">Star</h3>
+                              <div class="ms-auto">
+                                <img src="assets/img/pages/sbmaket-star.png" alt="">
+                              </div>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__star4-01" name="sbmaket__star4" value="Normal" checked>
+                                <label for="sbmaket__star4-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star4-02" name="sbmaket__star4" value="Rare">
+                                <label for="sbmaket__star4-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star4-03" name="sbmaket__star4" value="Epic">
+                                <label for="sbmaket__star4-03">Epic</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="sbmaket5" role="tabpanel" aria-labelledby="sbmaket5-tab">
+                          <div class="sbmaket__widget sbmaket__rarity">
+                            <div class="sbmaket__widget__header">
+                              <h3 class="sbmaket__widget__title">Rarity</h3>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__rarity5-01" name="sbmaket__rarity5" value="Normal" checked>
+                                <label for="sbmaket__rarity5-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity5-02" name="sbmaket__rarity5" value="Rare">
+                                <label for="sbmaket__rarity5-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity5-03" name="sbmaket__rarity5" value="Epic">
+                                <label for="sbmaket__rarity5-03">Epic</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity5-04" name="sbmaket__rarity5" value="Legent">
+                                <label for="sbmaket__rarity5-04">Legent</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__rarity5-05" name="sbmaket__rarity5" value="Legendary">
+                                <label for="sbmaket__rarity5-05">Legendary</label>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="sbmaket__widget sbmaket__star">
+                            <div class="sbmaket__widget__header d-flex align-items-center">
+                              <h3 class="sbmaket__widget__title">Star</h3>
+                              <div class="ms-auto">
+                                <img src="assets/img/pages/sbmaket-star.png" alt="">
+                              </div>
+                            </div>
+                            <ul class="sbmaket__radio">
+                              <li>
+                                <input type="radio" id="sbmaket__star5-01" name="sbmaket__star5" value="Normal" checked>
+                                <label for="sbmaket__star5-01">Normal</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star5-02" name="sbmaket__star5" value="Rare">
+                                <label for="sbmaket__star5-02">Rare</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="sbmaket__star5-03" name="sbmaket__star5" value="Epic">
+                                <label for="sbmaket__star5-03">Epic</label>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="sbmaket__widget sbmaket__purebred">
+                            <div class="sbmaket__widget__header d-flex align-items-center">
+                              <h3 class="sbmaket__widget__title">Purebred</h3>
+                              <div class="sbmaket__widget__sub ms-auto">
+                                1-7
+                              </div>
+                            </div>
+                            <input type="text" class="js-range-slider" name="my_range" value="" />
+                          </div>
+
+                          <div class="sbmaket__widget sbmaket__adn">
+                            <div class="dnselect2 js-dnselect2">
+                              <div class="dnselect2__label js-dnselect2__label">ADN</div>
+                              <ul class="dnselect2__list js-dnselect2__list">
+                                <li><label><input type="radio" name="cate" value=""><span>Dragon</span></label></li>
+                                <li><label><input type="radio" name="cate" value="20"><span>Owl</span></label></li>
+                                <li><label><input type="radio" name="cate" value="13"><span>Pig</span></label></li>
+                                <li><label><input type="radio" name="cate" value="13"><span>Coroco</span></label></li>
+                                <li><label><input type="radio" name="cate" value="13"><span>Bunny</span></label></li>
+                                <li><label><input type="radio" name="cate" value="13"><span>Mush</span></label></li>
+                                <li><label><input type="radio" name="cate" value="13"><span>Bee</span></label></li>
+                                <li><label><input type="radio" name="cate" value="13"><span>Cown</span></label></li>
+                                <li><label><input type="radio" name="cate" value="13"><span>Macaw</span></label></li>
+                              </ul>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+
+                    </div> <!-- .market__sidebar__inner -->
+
+                  </div>
+                </div>
+                <div class="col--right col-md-9">
+
+                  <ul class="market-properties">
+                    <li>
+                      <input type="radio" id="market-properties-01" name="market_properties" value="DARK" checked>
+                      <label for="market-properties-01">DARK</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="market-properties-02" name="market_properties" value="FIRE">
+                      <label for="market-properties-02">FIRE</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="market-properties-03" name="market_properties" value="LIGHT">
+                      <label for="market-properties-03">LIGHT</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="market-properties-04" name="market_properties" value="WATER">
+                      <label for="market-properties-04">WATER</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="market-properties-05" name="market_properties" value="WIND">
+                      <label for="market-properties-05">WIND</label>
+                    </li>
+                  </ul>
+
+                  <div class="row gx-2 gx-lg-3">
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-1.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-2.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-3.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-4.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-5.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-6.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-7.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-8.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-9.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-10.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-11.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                      <div class="market__item">
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/g-treasure/home-collection-pet-12.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane" id="marketplace2" role="tabpanel" aria-labelledby="marketplace2-tab">...2</div>
+            <div class="tab-pane" id="marketplace3" role="tabpanel" aria-labelledby="marketplace3-tab">.3..</div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="footer__item">
+                <div class="footer__logo">
+                  <a href="index.html">
+                    <img src="images/logo-footer.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="footer__item">
+                <h3 class="footer__item--title">CONTACT US</h3>
+                <ul class="footer__address">
+                  <!-- <li><i class="ic-map-marker"></i>Address: 1 Kingdom Street, London, United Kingdom, W2 6BD</li> -->
+                  <li><i class="ic-envelope"></i><a href="mailto:support@orbitmeta.io">Email: support@orbitmeta.io</a></li>
+                  <!-- <li><i class="ic-phone"></i><a href="tel:+442045770691">Phone: +442045770691</a></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="footer__item">
+                <h3 class="footer__item--title">ABOUT</h3>
+                <ul class="footer__list">
+                  <li><a href="https://docs.orbitmeta.io/">Documentation</a></li>
+                                                  <!--                    <li><a href="">FAQ</a></li>-->
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col-6">
+              <div class="footer__item">
+                <h3 class="footer__item--title">LEGAL</h3>
+                <ul class="footer__list">
+                  <li><a href="">Terms Of Service</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <ul class="footer__socical">
+<!--          <li><a href="https://www.facebook.com/OrbitMetaverse" target="_blank"><img src="assets/img/facebook.png" alt=""></a></li>-->
+          <!-- <li><a href="https://twitter.com/Orbit_Metaverse" target="_blank"><img src="assets/img/twitter.png" alt=""></a></li> -->
+<!--          <li><a href="https://youtube.com/channel/UCaoqXtS2t2ReByWkCUQgCiQ" target="_blank"><img src="assets/img/youtube.png" alt=""></a></li>-->
+<!--          <li><a href="https://t.me/OrbitMetaverseoffical" target="_blank"><img src="assets/img/telegram.png" alt=""></a></li>-->
+<!--          <li><a href="https://medium.com/@OrbitMetaverse" target="_blank"><img src="assets/img/medium.png" alt=""></a></li>-->
+        </ul>
+
+       <!--  <div class="text-center">
+          <div class="languages">
+            <div class="languages-item"><img src="./assets/flag/en.png" alt="ENG"><span>English</span></div>
+            <ul class="">
+              <li class="active"><img src="./assets/flag/en.png" alt="ENG"><span>English</span></li>
+              <li><img src="./assets/flag/vi.png" alt="PHILIPPINE"><span>Viet Nam</span></li>
+              <li><img src="./assets/flag/zh.png" alt="PHILIPPINE"><span>China</span></li>
+            </ul>
+          </div>
+        </div> -->
+      </footer>
+      <div class="play-to-earn__link">
+        <a href="play-to-earn.html" class="tada">
+          <img src="assets/img/playtoearn-icon.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <nav id="menu__mobile" class="nav__mobile">
+        <div class="nav__mobile__content">
+            <div class="nav__mobile__header">
+                <img src="images/logo.png">
+                <div class="nav__mobile--close ms-auto"><img src="./assets/img/burger.png" alt=""></div>
+            </div>
+            <ul class="nav__mobile--ul">
+              <li class="menu-item active"><a href="index.html">HOME</a></li>
+              <!-- <li class="menu-item"><a href="governance.html">Governance</a></li> -->
+              <li class="menu-item"><a href="games.html">GAMES</a></li>
+              <!-- <li class="menu-item"><a href="#">MARKETPLACE</a></li> -->
+              <li class="menu-item"><a href="orbit-meta.html">ORBIT META</a></li>
+              <li class="menu-item"><a href="https://docs.orbitmeta.io/">WHITEPAPER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade ourteamModal" id="ourteamModal" tabindex="-1" aria-labelledby="ourteamModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="ourteamModal-content modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body js-modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+    <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/firefly.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+       $(".js-range-slider").ionRangeSlider({
+          min: 0,
+          max: 7,
+          from: 1,
+       });
+    </script>
+  </body>
+</html>
