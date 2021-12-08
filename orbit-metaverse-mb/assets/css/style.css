@@ -747,8 +747,12 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     .dnselect{margin:0 auto;}
     .games-system__carousel .item__wrap{padding:0;}
     .games-system__carousel .dnfix__thumb{max-width:300px;padding-top:80%;margin:0 auto;transition:all .5s;}
-    .games-system__carousel .is-selected .dnfix__thumb{transform:scale(1.0);}
+    .games-system__carousel .is-selected .dnfix__thumb{max-width:300px;transform:scale(1.0);}
     .home-tokenomics .el__box{font-size:14px;}
+
+    .g-treasure__pet .slider__item__thumb{max-width:300px;margin:0 auto;transition:all .5s;}
+    .g-treasure__pet .is-selected .slider__item__thumb{max-width:300px;transform:scale(1.0);}
+
 }
 @media (max-width:480px){
     .nav__mobile{width:100%;}
