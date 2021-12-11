@@ -9,13 +9,11 @@ $(function() {
 
 	// Header Fix
 	var header_sticky=$("header.-fix")
-    if($('body').hasClass( "home" )){
-        $(window).scroll(function(){
-            $(this).scrollTop()>1?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
-        })
-    }else{
-        header_sticky.addClass("is-active")
-    }
+
+    $(window).scroll(function(){
+        $(this).scrollTop()>1?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
+    })
+
 
     /*----Languages---*/
 	$('.languages .languages-item').click(function() {
