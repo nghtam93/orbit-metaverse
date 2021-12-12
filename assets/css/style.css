@@ -525,6 +525,8 @@ content: '';
 .games-system__carousel .item__wrap{padding:100px 0;}
 .games-system__carousel .dnfix__thumb{max-width:180px;padding-top:100%;margin:0 auto;transition:all .5s;}
 .games-system__carousel .is-selected .dnfix__thumb{max-width:100%;padding-top:100%;transform:scale(1.1);}
+.games-system__carousel .slider__item__thumb{max-width:200px;;margin:0 auto;transition:all 1s;}
+.games-system__carousel .is-selected .slider__item__thumb{max-width:100%;transform:scale(1.1);}
 
 /*PAge games*/
 .play-to-earn__link{position:fixed;bottom:30px;right:30px;z-index:99;animation:pulse 2s infinite;}
