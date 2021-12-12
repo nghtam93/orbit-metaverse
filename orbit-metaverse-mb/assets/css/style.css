@@ -523,7 +523,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .games-system__carousel .dnfix__thumb{max-width:60%;padding-top:100%;margin:0 auto;transition:all .5s;}
 .games-system__carousel .is-selected .dnfix__thumb{max-width:100%;transform:scale(1.1);}
 
-.games-system__carousel .slider__item2__thumb{max-width:200px;;margin:0 auto;transition:all 1s;height: 160px;}
+.games-system__carousel .slider__item2__thumb{max-width:200px;;margin:0 auto;transition:all 1s;height: 250px;}
 .games-system__carousel .is-selected .slider__item2__thumb{max-width:100%;transform:scale(1.1);}
 
 /*PAge games*/
