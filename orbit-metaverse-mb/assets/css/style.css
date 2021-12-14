@@ -347,7 +347,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .ourteamModal-content{padding:100px 20px 70px;background:url(../img/popup-bg.png) no-repeat;background-size:100% 100%;border:0;}
 .ourteamModal__title{font-family:LNTH-BELLABOO;font-weight:normal;font-size:30px;line-height:40px;text-transform:uppercase;color:#471709;margin-bottom:10px;}
 .ourteamModal__sub{font-family:LNTH-BELLABOO;font-weight:normal;font-size:16px;line-height:22px;color:#B14C35;margin-bottom:30px;}
-.ourteamModal__excerpt{font-family:Nunito;font-weight:normal;font-size:16px;line-height:22px;color:#B14C35;}
+.ourteamModal__excerpt{font-family:Nunito;font-weight:normal;font-size:16px;line-height:22px;color:#B14C35;padding-bottom: 80px;}
 .ourteamModal-content ul{list-style:disc;padding-left:15px;}
 
 /**/
