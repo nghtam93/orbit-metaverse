@@ -231,10 +231,10 @@ $(function() {
 			]
 		});
 
-		$('.js-slick .slider__item[data-bs-toggle="modal"]').on("click",function(e) {
-			var content = $(this).find('.js-slider-content').html()
+		$('.js-slick').on('click', '.slider__item[data-bs-toggle="modal"]', function() {
+		  	var content = $(this).find('.js-slider-content').html()
 			$('.js-modal-body').html(content)
-		})
+		});
 
 	}
 
