@@ -428,7 +428,15 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .governance__box .el__item__value{margin-left:auto;background:-webkit-linear-gradient(45deg,#FFE142,#F06B23);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:right;}
 .governance__box .el__item__value small{display:block;font-size:16px;line-height:25px;color:#FFFFFF;-webkit-text-fill-color:#f1f1f1;}
 .governance__box .el__list>li:nth-child(2n){background:#392A76;}
-.governance__box .btn{min-width:200px;}
+
+.governance__box .btn{min-width:30%;}
+.governance__box .btn.-reward{
+     background: linear-gradient(131.45deg,#f0d023 24.6%,#eea03e 84.41%);
+}
+.governance__box .btn.-exit{
+    background: linear-gradient(131.45deg,#a99abe 24.6%,#aa9abe 84.41%);
+}
+
 .governance__box input{font-family:Lalezar;padding:15px 0 10px;border-radius:30px;border:0;background:#340d5a;text-align:center;}
 .governance__box input:focus{background:#340d5a;color:#fff;}
 .governance__box input::-webkit-input-placeholder{color:#fff;}
@@ -450,6 +458,8 @@ font-weight:600;color:#F2F2F2;}
 .modal-s1 .modal-title{font-family:iCiel Cadena;font-style:normal;font-weight:900;font-size:32px;line-height:44px;color:#FFFFFF;}
 .modal-s1 .btn-close{position:absolute;top:20px;right:20px;width:44px;height:44px;padding:0;opacity:1;background:url(../img/popup-close.png) no-repeat;background-size:contain;}
 .modal-s1 .btn-stake{min-width:250px;}
+
+
 @media (min-width:576px){
     .modal-dialog{max-width:600px;}
 }
@@ -937,7 +947,10 @@ font-weight:600;color:#F2F2F2;}
     .home-ourteam .nav-tabs{margin-left:calc(-1.5rem + -12px);margin-right:calc(-1.5rem + -12px);padding-left:calc(1.5rem + 12px);padding-right:calc(1.5rem + 12px);}
     .g-treasure .el__slider{margin:0 auto 30px;}
     .g-treasure__pet .slider__item__thumb{max-width:90%;margin:auto;}
-    .governance__box .btn{margin-bottom:16px}
+    .governance__box .btn{
+        min-width: 46%;
+        margin: 0 5px 15px;
+    }
     .dnselect{margin:0 auto;}
     .games-system__carousel .item__wrap{padding:0;}
     .games-system__carousel .dnfix__thumb{max-width:300px;padding-top:80%;margin:0 auto;transition:all .5s;}
