@@ -891,6 +891,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     .market-properties [type="radio"]:checked + label,.market-properties [type="radio"]:not(:checked) + label{padding-left:28px;}
     .marketplace-tabs .nav-link{min-width:169px;}
     .footer__newsletter{padding-bottom:100px;}
+    .night{
+        display: none;
+    }
 }
 @media (max-width:575px){
     .home-story-slider .slick-prev{left:-20px;}
