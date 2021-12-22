@@ -37,11 +37,11 @@ $(function() {
 
 	// Loader
 	$('body').addClass('modal-open')
-	$(window).on('load', function() {
-	  $('.loading-page__logo').fadeOut();
-	  $('.loading-page').delay(350).fadeOut('slow');
-	  $('body').removeClass('modal-open')
-	})
+	setTimeout(function(){
+		$('.loading-page__logo').fadeOut();
+	  	$('.loading-page').delay(350).fadeOut('slow');
+	  	$('body').removeClass('modal-open')
+	}, 500);
 
 	// Header Fix
 	var header_sticky=$("header.-fix")
