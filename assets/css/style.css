@@ -104,6 +104,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
 
 /*Header banner*/
 .header__banner{position:relative;}
+
 /*.header__banner .dnfix__thumb{padding-top:52.6%;}*/
 .header__banner .videoWrapper{padding-bottom:52.6%;}
 .header__banner .el__wrap{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;}
@@ -520,6 +521,8 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
 .games-system__carousel .is-selected .dnfix__thumb{max-width:100%;padding-top:100%;transform:scale(1.1);}
 .games-system__carousel .slider__item2__thumb{max-width:200px;margin:0 auto;transition:all 1s;}
 .games-system__carousel .is-selected .slider__item2__thumb{max-width:100%;transform:scale(1.1);}
+.orbit-meta__content{position:relative;}
+.orbit-meta__content:before{content:'';position:absolute;top:-10%;left:0;width:100%;height:45%;background:linear-gradient(180.27deg,rgba(61,25,104,0) 1.36%,#2a0d57 17.25%,#240a47 32%,rgba(51,23,60,0) 88.28%);pointer-events:none;}
 
 /*PAge games*/
 .play-to-earn__link{position:fixed;bottom:30px;right:30px;z-index:99;animation:pulse 2s infinite;}
