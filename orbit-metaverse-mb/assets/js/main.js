@@ -481,8 +481,14 @@ $(function() {
         }else{
         	$('body').addClass('modal-open')
         }
-
 	});
+
+	$('.market__sidebar').mousedown(function(e){ e.stopPropagation(); });
+    $(document).mousedown(function(e){
+        $('.js-market__sidebar').removeClass('active');
+
+    });
+
 
 	//Select 2 Item
 	function dnselect2(elm) {
