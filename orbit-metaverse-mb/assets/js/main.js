@@ -498,7 +498,38 @@ $(function() {
 	}
 	dnselect2('.js-dnselect2__label')
 
+	/*Page market*/
+	$(".js-range-slider").ionRangeSlider({
+		min: 0,
+		max: 5,
+		from: 1,
+		});
 
+	$('.js-reset-market').on("click",function(e) {
+		thiz_from = $(this).closest('.tab-pane')
+		if(thiz_from.find('.js-range-slider').length !=0){
+			thiz_from.find('.js-range-slider').data("ionRangeSlider").reset();
+		}
+		if(thiz_from.find('.rateit').length !=0){
+			thiz_from.find('.rateit').rateit('reset');
+		}
+
+		if(thiz_from.find('.js-dnselect2').length !=0){
+			var select_item = thiz_from.find('.js-dnselect2')
+
+			select_item.each(function(){
+				var label = $(this).find('.dnselect2__label')
+				$(this).find('.dnselect2__list li').removeClass('active')
+
+				if(label.attr('data-label')){
+					label.text(label.data('label'))
+				}else{
+					label.text($(this).find('.dnselect2__list li:first-child').text())
+					$(this).find('.dnselect2__list li:first-child').addClass('active')
+				}
+			});
+		}
+	})
 
 
 });
