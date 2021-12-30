@@ -472,7 +472,7 @@ $(function() {
 	$('.market-sidebar').mousedown(function(e){ e.stopPropagation(); });
     $(document).mousedown(function(e){
         $('.js-market-sidebar').removeClass('active');
-
+		$('body').removeClass('modal-open')
     });
 
 
