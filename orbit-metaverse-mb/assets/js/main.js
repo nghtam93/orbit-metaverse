@@ -322,19 +322,15 @@ $(function() {
 			    }
 			]
 		});
-
 	}
 
 	//Select Item
 	function dnselect(elm) {
-	    var dnselect_parent = $(elm).closest('.js-dnselect')
 	    $(elm).click(function(e) {
 	        e.preventDefault();
-	        $(elm).closest('.js-dnselect').toggleClass('active');
+	        $(this).closest('.js-dnselect').toggleClass('active');
 	    })
-
 	    $('.js-dnselect').mousedown(function(e){ e.stopPropagation(); });
-
 	    $(document).mousedown(function(e){ $('.js-dnselect').removeClass('active'); });
 	}
 	dnselect('.js-dnselect__label')
@@ -390,16 +386,6 @@ $(function() {
 	}
 
 	if($('body').hasClass('games')){
-		// $('.nav-link').on("click",function(e) {
-		// 	var setSliderCurrent = $(this).data('current')
-		// 	console.log(1111)
-		// 	setTimeout(function(){
-		// 		$('.games-system__carousel').flickity()
-		// 		.flickity('next')
-		// 		.flickity( 'select', parseInt(setSliderCurrent)  );
-		// 	}, 500);
-		// });
-
 
 		$('.g-treasure__characters .el__slider').slick({
 			infinite: true,
@@ -468,7 +454,7 @@ $(function() {
 
 	/*Page Marketplace*/
 	$('.market__settings, .js-market--close').on("click",function(e) {
-		var content = $(this).closest('.tab-content').find('.js-market__sidebar')
+		var content = $(this).closest('.tab-content').find('.js-market-sidebar')
 
 		if(content.hasClass('active')){
         	content.removeClass('active')
@@ -483,22 +469,24 @@ $(function() {
         }
 	});
 
-	$('.market__sidebar').mousedown(function(e){ e.stopPropagation(); });
+	$('.market-sidebar').mousedown(function(e){ e.stopPropagation(); });
     $(document).mousedown(function(e){
-        $('.js-market__sidebar').removeClass('active');
+        $('.js-market-sidebar').removeClass('active');
 
     });
 
 
 	//Select 2 Item
 	function dnselect2(elm) {
-	    var dnselect_parent = $(elm).closest('.js-dnselect2')
 	    $(elm).click(function(e) {
-	        e.preventDefault();
-	        $(elm).closest('.js-dnselect2').toggleClass('active');
+	    	e.preventDefault();
+	        $(this).closest('.js-dnselect2').toggleClass('active');
 	    })
-	    dnselect_parent.find('li').on("click",function(e) {
+	    $(elm).closest('.js-dnselect2').find('li').on("click",function(e) {
+
+	    	var dnselect_parent = $(this).closest('.js-dnselect2')
 	        var text = $(this).text()
+
 	        dnselect_parent.find('li').removeClass('active')
 	        $(this).addClass('active')
 	        dnselect_parent.removeClass('active')
@@ -509,6 +497,7 @@ $(function() {
 	    $(document).mousedown(function(e){ $('.js-dnselect2').removeClass('active'); });
 	}
 	dnselect2('.js-dnselect2__label')
+
 
 
 

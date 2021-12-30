@@ -52,16 +52,28 @@
       </section>
 
       <section class="marketplace__content">
-        <div class="container">
+        <div class="container position-relative">
 
           <div class="nav-tabs__wrap">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs marketplace-tabs" id="marketplaceTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="marketplace1-tab" data-bs-toggle="tab" data-bs-target="#marketplace1" type="button" role="tab" aria-controls="marketplace1" aria-selected="true"><span>MARKET</span></button>
+                <button class="nav-link active" id="marketplace1-tab" data-bs-toggle="tab" data-bs-target="#marketplace1" type="button" role="tab" aria-controls="marketplace1" aria-selected="true"><span>Characters</span></button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="marketplace2-tab" data-bs-toggle="tab" data-bs-target="#marketplace2" type="button" role="tab" aria-controls="marketplace2" aria-selected="false"><span>OBIT GATE</span></button>
+                <button class="nav-link" id="marketplace2-tab" data-bs-toggle="tab" data-bs-target="#marketplace2" type="button" role="tab" aria-controls="marketplace2" aria-selected="false"><span>PETs</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="marketplace3-tab" data-bs-toggle="tab" data-bs-target="#marketplace3" type="button" role="tab" aria-controls="marketplace3" aria-selected="false"><span>items</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="marketplace4-tab" data-bs-toggle="tab" data-bs-target="#marketplace4" type="button" role="tab" aria-controls="marketplace4" aria-selected="false"><span>WAGONs</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="marketplace5-tab" data-bs-toggle="tab" data-bs-target="#marketplace5" type="button" role="tab" aria-controls="marketplace5" aria-selected="false"><span>HOOKS</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="marketplace6-tab" data-bs-toggle="tab" data-bs-target="#marketplace6" type="button" role="tab" aria-controls="marketplace6" aria-selected="false"><span>ROPES</span></button>
               </li>
             </ul>
           </div>
@@ -72,353 +84,2860 @@
               <div class="market__settings">
                 <img src="assets/img/pages/settings-gear.png" alt="">
               </div>
+              
               <div class="row">
+
                 <div class="col--left col-md-3">
-                  <div class="market__sidebar js-market__sidebar">
+                  <div class="market-sidebar js-market-sidebar">
                     <div class="js-market--close"><img src="assets/img/popup-close.png" alt=""></div>
-                    <div class="market__sidebar__inner">
-                      <ul class="market__sidebar__header">
-                        <li>
-                          <div class="el__label">Total Volume:</div>
-                          <div class="el__value ms-auto">$1,344,411,23</div>
-                        </li>
-                      </ul>
-                      <ul class="nav nav-tabs sbmaketTab" id="sbmaketTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="sbmaket1-tab" data-bs-toggle="tab" data-bs-target="#sbmaket1" type="button" role="tab" aria-controls="sbmaket1" aria-selected="false">
-                            <img src="images/pages/sbmaket-04.png" alt="">
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="sbmaket2-tab" data-bs-toggle="tab" data-bs-target="#sbmaket2" type="button" role="tab" aria-controls="sbmaket2" aria-selected="false">
-                            <img src="images/pages/sbmaket-05.png" alt="">
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="sbmaket3-tab" data-bs-toggle="tab" data-bs-target="#sbmaket3" type="button" role="tab" aria-controls="sbmaket3" aria-selected="true">
-                            <img src="images/pages/sbmaket-01.png" alt="">
-                          </button>
-                        </li>
-                      </ul> <!-- .market__sidebar__header -->
+                    <div class="market-sidebar__inner">
+                      <form action="">
+                        <ul class="market-sidebar__header">
+                          <li>
+                            <div class="el__label">Filter</div>
+                            <button type="reset" class="el__value js-reset-market ms-auto">Reset</button>
+                          </li>
+                        </ul>
 
-                      <div class="tab-content" id="sbmaketTabContent">
-                        <div class="tab-pane fade" id="sbmaket1" role="tabpanel" aria-labelledby="sbmaket1-tab">
+                        <div class="sbmaket-widget sbmaket__rarity">
+                          <div class="sbmaket-widget__header">
+                            <h3 class="sbmaket-widget__title">Grade</h3>
+                          </div>
+                          <ul class="sbmaket__radio">
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-01" name="sbmaket__rarity" value="Normal" checked>
+                              <label for="sbmaket__rarity-01">Normal</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-02" name="sbmaket__rarity" value="Rare">
+                              <label for="sbmaket__rarity-02">Rare</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-03" name="sbmaket__rarity" value="Epic">
+                              <label for="sbmaket__rarity-03">Epic</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-04" name="sbmaket__rarity" value="Legendary">
+                              <label for="sbmaket__rarity-04">Legendary</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-05" name="sbmaket__rarity" value="Mythological">
+                              <label for="sbmaket__rarity-05">Mythological</label>
+                            </li>
+                          </ul>
+                        </div><!-- .sbmaket-widget -->
 
-                          <div class="sbmaket__widget sbmaket__rarity">
-                            <div class="sbmaket__widget__header">
-                              <h3 class="sbmaket__widget__title">Grade</h3>
+                        <div class="sbmaket-widget sbmaket__star">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Star</h3>
+                            <div class="star__wrap ms-auto">
+                                <input type="range" value="1" step="0.5" id="star1">
+                                <div data-rateit-backingfld="#star1" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="3"></div>
                             </div>
-                            <ul class="sbmaket__radio">
-                              <li>
-                                <input type="radio" id="sbmaket__rarity-01" name="sbmaket__rarity" value="Normal" checked>
-                                <label for="sbmaket__rarity-01">Normal</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity-02" name="sbmaket__rarity" value="Rare">
-                                <label for="sbmaket__rarity-02">Rare</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity-03" name="sbmaket__rarity" value="Epic">
-                                <label for="sbmaket__rarity-03">Epic</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity-04" name="sbmaket__rarity" value="Legendary">
-                                <label for="sbmaket__rarity-04">Legendary</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity-05" name="sbmaket__rarity" value="Mythological">
-                                <label for="sbmaket__rarity-05">Mythological</label>
-                              </li>
-                            </ul>
-                          </div><!-- .sbmaket__widget -->
-
-                          <div class="sbmaket__widget sbmaket__star">
-                            <div class="sbmaket__widget__header d-flex align-items-center">
-                              <h3 class="sbmaket__widget__title">Star</h3>
-                              <div class="star__wrap ms-auto">
-                                  <input type="range" value="1" step="0.5" id="star1">
-                                  <div data-rateit-backingfld="#star1" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="3"></div>
-                              </div>
-                            </div>
-                          </div> <!-- .sbmaket__widget -->
-
-                          <div class="sbmaket__widget sbmaket__purebred">
-                            <div class="sbmaket__widget__header d-flex align-items-center">
-                              <h3 class="sbmaket__widget__title">Fortify count</h3>
-                              <div class="sbmaket__widget__sub ms-auto">
-                                1-5
-                              </div>
-                            </div>
-                            <input type="text" class="js-range-slider" name="my_range" value="" />
-                          </div><!-- .sbmaket__widget -->
-
-                        </div>
-                        <div class="tab-pane fade" id="sbmaket2" role="tabpanel" aria-labelledby="sbmaket2-tab">
-
-                          <div class="sbmaket__widget sbmaket__rarity">
-                            <div class="sbmaket__widget__header">
-                              <h3 class="sbmaket__widget__title">Grade</h3>
-                            </div>
-                            <ul class="sbmaket__radio">
-                              <li>
-                                <input type="radio" id="sbmaket__rarity2-01" name="sbmaket__rarity2" value="Normal" checked>
-                                <label for="sbmaket__rarity2-01">Normal</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity2-02" name="sbmaket__rarity2" value="Rare">
-                                <label for="sbmaket__rarity2-02">Rare</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity2-03" name="sbmaket__rarity2" value="Epic">
-                                <label for="sbmaket__rarity2-03">Epic</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity2-03" name="sbmaket__rarity2" value="Legendary">
-                                <label for="sbmaket__rarity2-03">Legendary</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity2-04" name="sbmaket__rarity2" value="Mythological">
-                                <label for="sbmaket__rarity2-04">Mythological</label>
-                              </li>
-                            </ul>
-                          </div><!-- .sbmaket__widget -->
-
-                          <div class="sbmaket__widget sbmaket__star">
-                            <div class="sbmaket__widget__header d-flex align-items-center">
-                              <h3 class="sbmaket__widget__title">Star</h3>
-                              <div class="star__wrap ms-auto">
-                                  <input type="range" value="1" step="0.5" id="star2">
-                                  <div data-rateit-backingfld="#star2" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="3"></div>
-                              </div>
-                            </div>
-                          </div> <!-- .sbmaket__widget -->
-
-                          <div class="sbmaket__widget sbmaket__purebred">
-                            <div class="sbmaket__widget__header d-flex align-items-center">
-                              <h3 class="sbmaket__widget__title">Breed count</h3>
-                              <div class="sbmaket__widget__sub ms-auto">
-                                1-5
-                              </div>
-                            </div>
-                            <input type="text" class="js-range-slider" name="my_range" value="" />
-                          </div><!-- .sbmaket__widget -->
-
-                          <div class="sbmaket__widget sbmaket__adn">
-                            <div class="dnselect2 js-dnselect2">
-                              <div class="dnselect2__label js-dnselect2__label">Purebred</div>
-                              <ul class="dnselect2__list js-dnselect2__list">
-                                <li><label><input type="radio" name="cate" value="Dragon"><span>Dragon</span></label></li>
-                                <li><label><input type="radio" name="cate" value="Owl"><span>Owl</span></label></li>
-                                <li><label><input type="radio" name="cate" value="Pig"><span>Pig</span></label></li>
-                                <li><label><input type="radio" name="cate" value="Coroco"><span>Coroco</span></label></li>
-                                <li><label><input type="radio" name="cate" value="Bunny"><span>Bunny</span></label></li>
-                                <li><label><input type="radio" name="cate" value="Mush"><span>Mush</span></label></li>
-                                <li><label><input type="radio" name="cate" value="Bee"><span>Bee</span></label></li>
-                                <li><label><input type="radio" name="cate" value="Cown"><span>Cown</span></label></li>
-                                <li><label><input type="radio" name="cate" value="Macaw"><span>Macaw</span></label></li>
-                              </ul>
-                            </div>
-                          </div><!-- .sbmaket__widget -->
-
-                        </div>
-
-                        <div class="tab-pane fade show active" id="sbmaket3" role="tabpanel" aria-labelledby="sbmaket3-tab">
-
-                          <div class="sbmaket__widget sbmaket__rarity">
-                            <div class="sbmaket__widget__header">
-                              <h3 class="sbmaket__widget__title">Grade</h3>
-                            </div>
-                            <ul class="sbmaket__radio">
-                              <li>
-                                <input type="radio" id="sbmaket__rarity3-01" name="sbmaket__rarity3" value="Normal" checked>
-                                <label for="sbmaket__rarity3-01">Normal</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity3-02" name="sbmaket__rarity3" value="Rare">
-                                <label for="sbmaket__rarity3-02">Rare</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity3-03" name="sbmaket__rarity3" value="Epic">
-                                <label for="sbmaket__rarity3-03">Epic</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity3-04" name="sbmaket__rarity3" value="Legendary">
-                                <label for="sbmaket__rarity3-04">Legendary</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="sbmaket__rarity3-05" name="sbmaket__rarity3" value="Mythological">
-                                <label for="sbmaket__rarity3-05">Mythological</label>
-                              </li>
-                            </ul>
-                          </div> <!-- .sbmaket__widget -->
-
-                          <div class="sbmaket__widget sbmaket__star">
-                            <div class="sbmaket__widget__header d-flex align-items-center">
-                              <h3 class="sbmaket__widget__title">Star</h3>
-                              <div class="star__wrap ms-auto">
-                                  <input type="range" value="1" step="0.5" id="star3">
-                                  <div data-rateit-backingfld="#star3" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="3"></div>
-                              </div>
-                            </div>
-                          </div> <!-- .sbmaket__widget -->
-
-                          <div class="sbmaket__widget sbmaket__purebred">
-                            <div class="sbmaket__widget__header d-flex align-items-center">
-                              <h3 class="sbmaket__widget__title">Fortify count</h3>
-                              <div class="sbmaket__widget__sub ms-auto">
-                                1-5
-                              </div>
-                            </div>
-                            <input type="text" class="js-range-slider" name="my_range" value="" />
-                          </div><!-- .sbmaket__widget -->
-
-                        </div>
-                      </div>
-
-                    </div> <!-- .market__sidebar__inner -->
-
+                          </div>
+                        </div> <!-- .sbmaket-widget -->
+                      </form>
+                    </div> <!-- .market-sidebar__inner -->
                   </div>
                 </div>
+             
                 <div class="col--right col-md-9">
 
-                  <!--   <ul class="market-properties">
-                    <li>
-                      <input type="radio" id="market-properties-01" name="market_properties" value="DARK" checked>
-                      <label for="market-properties-01">DARK</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="market-properties-02" name="market_properties" value="FIRE">
-                      <label for="market-properties-02">FIRE</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="market-properties-03" name="market_properties" value="LIGHT">
-                      <label for="market-properties-03">LIGHT</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="market-properties-04" name="market_properties" value="WATER">
-                      <label for="market-properties-04">WATER</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="market-properties-05" name="market_properties" value="WIND">
-                      <label for="market-properties-05">WIND</label>
-                    </li>
-                  </ul> -->
+                  <div class="market-price__filter">
+                    <div class="dnselect2 js-dnselect2 -hauto">
+                      <div class="dnselect2__label js-dnselect2__label">Lowest Price</div>
+                      <ul class="dnselect2__list js-dnselect2__list">
+                        <li><label><input type="radio" name="cate" value="Lowest Price"><span>Lowest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Highest Price"><span>Highest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Latest"><span>Latest</span></label></li>
+                      </ul>
+                    </div>
+                  </div> <!-- .market-price__filter -->
 
-                  <div class="row gx-2 gx-lg-3">
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-1.png" alt="">
+                  <div class="row">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-2.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-3.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-4.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-5.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-6.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-7.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-8.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-9.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-10.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-11.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3">
-                      <div class="market__item">
-                        <div class="market__item__thumb">
-                          <div class="dnfix__thumb -contain">
-                            <img src="images/g-treasure/home-collection-pet-12.png" alt="">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
                           </div>
                         </div>
-                      </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
                     </div>
                   </div>
+                  <nav class="navigation paging-navigation" role="navigation">
+                    <div class="pagination loop-pagination">
+                      <a class="prev page-numbers" href="#"><span class="icon-arrow-left-bold"></span></a>
+                      <span class="page-numbers current">1</span>
+                      <a class="page-numbers" href="#">2</a>
+                      <a class="page-numbers" href="#">3</a>
+                      <a class="page-numbers" href="#">45</a>
+                      <a class="next page-numbers" href="#"><span class="icon-arrow-right-bold"></span></a>
+                    </div><!-- .pagination -->
+                  </nav>
+
                 </div>
               </div>
 
             </div>
-            <div class="tab-pane" id="marketplace2" role="tabpanel" aria-labelledby="marketplace2-tab">.2..</div>
+            <div class="tab-pane" id="marketplace2" role="tabpanel" aria-labelledby="marketplace2-tab">
+              <div class="market__settings">
+                <img src="assets/img/pages/settings-gear.png" alt="">
+              </div>
+              <div class="row">
+                <div class="col--left col-md-3">
+                  <div class="market-sidebar js-market-sidebar">
+                    <div class="js-market--close"><img src="assets/img/popup-close.png" alt=""></div>
+                    <div class="market-sidebar__inner">
+                      <form action="">
+                        <ul class="market-sidebar__header">
+                          <li>
+                            <div class="el__label">Filter</div>
+                            <button type="reset" class="el__value js-reset-market ms-auto">Reset</button>
+                          </li>
+                        </ul>
+
+                        <div class="sbmaket-widget sbmaket__rarity">
+                          <div class="sbmaket-widget__header">
+                            <h3 class="sbmaket-widget__title">Grade</h3>
+                          </div>
+                          <ul class="sbmaket__radio">
+                            <li>
+                              <input type="radio" id="sbmaket__rarity2-01" name="sbmaket__rarity2" value="Normal" checked>
+                              <label for="sbmaket__rarity2-01">Normal</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity2-02" name="sbmaket__rarity2" value="Rare">
+                              <label for="sbmaket__rarity2-02">Rare</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity2-03" name="sbmaket__rarity2" value="Epic">
+                              <label for="sbmaket__rarity2-03">Epic</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity2-04" name="sbmaket__rarity2" value="Legendary">
+                              <label for="sbmaket__rarity2-04">Legendary</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity2-05" name="sbmaket__rarity2" value="Mythological">
+                              <label for="sbmaket__rarity2-05">Mythological</label>
+                            </li>
+                          </ul>
+                        </div><!-- .sbmaket-widget -->
+
+                        <div class="sbmaket-widget sbmaket__star">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Star</h3>
+                            <div class="star__wrap ms-auto">
+                                <input type="range" value="1" step="0.5" id="star2">
+                                <div data-rateit-backingfld="#star2" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="3"></div>
+                            </div>
+                          </div>
+                        </div> <!-- .sbmaket-widget -->
+
+                        <div class="sbmaket-widget sbmaket__purebred">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Breed count</h3>
+                            <div class="sbmaket-widget__sub ms-auto">
+                              1-5
+                            </div>
+                          </div>
+                          <input type="text" class="js-range-slider" name="my_range" value="" />
+                        </div><!-- .sbmaket-widget -->
+
+                        <div class="sbmaket-widget sbmaket__adn">
+                          <div class="dnselect2 js-dnselect2">
+                            <div class="dnselect2__label js-dnselect2__label" data-label="Purebred">Purebred</div>
+                            <ul class="dnselect2__list js-dnselect2__list">
+                              <li><label><input type="radio" name="cate" value="Clover"><span>Clover</span></label></li>
+                              <li><label><input type="radio" name="cate" value="Macaw"><span>Macaw</span></label></li>
+                              <li><label><input type="radio" name="cate" value="Jumba"><span>Jumba</span></label></li>
+                              <li><label><input type="radio" name="cate" value="Vaneer"><span>Vaneer</span></label></li>
+                              <li><label><input type="radio" name="cate" value="Owl"><span>Owl</span></label></li>
+                              <li><label><input type="radio" name="cate" value="Vela"><span>Vela</span></label></li>
+                              <li><label><input type="radio" name="cate" value="Hary"><span>Hary</span></label></li>
+                              <li><label><input type="radio" name="cate" value="Centaur"><span>Centaur</span></label></li>
+                              <li><label><input type="radio" name="cate" value="Puppar"><span>Puppar</span></label></li>
+                            </ul>
+                          </div>
+                        </div><!-- .sbmaket-widget -->
+                      </form>
+                    </div> <!-- .market-sidebar__inner -->
+                  </div>
+                </div>
+                <div class="col--right col-md-9">
+                  <div class="market-price__filter">
+                    <div class="dnselect2 js-dnselect2 -hauto">
+                      <div class="dnselect2__label js-dnselect2__label">Lowest Price</div>
+                      <ul class="dnselect2__list js-dnselect2__list">
+                        <li><label><input type="radio" name="cate" value="Lowest Price"><span>Lowest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Highest Price"><span>Highest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Latest"><span>Latest</span></label></li>
+                      </ul>
+                    </div>
+                  </div> <!-- .market-price__filter -->
+                  <div class="row">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                  </div>
+                  <nav class="navigation paging-navigation" role="navigation">
+                    <div class="pagination loop-pagination">
+                      <a class="prev page-numbers" href="#"><span class="icon-arrow-left-bold"></span></a>
+                      <span class="page-numbers current">1</span>
+                      <a class="page-numbers" href="#">2</a>
+                      <a class="page-numbers" href="#">3</a>
+                      <a class="page-numbers" href="#">45</a>
+                      <a class="next page-numbers" href="#"><span class="icon-arrow-right-bold"></span></a>
+                    </div><!-- .pagination -->
+                  </nav>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="marketplace3" role="tabpanel" aria-labelledby="marketplace3-tab">
+              <div class="market__settings">
+                <img src="assets/img/pages/settings-gear.png" alt="">
+              </div>
+              <div class="row">
+                <div class="col--left col-md-3">
+                  <div class="market-sidebar js-market-sidebar">
+                    <div class="js-market--close"><img src="assets/img/popup-close.png" alt=""></div>
+                    <div class="market-sidebar__inner">
+                      <form action="">
+                        <ul class="market-sidebar__header">
+                          <li>
+                            <div class="el__label">Filter</div>
+                            <button type="reset" class="el__value js-reset-market ms-auto">Reset</button>
+                          </li>
+                        </ul>
+
+                        <div class="sbmaket-widget sbmaket__adn">
+                          <div class="dnselect2 js-dnselect2 -hauto">
+                            <div class="dnselect2__label js-dnselect2__label" data-label="Stone">Stone</div>
+                            <ul class="dnselect2__list js-dnselect2__list">
+                              <li><label>
+                                  <input type="radio" name="cate" value="Enhancement stone"><span>Enhancement stone</span>
+                              </label></li>
+                              <li><label>
+                                <input type="radio" name="cate" value="Elemental stone"><span>Elemental stone</span>
+                              </label></li>
+                            </ul>
+                          </div>
+                        </div><!-- .sbmaket-widget -->
+                        <div class="sbmaket-widget">
+                          <button class="sbmaket-widget__btn">charm</button>
+                        </div>
+                      </form>
+                    </div> <!-- .market-sidebar__inner -->
+                  </div>
+                </div>
+                <div class="col--right col-md-9">
+                  <div class="market-price__filter">
+                    <div class="dnselect2 js-dnselect2 -hauto">
+                      <div class="dnselect2__label js-dnselect2__label">Lowest Price</div>
+                      <ul class="dnselect2__list js-dnselect2__list">
+                        <li><label><input type="radio" name="cate" value="Lowest Price"><span>Lowest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Highest Price"><span>Highest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Latest"><span>Latest</span></label></li>
+                      </ul>
+                    </div>
+                  </div> <!-- .market-price__filter -->
+                  <div class="row">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                  </div>
+                  <nav class="navigation paging-navigation" role="navigation">
+                    <div class="pagination loop-pagination">
+                      <a class="prev page-numbers" href="#"><span class="icon-arrow-left-bold"></span></a>
+                      <span class="page-numbers current">1</span>
+                      <a class="page-numbers" href="#">2</a>
+                      <a class="page-numbers" href="#">3</a>
+                      <a class="page-numbers" href="#">45</a>
+                      <a class="next page-numbers" href="#"><span class="icon-arrow-right-bold"></span></a>
+                    </div><!-- .pagination -->
+                  </nav>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="marketplace4" role="tabpanel" aria-labelledby="marketplace4-tab">
+              <div class="market__settings">
+                <img src="assets/img/pages/settings-gear.png" alt="">
+              </div>
+              <div class="row">
+                <div class="col--left col-md-3">
+                  <div class="market-sidebar js-market-sidebar">
+                    <div class="js-market--close"><img src="assets/img/popup-close.png" alt=""></div>
+                    <div class="market-sidebar__inner">
+                      <form action="">
+                        <ul class="market-sidebar__header">
+                          <li>
+                            <div class="el__label">Filter</div>
+                            <button type="reset" class="el__value js-reset-market ms-auto">Reset</button>
+                          </li>
+                        </ul>
+
+                        <div class="sbmaket-widget sbmaket__rarity">
+                          <div class="sbmaket-widget__header">
+                            <h3 class="sbmaket-widget__title">Grade</h3>
+                          </div>
+                          <ul class="sbmaket__radio">
+                            <li>
+                              <input type="radio" id="sbmaket__rarity4-01" name="sbmaket__rarity4" value="Normal" checked>
+                              <label for="sbmaket__rarity4-01">Normal</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity4-02" name="sbmaket__rarity4" value="Rare">
+                              <label for="sbmaket__rarity4-02">Rare</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity4-03" name="sbmaket__rarity4" value="Epic">
+                              <label for="sbmaket__rarity4-03">Epic</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity4-04" name="sbmaket__rarity4" value="Legendary">
+                              <label for="sbmaket__rarity4-04">Legendary</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity4-05" name="sbmaket__rarity4" value="Mythological">
+                              <label for="sbmaket__rarity4-05">Mythological</label>
+                            </li>
+                          </ul>
+                        </div> <!-- .sbmaket-widget -->
+                        <div class="sbmaket-widget sbmaket__star">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Star</h3>
+                            <div class="star__wrap ms-auto">
+                                <input type="range" value="1" step="0.5" id="star4">
+                                <div data-rateit-backingfld="#star4" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="3"></div>
+                            </div>
+                          </div>
+                        </div> <!-- .sbmaket-widget -->
+
+                        <div class="sbmaket-widget sbmaket__purebred">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Fortify count</h3>
+                            <div class="sbmaket-widget__sub ms-auto">
+                              1-5
+                            </div>
+                          </div>
+                          <input type="text" class="js-range-slider" name="my_range" value="" />
+                        </div><!-- .sbmaket-widget -->
+                      </form>
+                    </div> <!-- .market-sidebar__inner -->
+                  </div>
+                </div>
+                <div class="col--right col-md-9">
+                  <div class="market-price__filter">
+                    <div class="dnselect2 js-dnselect2 -hauto">
+                      <div class="dnselect2__label js-dnselect2__label">Lowest Price</div>
+                      <ul class="dnselect2__list js-dnselect2__list">
+                        <li><label><input type="radio" name="cate" value="Lowest Price"><span>Lowest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Highest Price"><span>Highest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Latest"><span>Latest</span></label></li>
+                      </ul>
+                    </div>
+                  </div> <!-- .market-price__filter -->
+                  <div class="row">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                  </div>
+                  <nav class="navigation paging-navigation" role="navigation">
+                    <div class="pagination loop-pagination">
+                      <a class="prev page-numbers" href="#"><span class="icon-arrow-left-bold"></span></a>
+                      <span class="page-numbers current">1</span>
+                      <a class="page-numbers" href="#">2</a>
+                      <a class="page-numbers" href="#">3</a>
+                      <a class="page-numbers" href="#">45</a>
+                      <a class="next page-numbers" href="#"><span class="icon-arrow-right-bold"></span></a>
+                    </div><!-- .pagination -->
+                  </nav>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="marketplace5" role="tabpanel" aria-labelledby="marketplace5-tab">
+              <div class="market__settings">
+                <img src="assets/img/pages/settings-gear.png" alt="">
+              </div>
+              <div class="row">
+                <div class="col--left col-md-3">
+                  <div class="market-sidebar js-market-sidebar">
+                    <div class="js-market--close"><img src="assets/img/popup-close.png" alt=""></div>
+                    <div class="market-sidebar__inner">
+                      <form action="">
+                        <ul class="market-sidebar__header">
+                          <li>
+                            <div class="el__label">Filter</div>
+                            <button type="reset" class="el__value js-reset-market ms-auto">Reset</button>
+                          </li>
+                        </ul>
+
+                        <div class="sbmaket-widget sbmaket__rarity">
+                          <div class="sbmaket-widget__header">
+                            <h3 class="sbmaket-widget__title">Grade</h3>
+                          </div>
+                          <ul class="sbmaket__radio">
+                            <li>
+                              <input type="radio" id="sbmaket__rarity5-01" name="sbmaket__rarity5" value="Normal" checked>
+                              <label for="sbmaket__rarity5-01">Normal</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity5-02" name="sbmaket__rarity5" value="Rare">
+                              <label for="sbmaket__rarity5-02">Rare</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity5-03" name="sbmaket__rarity5" value="Epic">
+                              <label for="sbmaket__rarity5-03">Epic</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity5-04" name="sbmaket__rarity5" value="Legendary">
+                              <label for="sbmaket__rarity5-04">Legendary</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity5-05" name="sbmaket__rarity5" value="Mythological">
+                              <label for="sbmaket__rarity5-05">Mythological</label>
+                            </li>
+                          </ul>
+                        </div> <!-- .sbmaket-widget -->
+
+                        <div class="sbmaket-widget sbmaket__star">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Star</h3>
+                            <div class="star__wrap ms-auto">
+                                <input type="range" value="1" step="0.5" id="star5">
+                                <div data-rateit-backingfld="#star5" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="3"></div>
+                            </div>
+                          </div>
+                        </div> <!-- .sbmaket-widget -->
+
+                        <div class="sbmaket-widget sbmaket__purebred">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Fortify count</h3>
+                            <div class="sbmaket-widget__sub ms-auto">
+                              1-5
+                            </div>
+                          </div>
+                          <input type="text" class="js-range-slider" name="my_range" value="" />
+                        </div><!-- .sbmaket-widget -->
+                      </form>
+                    </div> <!-- .market-sidebar__inner -->
+                  </div>
+                </div>
+                <div class="col--right col-md-9">
+                  <div class="market-price__filter">
+                    <div class="dnselect2 js-dnselect2 -hauto">
+                      <div class="dnselect2__label js-dnselect2__label">Lowest Price</div>
+                      <ul class="dnselect2__list js-dnselect2__list">
+                        <li><label><input type="radio" name="cate" value="Lowest Price"><span>Lowest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Highest Price"><span>Highest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Latest"><span>Latest</span></label></li>
+                      </ul>
+                    </div>
+                  </div> <!-- .market-price__filter -->
+                  <div class="row">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                  </div>
+                  <nav class="navigation paging-navigation" role="navigation">
+                    <div class="pagination loop-pagination">
+                      <a class="prev page-numbers" href="#"><span class="icon-arrow-left-bold"></span></a>
+                      <span class="page-numbers current">1</span>
+                      <a class="page-numbers" href="#">2</a>
+                      <a class="page-numbers" href="#">3</a>
+                      <a class="page-numbers" href="#">45</a>
+                      <a class="next page-numbers" href="#"><span class="icon-arrow-right-bold"></span></a>
+                    </div><!-- .pagination -->
+                  </nav>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="marketplace6" role="tabpanel" aria-labelledby="marketplace6-tab">
+              <div class="market__settings">
+                <img src="assets/img/pages/settings-gear.png" alt="">
+              </div>
+              <div class="row">
+                <div class="col--left col-md-3">
+                  <div class="market-sidebar js-market-sidebar">
+                    <div class="js-market--close"><img src="assets/img/popup-close.png" alt=""></div>
+                    <div class="market-sidebar__inner">
+                      <form action="">
+                        <ul class="market-sidebar__header">
+                          <li>
+                            <div class="el__label">Filter</div>
+                            <button type="reset" class="el__value js-reset-market ms-auto">Reset</button>
+                          </li>
+                        </ul>
+
+                        <div class="sbmaket-widget sbmaket__rarity">
+                          <div class="sbmaket-widget__header">
+                            <h3 class="sbmaket-widget__title">Grade</h3>
+                          </div>
+                          <ul class="sbmaket__radio">
+                            <li>
+                              <input type="radio" id="sbmaket__rarity6-01" name="sbmaket__rarity6" value="Normal" checked>
+                              <label for="sbmaket__rarity6-01">Normal</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity6-02" name="sbmaket__rarity6" value="Rare">
+                              <label for="sbmaket__rarity6-02">Rare</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity6-03" name="sbmaket__rarity6" value="Epic">
+                              <label for="sbmaket__rarity6-03">Epic</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity6-04" name="sbmaket__rarity6" value="Legendary">
+                              <label for="sbmaket__rarity6-04">Legendary</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity6-05" name="sbmaket__rarity6" value="Mythological">
+                              <label for="sbmaket__rarity6-05">Mythological</label>
+                            </li>
+                          </ul>
+                        </div> <!-- .sbmaket-widget -->
+                        <div class="sbmaket-widget sbmaket__star">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Star</h3>
+                            <div class="star__wrap ms-auto">
+                                <input type="range" value="1" step="0.5" id="star6">
+                                <div data-rateit-backingfld="#star6" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="3"></div>
+                            </div>
+                          </div>
+                        </div> <!-- .sbmaket-widget -->
+
+                        <div class="sbmaket-widget sbmaket__purebred">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Fortify count</h3>
+                            <div class="sbmaket-widget__sub ms-auto">
+                              1-5
+                            </div>
+                          </div>
+                          <input type="text" class="js-range-slider" name="my_range" value="" />
+                        </div><!-- .sbmaket-widget -->
+                      </form>
+                    </div> <!-- .market-sidebar__inner -->
+                  </div>
+                </div>
+                <div class="col--right col-md-9">
+                  <div class="market-price__filter">
+                    <div class="dnselect2 js-dnselect2 -hauto">
+                      <div class="dnselect2__label js-dnselect2__label">Lowest Price</div>
+                      <ul class="dnselect2__list js-dnselect2__list">
+                        <li><label><input type="radio" name="cate" value="Lowest Price"><span>Lowest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Highest Price"><span>Highest Price</span></label></li>
+                        <li><label><input type="radio" name="cate" value="Latest"><span>Latest</span></label></li>
+                      </ul>
+                    </div>
+                  </div> <!-- .market-price__filter -->
+                  <div class="row">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <div class="market__item ef--shine">
+                        <div class="market__item__wrap">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__sub">Breed count: 3</div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pages/sbmaket-pet-01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="market__item__price">
+                            <span class="amount -price1">Ξ 0.02</span><span class="amount  -price">$76.84</span>
+                          </div>
+                        </div>
+                      </div><!-- .market__item -->
+                    </div>
+                  </div>
+                  <nav class="navigation paging-navigation" role="navigation">
+                    <div class="pagination loop-pagination">
+                      <a class="prev page-numbers" href="#"><span class="icon-arrow-left-bold"></span></a>
+                      <span class="page-numbers current">1</span>
+                      <a class="page-numbers" href="#">2</a>
+                      <a class="page-numbers" href="#">3</a>
+                      <a class="page-numbers" href="#">45</a>
+                      <a class="next page-numbers" href="#"><span class="icon-arrow-right-bold"></span></a>
+                    </div><!-- .pagination -->
+                  </nav>
+
+                </div>
+              </div>
+            </div>
           </div>
 
 
