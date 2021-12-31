@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NFT MARKETPLACE - Orbit Metaverse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="images/meta-image.jpg">
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css"/>
+
+    <!--star-rating-->
+    <link rel="stylesheet" href="./assets/libs/rateit.js/rateit.css"/>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+  <body class="marketplace">
+    <div class="wrapper">
+      <div class="loading-page">
+        <div class="loading-page__logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+      </div>
+
+      <div class="containerz">
+        <canvas id="pixie"></canvas>
+      </div>
+
+      <header class="header -fix">
+        <div class="container d-flex align-items-center">
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Logo">
+            </a>
+          </h1>
+          <a href="#" class="menu-mb__btn ms-auto">
+            <img src="./assets/img/burger.png" alt="">
+          </a>
+        </div>
+      </header>
+
+      <section class="wrap__single">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div>
+                <a href="marketplace.html" class="single__back"><span>BACK</span></a>
+              </div>
+              <h2 class="singlePet__title">Orbit #4426465</h2>
+
+              <div class="singlePet__thumb ef--shine">
+                <div class="dnfix__thumb -contain">
+                  <img src="images/pages/singleHooks-01.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="singlePetTab">
+                <ul class="nav nav-tabs" id="singlePetTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="single1-tab" data-bs-toggle="tab" data-bs-target="#single1" type="button" role="tab" aria-controls="single1" aria-selected="true">About</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="single2-tab" data-bs-toggle="tab" data-bs-target="#single2" type="button" role="tab" aria-controls="single2" aria-selected="false">Stats</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="singlePetTabContent">
+                  <div class="tab-pane fade show active -detail" id="single1" role="tabpanel" aria-labelledby="single1-tab">
+                    <div class="singleTab__detail">
+                      <div class="row gx-lg-5">
+                        <div class="col__col col-6">
+                          <div class="el__item -detail">
+                            <p class="el__item__title">Level:</p>
+                            <div class="el__item__value">4</div>
+                          </div>
+                        </div>
+                        <div class="col__col col-6">
+                          <div class="el__item -detail">
+                            <p class="el__item__title">star:</p>
+                            <div class="el__item__value">
+                              <div class="star__wrap ms-auto">
+                                  <input type="range" value="2" step="1" id="star1" disabled>
+                                  <div data-rateit-backingfld="#star1" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="2"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <hr>
+                        </div>
+                        <div class="col__col col-md-6 col-12">
+                          <div class="el__item -detail">
+                            <p class="el__item__title">Fortify count:</p>
+                            <div class="el__item__value">0/5</div>
+                          </div>
+                        </div>
+                        <div class="col__col col-md-6 col-12">
+                          <div class="el__item -detail">
+                            <p class="el__item__title">Owner:</p>
+                            <div class="el__item__value">Orbit: 0x13f386...405af086</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade -stats" id="single2" role="tabpanel" aria-labelledby="single2-tab">
+                    <div class="singleTab__detail">
+                      <div class="row">
+                        <div class="col-pclg-6 col-md-6">
+                          <div class="el__item -stats d-flex">
+                            <div class="el__item__thumb dnfix__thumb -contain"><img src="images/pages/singlePet-polygon-01.png" alt=""></div>
+                            <div class="el__item__meta">
+                              <p class="el__item__title">DAMAGE</p>
+                              <p class="el__item__value">49</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-pclg-6 col-md-6">
+                          <div class="el__item -stats d-flex">
+                            <div class="el__item__thumb dnfix__thumb -contain"><img src="images/pages/singlePet-polygon-01.png" alt=""></div>
+                            <div class="el__item__meta">
+                              <p class="el__item__title">BONUS GOLD</p>
+                              <p class="el__item__value">40</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="singlePet__price">
+                <div class="d-sm-flex align-items-center">
+                  <div class="flex-grow-1 mb-3 mb-md-0">
+                    <p class="singlePet__price__label">Price</p>
+                    <div>
+                      <span class="amount -price1">0.02 BNB</span> <span class="amount -price2">$76.84</span>
+                    </div>
+                  </div>
+                  <div class="ms-auto">
+                    <button class="single__buynow"><span>BUY NOW</span></button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="footer__item">
+                <div class="footer__logo">
+                  <a href="index.html">
+                    <img src="images/logo-footer.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="footer__item">
+                <h3 class="footer__item--title">CONTACT US</h3>
+                <ul class="footer__address">
+                  <!-- <li><i class="ic-map-marker"></i>Address: 1 Kingdom Street, London, United Kingdom, W2 6BD</li> -->
+                  <li><i class="ic-envelope"></i><a href="mailto:support@orbitmeta.io">Email: support@orbitmeta.io</a></li>
+                  <!-- <li><i class="ic-phone"></i><a href="tel:+442045770691">Phone: +442045770691</a></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="footer__item">
+                <h3 class="footer__item--title">ABOUT</h3>
+                <ul class="footer__list">
+                  <li><a href="https://docs.orbitmeta.io/">Documentation</a></li>
+                                                  <!--                    <li><a href="">FAQ</a></li>-->
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col-6">
+              <div class="footer__item">
+                <h3 class="footer__item--title">LEGAL</h3>
+                <ul class="footer__list">
+                  <li><a href="">Terms Of Service</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <ul class="footer__socical">
+          <!-- <li><a href="https://www.facebook.com/OrbitMetaverse" target="_blank"><img src="assets/img/facebook.png" alt=""></a></li> -->
+          <li><a href="https://twitter.com/orbit_meta" target="_blank"><img src="assets/img/twitter.png" alt=""></a></li>
+          <li><a href="https://youtube.com/channel/UCaoqXtS2t2ReByWkCUQgCiQ" target="_blank"><img src="assets/img/youtube.png" alt=""></a></li>
+          <li><a href="https://t.me/OrbitMeta" target="_blank"><img src="assets/img/telegram.png" alt=""></a></li>
+          <li><a href="https://t.me/Orbit_Meta" target="_blank"><img src="assets/img/telegram.png" alt=""></a></li>
+          <li><a href="https://orbitmeta.medium.com" target="_blank"><img src="assets/img/medium.png" alt=""></a></li>
+          <li><a href="https://discord.gg/paNYBWVUzV" target="_blank"><img src="assets/img/discord.png" alt=""></a></li>
+        </ul>
+
+        <div class="footer__newsletter mt-3">
+          <form method="post" action="">
+            <input type="hidden" name="nlang" value="">
+            <input type="text" name="ne" class="form-control input-text" placeholder="Email">
+            <input type="submit" class="input-submit" value="Send">
+          </form>
+        </div>
+
+       <!--  <div class="text-center">
+          <div class="languages">
+            <div class="languages-item"><img src="./assets/flag/en.png" alt="ENG"><span>English</span></div>
+            <ul class="">
+              <li class="active"><img src="./assets/flag/en.png" alt="ENG"><span>English</span></li>
+              <li><img src="./assets/flag/vi.png" alt="PHILIPPINE"><span>Viet Nam</span></li>
+              <li><img src="./assets/flag/zh.png" alt="PHILIPPINE"><span>China</span></li>
+            </ul>
+          </div>
+        </div> -->
+      </footer>
+
+      <div class="play-to-earn__link">
+        <a href="play-to-earn.html" class="tada">
+          <img src="assets/img/playtoearn-icon.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <nav id="menu__mobile" class="nav__mobile">
+        <div class="nav__mobile__content">
+            <div class="nav__mobile__header">
+                <img src="images/logo.png">
+                <div class="nav__mobile--close ms-auto"><img src="./assets/img/burger.png" alt=""></div>
+            </div>
+            <ul class="nav__mobile--ul">
+              <li class="menu-item active"><a href="index.html">HOME</a></li>
+              <!-- <li class="menu-item"><a href="governance.html">Governance</a></li> -->
+              <li class="menu-item"><a href="games.html">GAMES</a></li>
+              <!-- <li class="menu-item"><a href="#">MARKETPLACE</a></li> -->
+              <li class="menu-item"><a href="orbit-meta.html">ORBIT META</a></li>
+              <li class="menu-item"><a href="https://docs.orbitmeta.io/">WHITEPAPER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade ourteamModal" id="ourteamModal" tabindex="-1" aria-labelledby="ourteamModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="ourteamModal-content modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body js-modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+    <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script src="assets/libs/rateit.js/jquery.rateit.js"></script>
+    <script type="text/javascript" src="assets/js/firefly.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
