@@ -499,11 +499,13 @@ $(function() {
 	dnselect2('.js-dnselect2__label')
 
 	/*Page market*/
-	$(".js-range-slider").ionRangeSlider({
-		min: 0,
-		max: 5,
-		from: 1,
-		});
+	if($('div').find('.js-range-slider').length !=0){
+		$(".js-range-slider").ionRangeSlider({
+	      min: 0,
+	      max: 5,
+	      from: 1,
+	   	});
+	}
 
 	$('.js-reset-market').on("click",function(e) {
 		thiz_from = $(this).closest('.tab-pane')
