@@ -602,7 +602,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .market__item__price{background:rgb(53 74 170 / 40%);border:1px dashed rgb(88 106 191 / 40%);box-sizing:border-box;border-radius:7px;padding:8px;font-size:14px;line-height:19px;color:#FFFFFF;text-align:center;}
 .market__item__price .amount{margin:0 7.5px;}
 .market__item__price .amount.-price1{position:relative;top:1px;font-weight:bold;font-size:16px;line-height:22px;color:#FFE03D;}
-
+/**/
+.market__item.-character .dnfix__thumb{padding-top:125%;margin-bottom:0;}
+.market__item.-character .market__item__sub{margin-bottom:0;}
 /**/
 .market-properties{display:flex;align-items:center;margin-bottom:24px;font-family:Nunito;font-style:normal;font-weight:700;font-size:18px;line-height:40px;color:#F8F8F8;overflow-x:auto;}
 .market-properties::-webkit-scrollbar{display:none;}

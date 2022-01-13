@@ -534,7 +534,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
 .playtoearn-banner .container{position:relative;z-index:1;}
 .playtoearn-banner:after{content:'';position:absolute;bottom:-19%;left:0;width:100%;height:25%;background:linear-gradient(180.27deg,rgba(61,25,104,0) 1.36%,#1c024d 17.25%,#1c024d 32%,rgba(51,23,60,0) 88.28%);pointer-events:none;z-index:1;}
 .playtoearn-banner .el__wrap{position:absolute;opacity:20%;}
-.playtoearn-text{position:relative;padding:100px 0;background:linear-gradient(0deg,#1C024D,#1C024D);overflow: hidden;}
+.playtoearn-text{position:relative;padding:100px 0;background:linear-gradient(0deg,#1C024D,#1C024D);overflow:hidden;}
 .playtoearn-text:after{content:'';position:absolute;bottom:-15%;left:0;width:100%;height:19%;background:linear-gradient(180.27deg,rgba(61,25,104,0) 1.36%,#1c024d 17.25%,#1c024d 32%,rgba(51,23,60,0) 88.28%);pointer-events:none;z-index:1;}
 .playtoearn-text .container{position:relative;z-index:1;}
 .playtoearn-text .el__box{position:relative;max-width:900px;margin:0 auto;border-radius:8px;padding:20px;border:1px solid #fff;text-align:justify;}
@@ -583,6 +583,10 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
 .market__item__price{background:rgb(53 74 170 / 40%);border:1px dashed rgb(88 106 191 / 40%);box-sizing:border-box;border-radius:7px;padding:8px;font-size:14px;line-height:19px;color:#FFFFFF;text-align:center;}
 .market__item__price .amount{margin:0 7.5px;}
 .market__item__price .amount.-price1{position:relative;top:1px;font-weight:bold;font-size:16px;line-height:22px;color:#FFE03D;}
+
+/**/
+.market__item.-character .dnfix__thumb{padding-top:125%;margin-bottom:0;}
+.market__item.-character .market__item__sub{margin-bottom:0;}
 
 /**/
 .market-properties{display:flex;align-items:center;margin-bottom:24px;font-family:Nunito;font-style:normal;font-weight:700;font-size:18px;line-height:40px;color:#F8F8F8;overflow-x:auto;}
@@ -809,7 +813,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
 
 /*Effect*/
 .ef--shine .dnfix__thumb{position:relative;display:block;overflow:hidden}
-.ef--shine .dnfix__thumb::before{position:absolute;top:0;left:-75%;z-index:2;display:block;content:'';width:50%;height:100%;background:-webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);background:linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);-webkit-transform:skewX(-25deg);transform:skewX(-25deg)}
+.ef--shine .dnfix__thumb::before{position:absolute;top:0;left:-80%;z-index:2;display:block;content:'';width:50%;height:100%;background:-webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);background:linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);-webkit-transform:skewX(-25deg);transform:skewX(-25deg)}
 .ef--shine:hover .dnfix__thumb::before{-webkit-animation:shine 1s;animation:shine 1s}
 @-webkit-keyframes shine{
     100%{left:125%}
