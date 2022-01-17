@@ -15,9 +15,10 @@ p{margin-bottom:0;}
 body{--dn-header-height:83px;font-family:'Nunito',sans-serif;background:#2C0F85;color:#ECE1E1;font-size:16px;line-height:26px;cursor:url(data:image/png;base64,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) 0 0,auto!important;}
 img{max-width:100%;height:auto;}
 h1,h2,h3{font-family:Lalezar;}
-.btn,a,button,.slider__item,.home-roadmap .el__box li,.scrollTop,.btn-video-play,.dnselect__label,.el--hover,label,.dnselect2__label{cursor:url(../img/hover.png) 0 0,auto!important;}
+.btn,a,button,.slider__item,.home-roadmap .el__box li,.scrollTop,.btn-video-play,.dnselect__label,.el--hover,label,.dnselect2__label,.item-copy{cursor:url(../img/hover.png) 0 0,auto!important;}
 .modal-open{overflow:hidden;}
 body.home .wrapper{overflow:hidden;}
+.-color-yellow{color:#FFE03D;}
 
 /*Fix image trong khung*/
 .dnfix__thumb{position:relative;height:auto;width:100%;overflow:hidden;display:block;padding-top:68.075%;}
@@ -30,6 +31,7 @@ body.home .wrapper{overflow:hidden;}
 .ic-map-marker{display:inline-block;width:14px;height:16px;background:url(../img/map-marker.png) no-repeat;background-size:contain;}
 .ic-phone{display:inline-block;width:16px;height:16px;background:url(../img/phone.png) no-repeat;background-size:contain;}
 .ic-envelope{display:inline-block;width:16px;height:14px;background:url(../img/envelope.png) no-repeat;background-size:contain;}
+.ic-info-circle{display:inline-block;width:20px;height:20px;background:url(../img/info-circle.svg) no-repeat;background-size:contain;}
 
 /**/
 .btn{position:relative;display:inline-block;min-width:177px;padding:4px 15px;transition:all .5s;background:linear-gradient(131.45deg,#F517A0 24.6%,#AD00FF 84.41%);box-shadow:0px 5px 20px rgba(219,0,255,0.8),inset 0px -4px 0px rgba(0,0,0,0.25);border-radius:12px;}
@@ -437,7 +439,6 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
 .sellOrbitTab__box small strong{color:#00FDFF;}
 .amount-field__wrap.-fixleft .amount-field__prefix{left:16px;right:auto;border-left:0;border-right:1px solid #8141D4;padding-right:10px;padding-left:0;}
 .amount-field__wrap.-fixleft .amount-field{width:100%;height:48px;padding-right:65px;background:#451A7D;border:1px solid #9657E9;box-sizing:border-box;border-radius:8px;color:#fff;padding-left:80px;padding-right:15px;}
-
 @media (min-width:576px){
     .modal-dialog{max-width:600px;}
 }
@@ -637,7 +638,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
 
 /**/
 .marketplace__content{--sidebar-width:310px;}
-.marketplace__content.-inventory{padding-top:calc(var(--dn-header-height) + 60px);padding-bottom:100px;}
+.marketplace__content.-inventory,.marketplace__content.-account,.marketplace__content.-activity{padding-top:calc(var(--dn-header-height) + 60px);padding-bottom:100px;}
 .col--left{width:var(--sidebar-width);}
 .col--right{width:calc(100% - var(--sidebar-width));}
 .market-sidebar{position:relative;background:linear-gradient(180deg,#3A378F 0%,#3E2067 100%);box-shadow:0px 5px 10px rgba(219,0,255,0.5),inset 0px -4px 0px rgba(0,0,0,0.25);border-radius:16px;margin-bottom:30px;}
@@ -824,6 +825,41 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
 .activity__box .el__item__thumb{flex:0 0 auto;width:54px;padding-top:54px;margin-right:16px;}
 .activity__box .el__item__title{font-family:Nunito;font-weight:bold;color:#FCFCFC;margin-bottom:4px;}
 .activity__box .el__item__share{display:inline-block;font-size:16px;margin-left:8px;color:#FFE03D;}
+
+/**/
+
+/**/
+.marketplace__content.-account{}
+.account__header__title{font-family:Nunito;font-weight:800;font-size:32px;line-height:40px;color:#FCFCFC;margin-bottom:16px;}
+.account__box{margin-bottom:30px;}
+.account__box.-widget{}
+.account__box.-widget .account__box__item{padding:40px 40px 30px;}
+.account__box.-widget .-text{color:#FFE03D;}
+.account__box.-widget .el__item__thumb{flex:0 0 auto;width:108px;padding-top:108px;margin-right:48px;}
+.account__box__title{font-family:Nunito;font-size:24px;line-height:40px;color:#FCFCFC;margin-bottom:12px;}
+.account__box__item{position:relative;width:100%;padding:30px 40px 20px;background:linear-gradient(125.07deg,#3E226B 21.09%,#3C2F80 97.56%);border-radius:20px;margin-bottom:30px;}
+.account__box__item .el__item__wrap{position:relative;z-index:1;}
+.account__box__item.-s1::before{content:'';position:absolute;bottom:0;left:0;width:234px;height:161px;background:url(../img/account-box-bg-01.png);background-repeat:no-repeat;background-size:contain;pointer-events:none;}
+.account__box__item.-s1::after{content:'';position:absolute;top:0;right:0;width:100%;height:100%;background:url(../img/account-box-bg-02.png);background-repeat:no-repeat;background-size:contain;pointer-events:none;}
+.account__box__item.-s2::after{content:'';position:absolute;top:0;right:0;width:100%;height:100%;background:url(../img/account-box-bg-03.png);background-repeat:no-repeat;background-size:contain;pointer-events:none;}
+.account__box__item .el__item__coin{flex:0 0 auto;width:42px;margin-right:16px;}
+.account__box__item .el__item__coin img{width:42px;height:42px;}
+.account__box__item .amount.-large{font-family:Nunito;font-weight:bold;font-size:32px;color:#FFE03D;}
+.account__box__item .amount.-small{font-family:Nunito;font-weight:normal;font-size:14px;color:#E0E0E0;}
+.account__box__item .el__item__box{position:relative;padding:10px 24px;font-size:14px;background:#4B3790;border:1px dashed #6854AD;border-radius:8px;color:rgba(255,255,255,.6);}
+.account__box__item .el__item__box h4,.account__box__item .el__item__box h6{color:#fff;}
+.account__box__item .el__item__address{font-family:Nunito;font-size:16px;color:#FFFFFF;}
+.account__box__item .el__item__address strong{font-weight:bold;font-size:18px;}
+.account__box__item .ic-info-circle{position:relative;top:4px;}
+.account__box__item.-transfer{}
+.account__box__item .el__transfer{position:relative;padding:0 15px;}
+.account__box__item .el__transfer__thumb{width:48px;padding-top:48px;margin:0 auto 16px;}
+.account__box__item .el__transfer__icon{position:relative;top:14px;}
+.item-copy{font-size:18px;color:#FFE03D;border:0;background:transparent;padding:0;}
+.btnz{font-family:Nunito;font-weight:600;font-size:14px;line-height:40px;color:#09FFFF;text-align:center;padding:0 10px;background:#5C499D;border-radius:100px;border:0;transition:all .5s;}
+.btnz:hover{box-shadow:0 0 5px 0 #fff;}
+.btnz2{font-family:Nunito;font-weight:400;font-size:18px;line-height:40px;color:#FFFFFF;text-align:center;padding:2px 30px;background:transparent;border-radius:12px;border:1px solid #F2F2F2;transition:all .5s;}
+.btnz2:hover{background:#4B3790;}
 
 /*Footer*/
 .footer{position:relative;padding:48px 0 0;background:linear-gradient(269.63deg,#452187 -12.76%,#1C137B 104.12%);color:#F8F8F8;font-size:16px;line-height:32px;}
@@ -1050,6 +1086,9 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
     .home-tokenomics .el__box{margin-bottom:100px;}
     .col-pclg-6{width:50%;}
     .singlePetTab .nav-tabs .nav-link{min-width:122px;}
+    .account__box__item{padding:30px 30px 20px;}
+    .account__box.-widget .el__item__thumb{margin-right:24px;}
+    .account__box__item .el__transfer{padding:0 0;}
 }
 @media (max-width:1299px){
     .playtoearn-block .slick-prev{left:-15px;}
@@ -1085,6 +1124,13 @@ header.header.is-active{background:linear-gradient(183.53deg,#2C0F85 3.07%,#4e3d
     .col-tbl-6{width:50%;}
     .singleTab__detail .el__item__value{font-size:15px;}
     .singlePetTab .nav-tabs .nav-link{min-width:103px;}
+    .account__box__item{padding:30px 20px;}
+    .account__box__item .el__item__box{padding:10px 12px;}
+    .account__box.-widget .account__box__item{padding:30px 20px;}
+    .account__box.-widget .el__item__thumb{width:90px;padding-top:90px;margin-right:16px;}
+    .account__box h4{font-size:22px;}
+    .account__box__item .amount.-large{font-size:26px;}
+    .btnz2{font-size:16px;}
 }
 @media (max-width:1099px){
     .container{max-width:97%;}

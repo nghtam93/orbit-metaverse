@@ -612,7 +612,7 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .marketplace__banner .el__header{position:absolute;top:0;left:0;width:100%;height:100%;padding-top:50px;z-index:1;display:flex;align-items:center;justify-content:center;text-align:center;}
 .marketplace__banner .el__header__title{font-family:Lalezar;font-style:normal;font-weight:normal;font-size:48px;line-height:75px;background:-webkit-linear-gradient(45deg,#FFFFFF,#E79A6F);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 .marketplace__content{background:linear-gradient(180deg,#291052 0%,#33173C 100%);padding-bottom:200px;}
-.marketplace__content.-inventory{padding-top:calc(var(--dn-header-height) + 40px);padding-bottom:100px;}
+.marketplace__content.-inventory,.marketplace__content.-account,.marketplace__content.-activity{padding-top:calc(var(--dn-header-height) + 40px);padding-bottom:100px;}
 .marketplace-tabs{position:relative;border-bottom:1px solid #3E1E70;margin-bottom:35px;width:100%;justify-content:start;overflow-x:auto;flex-wrap:nowrap;padding:1px 0;}
 .marketplace-tabs::-webkit-scrollbar{display:none;}
 .marketplace__content .nav-tabs__wrap{display:flex;align-items:center;justify-content:center;}
@@ -870,6 +870,38 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
 .activity__box .el__item__title{font-family:Nunito;font-weight:bold;color:#FCFCFC;margin-bottom:4px;}
 .activity__box .el__item__share{display:inline-block;font-size:16px;margin-left:8px;color:#FFE03D;}
 
+/**/
+.marketplace__content.-account{}
+.account__header__title{font-family:Nunito;font-weight:800;font-size:32px;line-height:40px;color:#FCFCFC;margin-bottom:16px;}
+.account__box{margin-bottom:30px;}
+.account__box.-widget{}
+.account__box.-widget .account__box__item{padding:40px 40px 30px;}
+.account__box.-widget .-text{color:#FFE03D;}
+.account__box.-widget .el__item__thumb{flex:0 0 auto;width:108px;padding-top:108px;margin-right:48px;}
+.account__box__title{font-family:Nunito;font-size:24px;line-height:40px;color:#FCFCFC;margin-bottom:12px;}
+.account__box__item{position:relative;width:100%;padding:30px 40px 20px;background:linear-gradient(125.07deg,#3E226B 21.09%,#3C2F80 97.56%);border-radius:20px;margin-bottom:30px;}
+.account__box__item .el__item__wrap{position:relative;z-index:1;}
+.account__box__item.-s1::before{content:'';position:absolute;bottom:0;left:0;width:234px;height:161px;background:url(../img/account-box-bg-01.png);background-repeat:no-repeat;background-size:contain;pointer-events:none;}
+.account__box__item.-s1::after{content:'';position:absolute;top:0;right:0;width:100%;height:100%;background:url(../img/account-box-bg-02.png);background-repeat:no-repeat;background-size:contain;pointer-events:none;}
+.account__box__item.-s2::after{content:'';position:absolute;top:0;right:0;width:100%;height:100%;background:url(../img/account-box-bg-03.png);background-repeat:no-repeat;background-size:contain;pointer-events:none;}
+.account__box__item .el__item__coin{flex:0 0 auto;width:42px;margin-right:16px;}
+.account__box__item .el__item__coin img{width:42px;height:42px;}
+.account__box__item .amount.-large{font-family:Nunito;font-weight:bold;font-size:32px;color:#FFE03D;}
+.account__box__item .amount.-small{font-family:Nunito;font-weight:normal;font-size:14px;color:#E0E0E0;}
+.account__box__item .el__item__box{position:relative;padding:10px 24px;font-size:14px;background:#4B3790;border:1px dashed #6854AD;border-radius:8px;color:rgba(255,255,255,.6);}
+.account__box__item .el__item__box h4,.account__box__item .el__item__box h6{color:#fff;}
+.account__box__item .el__item__address{font-family:Nunito;font-size:16px;color:#FFFFFF;}
+.account__box__item .el__item__address strong{font-weight:bold;font-size:18px;}
+.account__box__item .ic-info-circle{position:relative;top:4px;}
+.account__box__item.-transfer{}
+.account__box__item .el__transfer__thumb{width:48px;padding-top:48px;margin:0 auto 16px;}
+.account__box__item .el__transfer__icon{position:relative;top:14px;}
+.item-copy{font-size:18px;color:#FFE03D;border:0;background:transparent;padding:0;}
+.btnz{font-family:Nunito;font-weight:600;font-size:14px;line-height:40px;color:#09FFFF;text-align:center;padding:0 10px;background:#5C499D;border-radius:100px;border:0;transition:all .5s;}
+.btnz:hover{box-shadow:0 0 5px 0 #fff;}
+.btnz2{font-family:Nunito;font-weight:400;font-size:18px;line-height:40px;color:#FFFFFF;text-align:center;padding:2px 30px;background:transparent;border-radius:12px;border:1px solid #F2F2F2;transition:all .5s;}
+.btnz2:hover{background:#4B3790;}
+
 /*Footer*/
 .footer{position:relative;padding:40px 0 15px;background:linear-gradient(269.63deg,#452187 -12.76%,#1C137B 104.12%);color:#F8F8F8;font-size:16px;line-height:32px;}
 .footer a{color:#ECE1E1;}
@@ -1069,6 +1101,21 @@ header.header.is-active{background:linear-gradient(183.53deg,#33173C 3.07%,rgba(
     .games-system__carousel .previous{left:-10px;}
     .games-system__carousel .next{right:0;}
     .singlePet__thumb{margin:0 auto 30px;}
+
+    .account__box__item, .account__box.-widget .account__box__item {
+        padding: 30px 20px;
+    }
+    .account__box__item .el__item__box{padding:10px 12px;}
+    .account__box.-widget .account__box__item{padding:30px 20px;}
+    .account__box.-widget .el__item__thumb{width:90px;padding-top:90px;margin-right:16px;}
+    .account__box h4{font-size:22px;}
+    .account__box__item .amount.-large{font-size:26px;}
+    .btnz2{font-size:16px;}
+
+    .marketplace__content.-inventory, .marketplace__content.-account, .marketplace__content.-activity {
+        padding-bottom: 50px;
+    }
+
 }
 @media (max-width:767px){
     .governance__box .el__header{top:-100px;left:0;max-width:100%;}

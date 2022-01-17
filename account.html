@@ -54,7 +54,8 @@
           </div>
       </header>
 
-      <section class="marketplace__content -activity">
+
+      <section class="marketplace__content -account">
         <div class="container position-relative">
 
           <div class="row">
@@ -62,84 +63,126 @@
               <div class="market-sidebar">
                 <div class="market-sidebar__inner">
                   <ul class="nav__widget">
-                    <li><a href="account.html"><i class="icon-Profile"></i> Account</a></li>
+                    <li class="active"><a href="account.html"><i class="icon-Profile"></i> Account</a></li>
                     <li><a href="inventory.html"><i class="icon-Graph"></i> Inventory</a></li>
-                    <li class="active"><a href="activity.html"><i class="icon-Shield-Done"></i> Activity</a></li>
+                    <li><a href="activity.html"><i class="icon-Shield-Done"></i> Activity</a></li>
                   </ul>
                 </div> <!-- .market-sidebar__inner -->
               </div>
             </div>
             <div class="col--right col-md-9">
-              <div class="activity__header">
-                <h1 class="activity__header__title">Activities</h1>
-                <p class="activity__header__sub">Below shows your attempted trasactions but they could fail or be pending <br>See the real status on Block Explore. Relea see this arbcle for more info.</p>
+              <div class="account__header">
+                <h2 class="account__header__title">Hi John Doe</h2>
+                <div class="account__header__excerpt">
+
+                </div>
               </div>
-              <div class="activity__box">
-                <h3 class="activity__box__title">Otc 18, 2021</h3>
-                <div class="activity__box__item">
-                  <div class="el__item">
-                    <div class="el__item__date">09:00</div>
-                    <div class="el__item__thumb dnfix__thumb -contain">
-                      <img src="assets/img/polygon.svg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <div class="el__item__title">You atternpted to start a sale on Orbit #42187898 for 0.032 eth</div>
-                      <div class="el__item__sub">View transaction status here <a href="" class="el__item__share"><span class="icon-share"></span></a></div>
+              <div class="account__box">
+                <div class="account__box__title">Balances</div>
+                <div class="row">
+                  <div class="col-sm-6 d-flex">
+                    <div class="account__box__item -s1">
+                      <div class="el__item__wrap">
+                        <div class="d-flex mb-5">
+                          <div class="el__item__coin">
+                            <img src="assets/img/binance-coin.svg" alt="">
+                          </div>
+                          <div>
+                            <p class="amount -large">0 BNB</p>
+                            <p class="amount -small">0 USD</p>
+                          </div>
+                        </div>
+                        <div class="el__item__address mb-5">
+                          <strong>BSC address</strong>
+                          <div><span class="item__address">0X9843174537789534289245978...</span><span class="item-copy js-item-copy icon-copy"></span></div>
+                        </div>
+                        <div class="el__item__box text-center">Offer fund coming soon</div>
+                      </div> <!-- .el__item__wrap -->
                     </div>
                   </div>
-                  <div class="el__item">
-                    <div class="el__item__date">09:00</div>
-                    <div class="el__item__thumb dnfix__thumb -contain">
-                      <img src="assets/img/polygon.svg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <div class="el__item__title">You atternpted to start a sale on Orbit #42187898 for 0.032 eth</div>
-                      <div class="el__item__sub">View transaction status here <a href="" class="el__item__share"><span class="icon-share"></span></a></div>
-                    </div>
-                  </div>
-                  <div class="el__item">
-                    <div class="el__item__date">09:00</div>
-                    <div class="el__item__thumb dnfix__thumb -contain">
-                      <img src="assets/img/polygon.svg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <div class="el__item__title">You atternpted to start a sale on Orbit #42187898 for 0.032 eth</div>
-                      <div class="el__item__sub">View transaction status here <a href="" class="el__item__share"><span class="icon-share"></span></a></div>
+                  <div class="col-sm-6 d-flex">
+                    <div class="account__box__item -s2">
+                      <div class="el__item__wrap">
+                        <div class="d-flex mb-4">
+                          <div class="el__item__coin">
+                            <img src="assets/img/binance-coin.svg" alt="">
+                          </div>
+                          <div>
+                            <p class="amount -large">0 OBM</p>
+                            <p class="amount -small">0 USD</p>
+                          </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                          <button class="btnz me-2">+ Add balance</button>
+                          <button class="btnz">Withdraw to OBM</button>
+                        </div>
+                        <div class="el__item__address mb-3">
+                          <strong>BSC address</strong>
+                          <div><span class="item__address clipboard-text">0X9843174537789534289245978...</span><span class="item-copy js-item-copy icon-copy"></span></div>
+
+                        </div>
+                        <div class="el__item__box">
+                          <div class="row">
+                            <div class="col-5 col-xxl-6">
+                              <h6>Offer fund <i class="ic-info-circle"></i></h6>
+                              <h4><strong>0 WETH</strong></h4>
+                              <p>0 USD</p>
+                            </div>
+                            <div class="col-7 col-xxl-6">
+                              <button class="btnz w-100 mb-2">+ Add balance</button>
+                              <button class="btnz w-100">Withdraw to OBM</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- .el__item__wrap -->
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="activity__box">
-                <h3 class="activity__box__title">Otc 18, 2021</h3>
-                <div class="activity__box__item">
-                  <div class="el__item">
-                    <div class="el__item__date">09:00</div>
-                    <div class="el__item__thumb dnfix__thumb -contain">
-                      <img src="assets/img/polygon.svg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <div class="el__item__title">You atternpted to start a sale on Orbit #42187898 for 0.032 eth</div>
-                      <div class="el__item__sub">View transaction status here <a href="" class="el__item__share"><span class="icon-share"></span></a></div>
-                    </div>
-                  </div>
-                  <div class="el__item">
-                    <div class="el__item__date">09:00</div>
-                    <div class="el__item__thumb dnfix__thumb -contain">
-                      <img src="assets/img/polygon.svg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <div class="el__item__title">You atternpted to start a sale on Orbit #42187898 for 0.032 eth</div>
-                      <div class="el__item__sub">View transaction status here <a href="" class="el__item__share"><span class="icon-share"></span></a></div>
+              <div class="account__box -widget">
+                <div class="account__box__title">Widget</div>
+                <div class="row">
+                  <div class="col-sm-6 d-flex">
+                    <div class="account__box__item">
+                      <div class="d-flex align-items-center mb-4 pb-3">
+                        <div class="el__item__thumb dnfix__thumb -contain">
+                          <img src="images/pages/singleHooks-01.png" alt="">
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6>Small love potion</h6>
+                          <h4>x0 <span class="-text">(Pending: 42)</span></h4>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button class="btnz2">Sync Love Potion</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="el__item">
-                    <div class="el__item__date">09:00</div>
-                    <div class="el__item__thumb dnfix__thumb -contain">
-                      <img src="assets/img/polygon.svg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <div class="el__item__title">You atternpted to start a sale on Orbit #42187898 for 0.032 eth</div>
-                      <div class="el__item__sub">View transaction status here <a href="" class="el__item__share"><span class="icon-share"></span></a></div>
+                  <div class="col-sm-6 d-flex">
+                    <div class="account__box__item -transfer">
+                      <div class="el__transfer d-flex justify-content-center">
+                        <div class="el__transfer__item text-center mb-4">
+                          <div class="el__transfer__thumb dnfix__thumb -contain">
+                            <img src="assets/img/ic-obm.svg" alt="">
+                          </div>
+                          <h6 class="el__transfer__title">ORBIT DAI COIN</h6>
+                          <h4 class="el__transfer__sub">x0</h4>
+                        </div>
+                        <div class="el__transfer__icon flex-grow-1 text-center">
+                          <span class="icon-long-arrow-right"></span>
+                        </div>
+                        <div class="el__transfer__item text-center mb-4">
+                          <div class="el__transfer__thumb dnfix__thumb -contain">
+                            <img src="assets/img/ic-obm.svg" alt="">
+                          </div>
+                          <h6 class="el__transfer__title">ORBIT DAI COIN</h6>
+                          <h4 class="el__transfer__sub">x0</h4>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <button class="btnz2">Claim DAI token</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -235,9 +278,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
-    <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-    <script src="assets/libs/rateit.js/jquery.rateit.js"></script>
-
+    <script src="assets/libs/clipboard.js/clipboard.min.js"></script>
     <script type="text/javascript" src="assets/js/firefly.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
