@@ -66,9 +66,6 @@
             <div class="col--right col-md-9">
               <div class="account__header">
                 <h2 class="account__header__title">Hi John Doe</h2>
-                <div class="account__header__excerpt">
-
-                </div>
               </div>
               <div class="account__box">
                 <div class="account__box__title">Balances</div>
@@ -87,7 +84,9 @@
                         </div>
                         <div class="el__item__address mb-5">
                           <strong>BSC address</strong>
-                          <div><span class="item__address">0X9843174537789534289245978...</span><span class="item-copy js-item-copy icon-copy"></span></div>
+                          <div><span class="item__address">0X9843174537789534289245978...</span>
+                            <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard" class="item-copy js-item-copy" data-clipboard-text="0X9843174537789534289245978..."><span class="icon-copy"></span></button>
+                          </div>
                         </div>
                         <div class="el__item__box text-center">Offer fund coming soon</div>
                       </div> <!-- .el__item__wrap -->
@@ -111,13 +110,16 @@
                         </div>
                         <div class="el__item__address mb-3">
                           <strong>BSC address</strong>
-                          <div><span class="item__address clipboard-text">0X9843174537789534289245978...</span><span class="item-copy js-item-copy icon-copy"></span></div>
+                          <div>
+                            <span class="item__address clipboard-text">0X9843174537789534289245978...</span>
+                            <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard" class="item-copy js-item-copy" data-clipboard-text="0X9843174537789534289245978..."><span class="icon-copy"></span></button>
+                          </div>
 
                         </div>
                         <div class="el__item__box">
                           <div class="row">
                             <div class="col-5 col-xxl-6">
-                              <h6>Offer fund <i class="ic-info-circle"></i></h6>
+                              <h6>Offer fund <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Offer fund" class="item-copy"><i class="ic-info-circle"></i></button></h6>
                               <h4><strong>0 WETH</strong></h4>
                               <p>0 USD</p>
                             </div>
