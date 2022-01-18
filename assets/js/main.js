@@ -357,16 +357,18 @@ $(function() {
 	})
 
 	// ClipboardJS
-	let clipboard = new ClipboardJS('.js-item-copy');
-	clipboard.on('success', function (e) {
-	    let trigger_button = e.trigger;
-	    // update the tooltip title, get the tooltip instance, and show it
-	    trigger_button.setAttribute('data-bs-original-title', 'Copied!');
-	    let btn_tooltip = bootstrap.Tooltip.getInstance(trigger_button);
-	    btn_tooltip.show();
-	    // reset the tooltip title
-	    trigger_button.setAttribute('data-bs-original-title', 'Copy to clipboard');
-	});
+	if($(document).find('.js-item-copy').length !=0){
+		let clipboard = new ClipboardJS('.js-item-copy');
+		clipboard.on('success', function (e) {
+		    let trigger_button = e.trigger;
+		    // update the tooltip title, get the tooltip instance, and show it
+		    trigger_button.setAttribute('data-bs-original-title', 'Copied!');
+		    let btn_tooltip = bootstrap.Tooltip.getInstance(trigger_button);
+		    btn_tooltip.show();
+		    // reset the tooltip title
+		    trigger_button.setAttribute('data-bs-original-title', 'Copy to clipboard');
+		});
+	}
 
 
 });
