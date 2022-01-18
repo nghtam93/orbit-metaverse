@@ -1,6 +1,20 @@
 $(function() {
 
+	// Loader
+	$('body').addClass('modal-open')
+	$( document ).ready(function() {
+	  $('.loading-page__logo').fadeOut();
+	  $('.loading-page').delay(350).fadeOut('slow');
+	  $('body').removeClass('modal-open')
+	})
+
 	new WOW().init();
+
+	// Header Fix
+	var header_sticky=$("header.-fix")
+    $(window).scroll(function(){
+        $(this).scrollTop()>1?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
+    })
 
 	/*----Languages---*/
 	$('.languages .languages-item').click(function() {
@@ -33,24 +47,6 @@ $(function() {
 	    $(this).css('opacity',1)
 	  }
 	})
-
-
-	// Loader
-	$('body').addClass('modal-open')
-	$(window).on('load', function() {
-	  $('.loading-page__logo').fadeOut();
-	  $('.loading-page').delay(350).fadeOut('slow');
-	  $('body').removeClass('modal-open')
-	})
-
-	// Header Fix
-	var header_sticky=$("header.-fix")
-
-
-    $(window).scroll(function(){
-        $(this).scrollTop()>1?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
-    })
-
 
     // Check home
 	if($('body').hasClass('home')){

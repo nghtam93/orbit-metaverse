@@ -1,5 +1,6 @@
 $(function() {
 
+	// Loader
 	$('body').addClass('modal-open')
 	$( document ).ready(function() {
 	  $('.loading-page__logo').fadeOut();
@@ -7,13 +8,13 @@ $(function() {
 	  $('body').removeClass('modal-open')
 	})
 
+	new WOW().init();
+
 	// Header Fix
 	var header_sticky=$("header.-fix")
-
     $(window).scroll(function(){
         $(this).scrollTop()>1?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
     })
-
 
     /*----Languages---*/
 	$('.languages .languages-item').click(function() {
@@ -30,8 +31,6 @@ $(function() {
 
 	    $('.languages>ul').removeClass('dropdown-languages')
 	});
-
-	new WOW().init();
 
 	// Video custom
 	$playPause = $(".btn-video-play");
